@@ -14,6 +14,7 @@ class InputParser:
     with open(self.filename) as input:
 
       for line in input:
+        line = line.decode('utf-8').strip()
         line_parts = line.split('\t')
 
         tweet = TweetData(long(line_parts[0]), long(line_parts[1]), 
