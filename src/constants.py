@@ -42,13 +42,12 @@ ESCAPE_SEQUENCE = "%%"
 SPLIT_REGEX = ' |\n|\t|;|:|,|\.|\"'
 
 #Header comment text
-HEADER = """
-\% CSI 4107
-\% Assignment 2 .arff file
-\% April 2, 2015
-\% Sean Billings\t6426637
-\% Craig Bryan\t6965144
-\%
-\% Generated from "semeval_twitter_data.txt"
-
+HEADER = """%
+% CSI 4107
+% Assignment 2 .arff file
+% April 2, 2015
+% Sean Billings\t6426637
+% Craig Bryan\t6965144
+%
+% Generated from "semeval_twitter_data.txt"
 """
