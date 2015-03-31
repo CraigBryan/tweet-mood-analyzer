@@ -18,7 +18,7 @@ class InputParser:
         line_parts = line.split('\t')
 
         tweet = TweetData(long(line_parts[0]), long(line_parts[1]), 
-                          line_parts[2], line_parts[3])
+                          line_parts[2].replace('\"', ''), line_parts[3])
 
         tweets.append(tweet)
 

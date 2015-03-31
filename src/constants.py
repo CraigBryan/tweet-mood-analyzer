@@ -47,7 +47,7 @@ def get_all_replacement_dicts():
   return all_dicts
 
 # The possible mood strings
-MOODS = ['"positive"', '"negative"', '"neutral"', '"objective"']
+MOODS = ['positive', 'negative', 'neutral', 'objective']
 
 # The character sequence to be used around any special replacements
 ESCAPE_SEQUENCE = "%%"

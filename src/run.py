@@ -4,8 +4,10 @@ from  simple_filters import Analyzer
 import constants
 from feature import Feature
 from arff_generator import DogSoundFileGenerator
+from unigram_swn_feature_parser import UnigramSWNFeatureParser
+import tweet_data
 
-options = []
+options = ['-t', '-swn', '-qe']
 
 if len(sys.argv) > 1:
   options = sys.argv[1:]
@@ -18,23 +20,42 @@ else:
 parser = InputParser(filename)
 tweet_list = parser.parse()
 
+#All preprocessing necessary
+print('Started preprocessing')
+
 analyzer = Analyzer(constants.ESCAPE_SEQUENCE)
+uFeatureParser = UnigramSWNFeatureParser()
 
 for data in tweet_list:
- print(analyzer.analyze(data.tweet_string))
+  tokens = analyzer.analyze(data.tweet_string)
 
-# EXAMPLE USE OF A FEATURE
-# This example just uses the basic data contained in the tweet, but shows
-# how the features and outputter are meant to be used
+  for term in tokens:
+    term = term.encode('utf_8').decode('ascii', 'ignore')
+      
+  data.set_tokens(tokens)
+  data.set_scores(uFeatureParser.score(tokens))
 
-# features = []
-# features.append(Feature("id", "numeric", "sid"))
-# features.append(Feature("uid", "numeric", "uid"))
-# features.append(Feature("mood", "enum", "mood", enum_fields = constants.MOODS))
-# features.append(Feature("tweet_string", "string", "get_quoted_tweet_string"))
+print('Done Preprocessing')                  
 
-# output_gen = DogSoundFileGenerator("tweet_mood", tweet_list)
+# Adding features
 
-# output_gen.add_to_features(features)
+features = []
+features.append(Feature("tweet_string", "string", "tokens")) #TODO add as a bag of words instead
 
-# output_gen.generate_output("../res/test_output.arff")
+if '-swn' in options:
+  features.append(Feature("pos_score", "numeric", "pos_score"))
+  features.append(Feature("neg_score", "numeric", "neg_score"))
+  features.append(Feature("obj_score", "numeric", "obj_score"))
+
+if '-qe' in options:
+  features.append(Feature("q_marks", "numeric", "q_marks"))
+  features.append(Feature("e_marks", "numeric", "e_marks")) 
+
+features.append(Feature("category", "enum", "mood", enum_fields = constants.MOODS))
+
+# Outputting the arff
+
+output_gen = DogSoundFileGenerator("tweet_mood", tweet_list)
+output_gen.add_to_features(features)
+
+output_gen.generate_output("../res/test_output.arff")
