@@ -2,27 +2,39 @@ from collections import OrderedDict
 
 # Map that defines any specially escaped punctuation.
 # The keys are regular expressions and the values are the replacement string
-# The order is important when dealing with repeated punctuation such as ? vs ???
 PUNCTUATION_MAP = OrderedDict([
   ('\?', 'Q_MARK'),
-  ('\?\?', 'DOUBLE_Q_MARK'),
-  ('\?\?\?+', 'MULTI_Q_MARK'),
   ('!', 'EXCLAIM'),
-  ('!!', 'DOUBLE_EXCLAIM'),
-  ('!!!+', 'MULTI_EXCLAIM'),
-  ('[\?|!]*[\?!|!\?]+[\?|!]*', 'EXCLAIM_QMARK_MIX')
 ])
 
 # Map that escapes any links
 # The keys are regular expressions and the values are the replacement string
 LINK_MAP = OrderedDict([
-  ('https?:\/\/[\w|\.|\/]+', 'LINK')
+  ('https?:\/\/[\w|\.|\/|-]+', 'LINK')
 ])
 
 # Map that escapes usernames and hashtags
+# The keys are regular expressions and the values are the replacement string
 TWITTER_MAP = OrderedDict([
-  ('@\w+', 'USERNAME'),
-  ('#\w+', 'HASHTAG')
+  ('(?:^|\s)@\w+', 'USERNAME'),
+  ('(?:^|\s)#\w+', 'HASHTAG')
+])
+
+#partial date regexes
+DAY_RE = '(?:sun(?:day)?|mon(?:day)?|tues(?:day)?|wed(?:nesday)?|thurs(?:day)?|fri(?:day)?|sat(?:urday)?)'
+MONTH_RE = '(?:jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|jun(?:e)?|jul(?:y)?|aug(?:ust)?|sept(?:ember)|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)'
+DAY_AND_YEAR_RE = '(?:,|, | )\d{1,2}(?:st|nd|rd|th)?(?:(?:,|, | )(?:\d{4}))?'
+DATE_MAP = OrderedDict([
+  #More descriptive dates eg. 12th of February, 15 august
+  ('\d{{1,2}}(?:st|nd|rd|th)? (?:of )?{}'.format(MONTH_RE), 'DATE'),
+  #textual date formats (february 15th, 2015, feb 15th, monday feb, 15th)
+  ('{}?\s+{}{}'.format(DAY_RE, MONTH_RE, DAY_AND_YEAR_RE), 'DATE'),
+  #number format dates "DD/MM/YYYY" or "DD/MM/YY" or "DD-MM-YY" or "DD-MM-YYYY"
+  ('\d{1,2}[-|\/]\d{1,2}[-|\/]\d{2,4}', 'DATE')
+])
+
+TIME_MAP = OrderedDict([
+  ('\d{1,2}(?:(?:(?::\d{1,2}) ?(?:pm|am))|(?::\d{1,2})|(?: ?(?:pm|am)))', 'TIME')
 ])
 
 def get_all_replacement_dicts():
@@ -30,6 +42,8 @@ def get_all_replacement_dicts():
   all_dicts.update(PUNCTUATION_MAP)
   all_dicts.update(LINK_MAP)
   all_dicts.update(TWITTER_MAP)
+  all_dicts.update(TIME_MAP)
+  all_dicts.update(DATE_MAP)
   return all_dicts
 
 # The possible mood strings

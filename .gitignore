@@ -1,2 +1,3 @@
 *.pyc
 weka-3-6-12/
+res/test_output.arff

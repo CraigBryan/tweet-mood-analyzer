@@ -90,7 +90,7 @@ class PunctuationFilter:
 class SpecialWordReplacer:
   """
   Replaces any defined sequences so they can can be later ignored in the 
-  preprocessing.
+  preprocessing. This uses ignored case regexes.
   """
   def __init__(self, replacement_dict, seq):
     self._replacement_dict = replacement_dict
@@ -98,7 +98,7 @@ class SpecialWordReplacer:
 
   def replace_special_sequences(self, data):
     for pattern, result in self._replacement_dict.items():
-      regex = re.compile(pattern)
+      regex = re.compile(pattern,  re.IGNORECASE)
       matches = regex.findall(data)
       for match in matches:
         data = data.replace(match, self._get_replacement(result))
