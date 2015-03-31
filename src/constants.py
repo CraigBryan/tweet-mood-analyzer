@@ -33,7 +33,7 @@ def get_all_replacement_dicts():
   return all_dicts
 
 # The possible mood strings
-MOODS = ['"positive"', '"negative"', '"neutral"', '"objective"']
+MOODS = ['positive', 'negative', 'neutral', 'objective']
 
 # The character sequence to be used around any special replacements
 ESCAPE_SEQUENCE = "%%"
@@ -43,12 +43,12 @@ SPLIT_REGEX = ' |\n|\t|;|:|,|\.|\"'
 
 #Header comment text
 HEADER = """
-\% CSI 4107
-\% Assignment 2 .arff file
-\% April 2, 2015
-\% Sean Billings\t6426637
-\% Craig Bryan\t6965144
-\%
-\% Generated from "semeval_twitter_data.txt"
+% CSI 4107
+% Assignment 2 .arff file
+% April 2, 2015
+% Sean Billings\t6426637
+% Craig Bryan\t6965144
+%
+% Generated from "semeval_twitter_data.txt"
 
 """

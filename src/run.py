@@ -4,8 +4,10 @@ from  simple_filters import Analyzer
 import constants
 from feature import Feature
 from arff_generator import DogSoundFileGenerator
+from unigram_swn_feature_parser import UnigramSWNFeatureParser
+import tweet_data
 
-options = []
+options = ['-swn']
 
 if len(sys.argv) > 1:
   options = sys.argv[1:]
@@ -18,20 +20,30 @@ else:
 parser = InputParser(filename)
 tweet_list = parser.parse()
 
-# analyzer = Analyzer(constants.ESCAPE_SEQUENCE)
+analyzer = Analyzer(constants.ESCAPE_SEQUENCE)
 
-# for data in tweet_list:
-#  print(analyzer.analyze(data.tweetString))
+print('parsed \n')
+
+uFeatureParser = UnigramSWNFeatureParser()
+
+for data in tweet_list:
+  data.set_scores(uFeatureParser.score(analyzer.analyze(data.tweet_string)))
+
+print('data updated')                  
 
 # EXAMPLE USE OF A FEATURE
 # This example just uses the basic data contained in the tweet, but shows
 # how the features and outputter are meant to be used
 
 features = []
-features.append(Feature("id", "numeric", "sid"))
-features.append(Feature("uid", "numeric", "uid"))
-features.append(Feature("mood", "enum", "mood", enum_fields = constants.MOODS))
 features.append(Feature("tweet_string", "string", "get_quoted_tweet_string"))
+if '-swn' in options:
+  features.append(Feature("pos_score", "numeric", "pos_score"))
+  features.append(Feature("neg_score", "numeric", "neg_score"))
+  features.append(Feature("obj_score", "numeric", "obj_score"))
+
+features.append(Feature("category", "enum", "mood", enum_fields = constants.MOODS))
+
 
 output_gen = DogSoundFileGenerator("tweet_mood", tweet_list)
 
