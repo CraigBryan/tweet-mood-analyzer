@@ -7,7 +7,7 @@ from arff_generator import DogSoundFileGenerator
 from unigram_swn_feature_parser import UnigramSWNFeatureParser
 import tweet_data
 
-options = ['-swn']
+options = ['-t', '-swn', '-qe']
 
 if len(sys.argv) > 1:
   options = sys.argv[1:]
@@ -27,7 +27,14 @@ print('parsed \n')
 uFeatureParser = UnigramSWNFeatureParser()
 
 for data in tweet_list:
-  data.set_scores(uFeatureParser.score(analyzer.analyze(data.tweet_string)))
+  tokens = analyzer.analyze(data.tweet_string)
+
+  for term in tokens:
+    term = term.encode('utf_8').decode('ascii', 'ignore')
+      
+  data.set_tokens(tokens)
+  data.set_scores(uFeatureParser.score(tokens))
+  data.count_exclamation_and_question_marks(tokens)
 
 print('data updated')                  
 
@@ -36,11 +43,15 @@ print('data updated')
 # how the features and outputter are meant to be used
 
 features = []
-features.append(Feature("tweet_string", "string", "get_quoted_tweet_string"))
+features.append(Feature("tweet_string", "string", "tokens"))
 if '-swn' in options:
   features.append(Feature("pos_score", "numeric", "pos_score"))
   features.append(Feature("neg_score", "numeric", "neg_score"))
   features.append(Feature("obj_score", "numeric", "obj_score"))
+
+if '-qe' in options:
+  features.append(Feature("q_marks", "numeric", "qMarks"))
+  features.append(Feature("e_marks", "numeric", "eMarks")) 
 
 features.append(Feature("category", "enum", "mood", enum_fields = constants.MOODS))
 

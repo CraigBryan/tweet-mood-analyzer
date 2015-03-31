@@ -42,7 +42,7 @@ ESCAPE_SEQUENCE = "%%"
 SPLIT_REGEX = ' |\n|\t|;|:|,|\.|\"'
 
 #Header comment text
-HEADER = """
+HEADER = """%
 % CSI 4107
 % Assignment 2 .arff file
 % April 2, 2015
@@ -52,3 +52,4 @@ HEADER = """
 % Generated from "semeval_twitter_data.txt"
 
 """
+

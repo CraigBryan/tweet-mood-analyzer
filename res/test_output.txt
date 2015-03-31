@@ -1,0 +1,718 @@
+%
+% CSI 4107
+% Assignment 2 .arff file
+% April 2, 2015
+% Sean Billings	6426637
+% Craig Bryan	6965144
+%
+% Generated from "semeval_twitter_data.txt"
+
+@RELATION tweet
+
+@ATTRIBUTE tweet_string string
+@ATTRIBUTE pos_score numeric
+@ATTRIBUTE neg_score numeric
+@ATTRIBUTE obj_score numeric
+@ATTRIBUTE category {positive,negative,neutral,objective}
+
+@DATA
+[u'not', u'Im', u'GSP', u'fan', u'just', u'hate', u'Nick', u'Diaz', u'cant', u'wait', u'februari'],0.375,0.625,0.857142857143,negative
+[u'I', u'sat', u'thi', u'whole', u'movi', u'for', u'Harri', u'Ron', u'christma', u'ohlawd'],0.0,0.0,1.0,neutral
+[u'J', u'Davlar', u'11th', u'Main', u'rival', u'team', u'Poland', u'Hope', u'an', u'make', u'a', u'success', u'end', u'a', u'tough', u'week', u'train', u'tomorrow'],0.875,0.875,0.865384615385,positive
+[u'Whi', u'Happi', u'Valentin', u'Day', u'trend', u'%%Q_MARK%%', u'It', u'the', u'14th', u'Februari', u'12th', u'June', u'smh'],0.0,0.0,1.0,objective
+[u'They', u'may', u'SuperBowl', u'Dalla', u'Dalla', u'aint', u'win', u'a', u'SuperBowl', u'Not', u'that', u'quarterback', u'owner', u'%%USERNAME%%', u'%%USERNAME%%'],0.125,0.0,0.958333333333,negative
+[u'%%HASHTAG%%', u'Nadal', u'confirm', u'Mexican', u'Open', u'Februari', u'Rafael', u'Nadal', u'set', u'play', u'the', u'Me', u'%%LINK%%', u'\xa0', u'%%HASHTAG%%'],0.0,0.0,1.0,objective
+[u'Men', u'get', u'mad', u'each', u'fight', u'get', u'it', u'Women', u'get', u'mad', u'will', u'hold', u'grudg', u'last', u'forev'],0.25,0.0,0.96875,positive
+[u'%%HASHTAG%%', u'US', u'delist', u'MKO', u'global', u'terrorist', u'list', u'line', u'Iran', u'campaign', u'Tehran', u'Oct', u'30', u'IRNA', u'--', u'Secretari', u'%%LINK%%'],0.0,0.0,1.0,objective
+[u'The', u'greatest', u'baller', u'all', u'time', u'%%LINK%%'],0.0,0.0,1.0,neutral
+[u'GM', u'nvr4get', u'Steven', u'Smith', u'Doherti', u'Wood', u'%%HASHTAG%%', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%'],0.0,0.0,1.0,positive
+[u'Expect', u'light-moder', u'rain', u'E', u'Visaya', u'Cebu', u'Bohol', u'Samar', u'Leyt', u'30-70%', u'chanc', u'rain', u'tonight', u'%%EXCLAIM%%', u'Expect', u'fair', u'weather', u'tomorrow', u'%%EXCLAIM%%'],0.375,0.0,0.953125,objective
+[u'One', u'ticket', u'left', u'%%USERNAME%%', u'game', u'tomorrow', u'%%EXCLAIM%%', u'Dont', u'miss', u'the', u'rematch', u'the', u'NFC', u'Championship', u'game', u'the', u'NY', u'Giant', u'%%EXCLAIM%%', u'Hit', u'up', u'%%EXCLAIM%%'],0.125,0.5,0.943181818182,positive
+[u'My', u'Saturday', u'night', u'consist', u'me', u'watch', u'The', u'Grey', u'my', u'puppi', u'my', u'parent', u'throw', u'rager', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.125,0.0,0.979166666667,negative
+[u'Whi', u'it', u'hard', u'find', u'%%USERNAME%%', u'day', u'%%Q_MARK%%', u'Went', u'3', u'store', u'the', u'Castl', u'cover', u'issu', u'NONE', u'Will', u'search', u'tomorrow'],0.25,0.125,0.958333333333,negative
+[u'%%USERNAME%%', u'is', u'2', u'game', u'hornet', u'the', u'heat'],0.25,0.25,0.875,neutral
+[u'Never', u'start', u'work', u'your', u'dream', u'goal', u'tomorrow', u'tomorrow', u'never', u'come', u'it', u'mean', u'anyth', u'U', u'ACT', u'NOW', u'%%EXCLAIM%%', u'%%HASHTAG%%'],0.0,1.25,0.903846153846,positive
+[u'Who', u'watch', u'%%HASHTAG%%', u'%%Q_MARK%%', u'%%Q_MARK%%', u'It', u'now'],0.125,0.0,0.9375,positive
+[u'Look', u'like', u'Andi', u'Android', u'may', u'had', u'littl', u'much', u'fun', u'yesterday', u'%%LINK%%'],0.375,0.0,0.925,positive
+[u'YE', u'all', u'know', u'INDIO', u'vs', u'CV', u'tomorrow', u'BELL', u'GAME', u'It', u'enough', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.75,0.0,0.892857142857,positive
+[u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'Jenel', u'lie', u'1st', u'said', u'wa', u'alon', u'&the', u'hosp', u'she', u'say', u'weird', u'wa', u'Keiffer'],0.0,0.0,1.0,negative
+[u'It', u'rumor', u'goin', u'around', u'how', u'vote', u'ima', u'look', u'it', u'get', u'back', u'yall'],0.25,0.0,0.95,negative
+[u'%%USERNAME%%', u'Im', u'go', u'Hong', u'Kong', u'that', u'time', u'mamA', u'on', u'Nov', u'30', u'I', u'want', u'see', u'live'],1.125,0.0,0.839285714286,positive
+[u'Happi', u'20th', u'Mr', u'Presid', u'%%EXCLAIM%%', u'Nick', u'J', u'forev', u'the', u'chain'],0.0,0.0,1.0,positive
+[u'Cmon', u'Avila', u'%%EXCLAIM%%', u'You', u'got', u'tag', u'by', u'guy', u'look', u'like', u'kid', u'Bill', u'Murray', u'research', u'The', u'Royal', u'Tenenbaum', u'%%EXCLAIM%%', u'%%HASHTAG%%'],0.125,0.0,0.986111111111,neutral
+[u'%%USERNAME%%', u'It', u'%%EXCLAIM%%', u'\u2665'],0.0,0.0,0.0,positive
+[u'Good', u'morn', u'Thursday', u'Life', u'fragil', u'Were', u'guarante', u'tomorrow', u'give', u'everyth', u'youv', u'got', u'Tim', u'Cook', u'[Do', u'for', u'Job', u'%%EXCLAIM%%'],0.625,0.125,0.916666666667,positive
+[u'%%HASHTAG%%', u'Peyton', u'Man', u'name', u'AFC', u'Offens', u'Player', u'the', u'month', u'It', u'5th', u'honor', u'second', u'Tom', u'Bradi', u'6', u'tie', u'w/', u'TD'],0.625,0.0,0.921875,neutral
+[u'%%USERNAME%%', u'I', u'may', u'an', u'Android', u'phone', u'the', u'time', u'I', u'get', u'back', u'school', u'%%EXCLAIM%%'],0.125,0.0,0.979166666667,positive
+[u'Homegrown', u'talent', u'miss', u'Sign', u'Day', u'Throughout', u'of', u'day', u'Wednesday', u'video', u'scoreboard', u'%%LINK%%', u'\xa0', u'%%HASHTAG%%'],0.0,0.0,1.0,negative
+[u'taylor', u'swift', u'come', u'ed', u'sheeran', u'june', u'29th', u'%%Q_MARK%%', u'perf', u'news', u'ive', u'heard', u'night'],0.125,0.0,0.975,positive
+[u'The', u'great', u'Noel', u'Gallagh', u'about', u'hit', u'stage', u'St', u'Paul', u'Plenti', u'room', u'so', u'4th', u'row', u'center', u'Plenti', u'room', u'Pretti', u'fire'],0.0,0.0,1.0,positive
+[u'I', u'hope', u'do', u'get', u'promot', u'dont', u'tail', u'like', u'last', u'season', u'Just', u'piss', u'southern', u'media', u'Hello', u'welcom', u'the', u'%%HASHTAG%%', u'Our', u'shithol'],0.125,0.125,0.977272727273,objective
+[u'Play', u'the', u'Brown', u'HC', u'K', u'Fri', u'%%HASHTAG%%', u'XFacalac', u'lost', u'the', u'Raven', u'21-28', u'All-Madden', u'%%HASHTAG%%'],0.0,0.875,0.854166666667,neutral
+[u'%%HASHTAG%%', u'%%USERNAME%%', u'the', u'best', u'the', u'Premier', u'Leagu', u'%%EXCLAIM%%', u'Hi', u'overal', u'EA', u'Sport', u'Player', u'Perform', u'Index', u'score', u'217', u'(1st', u'place)', u'%%HASHTAG%%'],1.125,0.375,0.8125,positive
+[u'Ohhh', u'Nairobi', u'leg', u'\U0001f60d\U0001f60d\U0001f60d'],0.0,0.0,1.0,negative
+[u'The', u'pain', u'far', u'deeper', u'a', u'Billi', u'cundiff', u'miss', u'field', u'goal', u'Gotta', u'wake', u'and', u'forget', u'it', u'tomorrow', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.25,0.875,0.859375,neutral
+[u'%%USERNAME%%', u'Novemb', u'16', u'readi', u'head', u'the', u'movi', u'Break', u'Dawn', u'Part', u'2'],0.0,0.0,1.0,positive
+[u'Tomorrow', u'shall', u'consist', u'watch', u'Will', u'Ferrel', u'film', u'my', u'fave', u'peopl', u'Chines', u'food', u'sweet'],0.125,0.25,0.953125,positive
+[u'Alex', u'Poythress', u'11', u'point', u'7', u'rebound', u'hi', u'debut', u'Kentucki', u'an', u'exhibit', u'game', u'Thursday', u'He', u'play', u'28', u'minut'],0.0,0.0,1.0,objective
+[u'I', u'think', u'I', u'may', u'a', u'heart', u'attack', u'Jason', u'Wu', u'new', u'collect', u'So', u'Charlott', u'Rampl', u'the', u'Night', u'%%LINK%%', u'\xa0\u2026'],0.375,0.125,0.944444444444,positive
+[u'Amaz', u'concert', u'tonight', u'Jim', u'White', u'the', u'TCU', u'Jazz', u'Ensemble/Faculti', u'Jazz', u'Combo', u'%%EXCLAIM%%', u'Dont', u'miss', u'tomorrow', u'night', u'%%LINK%%'],0.25,0.0,0.972222222222,positive
+[u'%%HASHTAG%%', u'9th', u'Inning', u'that', u'4th', u'Quarter', u'%%HASHTAG%%', u'feel', u'didnt', u'%%Q_MARK%%', u'Coulda', u'swore', u'I', u'saw', u'Cundiff', u'shank', u'one', u'the', u'mound'],0.125,0.0,0.979166666667,neutral
+[u'Capello', u'say', u'time', u'Russia', u'win', u'big', u'match', u'Russia', u'manag', u'Fabio', u'Capello', u'Thursday', u'said', u'he', u'intend', u'%%LINK%%'],0.375,0.125,0.95,positive
+[u'JACKAL', u'GOAL', u'%%EXCLAIM%%', u'Jimmi', u'Martin', u'sneak', u'rebound', u'past', u'Killeen', u'give', u'Elmira', u'2-1', u'lead', u'Bushe', u'Bellami', u'the', u'assist', u'1', u'09', u'left', u'2nd', u'period'],1.0,0.25,0.886363636364,neutral
+[u'Kick-off', u'weekend', u'servic', u'%%EXCLAIM%%', u'EV', u'%%EXCLAIM%%', u'Get', u'the', u'Bu', u'trip', u'the', u'Boy', u'Girl', u'Club', u'Friday', u'3-6', u'%%EXCLAIM%%', u'Hope', u'see', u'there'],0.5,0.125,0.943181818182,positive
+[u'%%USERNAME%%', u'Damn', u'next', u'Saturday', u'tho', u'Nigga', u'trynna', u'get', u'shit', u'with', u'%%HASHTAG%%'],0.125,0.375,0.916666666667,negative
+[u'Blog', u'Post', u'MTV', u'Teen', u'Mom', u'2', u'Return', u'an', u'Intens', u'Third', u'Season', u'Chelsea', u'Jenel', u'Kailyn', u'Leah', u'Monday', u'%%LINK%%'],0.875,0.0,0.890625,objective
+[u'%%USERNAME%%', u'Hi', u'Elif', u'Greet', u'USA', u'midwest', u'How', u'school', u'go', u'%%Q_MARK%%', u'Happi', u'Turkish', u'Republ', u'Day', u'%%EXCLAIM%%', u'I', u'cant', u'wait', u'Nov', u'8', u'%%HASHTAG%%', u'Ye', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'Hope', u'look', u'FIT', u'tomorrow', u'the', u'Jeremi', u'Kyle', u'show', u'%%HASHTAG%%'],0.25,0.625,0.825,positive
+[u'Grammi', u'concert', u'pay', u'move', u'tribut', u'Whitney', u'Houston', u'Whitney', u'Houston', u'given', u'final', u'sendoff', u'the', u'Grammi', u'Thursday', u'Hall'],0.0,0.0,1.0,positive
+[u'We', u'talli', u'vote', u'are', u'announc', u'the', u'winner', u'Call', u'All', u'Commun', u'%%EXCLAIM%%', u'Tune', u'%%LINK%%', u'\xa0', u'Nov', u'1st', u'11am', u'(CST)'],0.375,0.125,0.916666666667,neutral
+[u'Halloween', u'may', u'the', u'second', u'worst', u'holiday', u'right', u'valentin', u'day'],0.25,1.0,0.791666666667,negative
+[u'Just', u'found', u'piec', u'candi', u'may', u'been', u'inject', u'someth', u'%%HASHTAG%%'],0.25,0.125,0.875,negative
+[u'Somehow', u'I', u'manag', u'lose', u'princess', u'leia', u'bra', u'Saturday', u'Im', u'go', u'Noel', u'Gallagh', u'Glock', u'Phish', u'ie', u'jorts&tank', u'%%USERNAME%%'],0.0,0.0,1.0,neutral
+[u'suggest', u'child', u'friendli', u'app', u'ipad', u'some', u'so', u'child', u'friendli', u'well'],0.375,0.0,0.8125,neutral
+[u'The', u'moment', u'last', u'night', u'you', u'cant', u'tell', u'it', u'Halloween', u'just', u'ordinari', u'night', u'Camden', u'%%HASHTAG%%'],0.0,0.0,1.0,neutral
+[u'Are', u'readi', u'shop', u'The', u'New', u'Collect', u'H&M', u'tomorrow', u'%%Q_MARK%%', u'%%Q_MARK%%', u'The', u'Grey', u'Concept', u'H&M', u'%%LINK%%', u'-grey-concept-from-h', u'html', u'%%Q_MARK%%', u'spref=tw\xa0\u2026', u'%%HASHTAG%%', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.0,0.0,1.0,neutral
+[u'FAQ', u'What', u'skeuomorph', u'design', u'the', u'execut', u'shakeup', u'Appl', u'SAN', u'FRANCISCO', u'CA', u'MARCH', u'07', u'Appl', u'CEO', u'%%LINK%%'],0.0,0.0,1.0,objective
+[u'Um', u'I', u'learn', u'Sunday', u'NATION', u'CHOCOL', u'DAY', u'Im', u'total', u'take', u'advantag', u'that'],0.0,0.0,1.0,positive
+[u'Noel', u'Gallagh', u'Musician', u'fuck', u'idiot', u'Yeah', u'Brian', u'May', u'he', u'idiot', u'idiot', u'just', u'happen', u'be', u'professor', u'%%Q_MARK%%'],0.25,0.125,0.953125,negative
+[u'%%USERNAME%%', u'Hell', u'yea', u'lmfaoo', u'see', u'tomorrow', u'Asia', u'babi'],0.25,0.375,0.875,positive
+[u'%%USERNAME%%', u'I', u'want', u'know', u'here', u'Argentina', u'go', u'to', u'make', u'direction', u'fest', u'10', u'Novemb', u'te', u'Amo', u'TE', u'AMO', u'te', u'amo', u'%%EXCLAIM%%'],0.25,0.0,0.972222222222,neutral
+[u'It', u'Novemb', u'alreadi', u'Christma', u'be', u'soon', u'New', u'Year', u'Valentin', u'day', u'GRADUAT', u'%%Q_MARK%%', u'%%EXCLAIM%%', u'%%Q_MARK%%', u'%%EXCLAIM%%'],0.25,0.25,0.875,neutral
+[u'Nigga', u'on', u'LAKER', u'DICK', u'still', u'gon', u'finish', u'damn', u'near', u'first', u'seed', u'yo', u'team', u'struggl', u'the', u'8th', u'spot'],0.125,0.25,0.953125,negative
+[u'YEP\u263a', u'strong', u'man', u'81', u'octob', u'RT', u'%%USERNAME%%', u'%%USERNAME%%', u'Noth', u'wrong', u'DT', u'moral', u'compass', u'even', u'82'],1.375,0.875,0.625,positive
+[u'Just', u'got', u'ticket', u'see', u'Muse', u'Florida', u'That', u'combin', u'the', u'Grammi', u'two', u'week', u'prior', u'equal', u'realli', u'busi', u'Februari', u'Rubi', u'myself'],0.25,0.0,0.96875,objective
+[u'Battl', u'the', u'17th', u'banner', u'Royal', u'Rumbl', u'basketbal', u'edit'],0.0,0.0,1.0,objective
+[u'4th', u'Album', u'%%HASHTAG%%', u'%%HASHTAG%%', u'6', u'Grammi', u'Award', u'10', u'AMA', u'13', u'BMI', u'Award', u'%%EXCLAIM%%', u'Reign', u'Entertain', u'the', u'Year', u'ACM', u'%%EXCLAIM%%', u'%%HASHTAG%%'],0.0,0.0,1.0,positive
+[u'It', u'midnight', u'the', u'east', u'coast', u'mean', u'%%USERNAME%%', u'birthday', u'%%EXCLAIM%%', u'HAPPi', u'20th', u'BIRTHDAY', u'NICK', u'J', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'<333'],0.0,0.0,1.0,positive
+[u'Monta', u'Elli', u'Elli', u'provid', u'five', u'point', u'2-of-13', u'shoot', u'Thursday', u'%%LINK%%', u'\xa0', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.125,0.0,0.975,neutral
+[u'When', u'I', u'teach', u'basketbal', u'my', u'school', u'gonna', u'spend', u'1st', u'day', u'watch', u'Larri', u'Bird', u'video', u'rest', u'take', u'care', u'itself'],0.625,0.25,0.902777777778,neutral
+[u'We', u'here', u'%%USERNAME%%', u'our', u'12th', u'Anniversari', u'celebr', u'You', u'still', u'time', u'make', u'6620', u'S', u'King', u'Dr'],0.5,0.125,0.895833333333,positive
+[u'%%USERNAME%%', u'Mitch', u'free', u'Sunday', u'bale', u'leav', u'an', u'hour', u'%%Q_MARK%%', u'If', u'no', u'big', u'deal', u'you', u'can', u'them', u'anim'],0.625,0.125,0.875,objective
+[u'Love', u'I', u'skip', u'everi', u'categori', u'NTA', u'besid', u'the', u'soap', u'Couldnt', u'give', u'half', u'fuck', u'everyth', u'els', u'went', u'the', u'air', u'tomorrow'],0.625,0.625,0.861111111111,positive
+[u'New', u'York', u'Giant', u'Game-by-Gam', u'Predict', u'the', u'2nd', u'Half', u'the', u'Season', u'%%LINK%%'],0.0,0.25,0.9375,objective
+[u'Cmon', u'cmon', u'sound', u'like', u'Queen', u'will', u'rock', u'somehow'],0.0,0.0,1.0,objective
+[u'Pick', u'Chelsea', u'team', u'play', u'Swansea', u'Chelsea', u'focu', u'turn', u'back', u'the', u'Premier', u'Leagu', u'on', u'Saturday', u'make', u'%%LINK%%'],0.0,0.0,1.0,objective
+[u'I', u'thi', u'vision', u'all', u'European', u'airport', u'full', u'hockey', u'player'],0.25,0.25,0.916666666667,neutral
+[u'My', u'mom', u'text', u'remind', u'that', u'Grammi', u'birthday', u'tomorrow', u'HOW', u'COULD', u'I', u'EVER', u'FORGET', u'%%Q_MARK%%', u'%%HASHTAG%%'],0.875,0.0,0.78125,positive
+[u'The', u'mark', u'athena', u'we', u'goooo', u'Brb', u'realiti'],0.125,0.125,0.875,positive
+[u'Esper', u'be', u'without', u'star', u'player', u'Youssef', u'Msakni', u'the', u'first', u'leg', u'the', u'Champion', u'Leagu', u'final', u'Al', u'Ahli', u'Saturday', u'%%HASHTAG%%'],0.25,0.125,0.953125,negative
+[u'%%USERNAME%%', u'The', u'Sun', u'Paolo', u'Di', u'Canio', u'say', u'beat', u'Aston', u'Villa', u'tonight', u'would', u'like', u'sex', u'Madonna', u'%%HASHTAG%%'],0.125,0.0,0.982142857143,negative
+[u'Black', u'Histori', u'Fact', u'Marsali', u'1st', u'onli', u'artist', u'win', u'classic', u'jazz', u'Grammi', u'Award', u'one', u'year', u'to', u'repeat', u'the', u'next', u'yr'],1.0,0.375,0.8625,positive
+[u'Watch', u'David', u'Letterman', u'no', u'audienc', u'play', u'like', u'are', u'still', u'is', u'2nd', u'brilliant', u'thing', u'Ive', u'seen', u'tonight'],0.25,0.25,0.9375,positive
+[u'HT', u'Norwich', u'0-0', u'%%HASHTAG%%', u'Weve', u'edg', u'1st', u'half', u'without', u'creat', u'clear', u'cut', u'chanc', u'Bale', u'a', u'coupl', u'decent', u'long', u'rang', u'effort'],0.5,0.0,0.916666666667,neutral
+[u'Guy', u'Marijuana', u'law', u'Colorado', u'Oregon', u'Washington', u'pass', u'Tuesday', u'%%HASHTAG%%'],0.0,0.0,1.0,positive
+[u'Breezin', u'won', u'Best', u'Pop', u'Instrument', u'Perform', u'the', u'19th', u'Grammi', u'Award'],0.875,0.0,0.825,positive
+[u'Not', u'wear', u'make', u'to', u'Dublin', u'tomorrow', u'Im', u'get', u'readi', u'the', u'parti', u'Help'],1.0,0.625,0.729166666667,negative
+[u'Snow', u'may', u'fall', u'part', u'CNi', u'next', u'day', u'Find', u'where', u'best', u'chanc', u'be', u'6', u'42', u'on', u'TV', u'onlin', u'%%LINK%%', u'\xa0\u2026'],1.75,0.125,0.765625,neutral
+[u'It', u'seem', u'like', u'Austin', u'River', u'tryin', u'had', u'get', u'bucket', u'I', u'feel', u'em', u'tho', u'1st', u'game', u'the', u'leagu', u'I', u'tri', u'hard'],0.5,1.0,0.833333333333,neutral
+[u'Text', u'my', u'dad', u'like', u'Charl', u'Dicken', u'1)', u'obv', u'look', u'my', u'amazon', u'wish', u'list', u'(too', u'late', u'Sunday)', u'2)', u'th', u'surpris', u'%%Q_MARK%%', u'%%EXCLAIM%%'],0.625,0.0,0.921875,positive
+[u'Upset', u'alert', u'ACC', u'men', u'soccer', u'%%HASHTAG%%', u'Maryland', u'4-2', u'Wake', u'Forest', u'late', u'the', u'2nd', u'AND', u'a', u'man', u'an', u'earlier', u'red', u'card'],0.125,0.75,0.927083333333,negative
+[u'I', u'may', u'miss', u'see', u'Noel', u'Field', u'Rich', u'Fulcher', u'today', u'I', u'just', u'see', u'Tom', u'Tilley', u'%%EXCLAIM%%', u'%%HASHTAG%%'],0.25,0.25,0.944444444444,neutral
+[u'Thank', u'he', u'Germani', u'And', u'come', u'home', u'Januari', u'Still', u'danger', u'though'],0.125,0.625,0.8125,negative
+[u'Looper', u'amaz', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'Now', u'the', u'theatr', u'see', u'Simon', u'Callow', u'The', u'Mysteri', u'Charl', u'Dicken', u'love', u'Wednesday', u'work', u'-)'],0.5,0.0,0.928571428571,positive
+[u'If', u'your', u'Octob', u'babi', u'Happi', u'Valentin', u'Day', u'your', u'folk', u'They', u'an', u'annual', u'memori'],0.0,0.0,1.0,positive
+[u'Wish', u'Maddi', u'luck', u'next', u'saturday', u'ha', u'solo', u'audit', u'Britain', u'Got', u'Talent', u'%%EXCLAIM%%', u'Elli', u'xxxxx'],0.25,0.125,0.953125,positive
+[u'Joe', u'Pa', u'mask', u'Penn', u'State', u'Sat', u'%%Q_MARK%%', u'Or', u'PSU', u'allow', u'in', u'stadium', u'%%Q_MARK%%', u'Is', u'bad', u'wear', u'%%Q_MARK%%', u'%%USERNAME%%'],0.25,1.0,0.875,neutral
+[u'%%USERNAME%%', u'what', u'you', u'think', u'o', u'get', u'go', u'there', u'yesterday', u'%%Q_MARK%%', u'%%Q_MARK%%', u'pretti', u'intens'],0.125,0.0,0.96875,negative
+[u'Mizzou', u'commemor', u'win', u'Kentucki', u'a', u'T-shirt', u'No', u'realli', u'%%EXCLAIM_QMARK_MIX%%', u'Dr', u'Saturday', u'Yahoo', u'%%EXCLAIM%%', u'Sport', u'%%LINK%%', u'-dr-saturday/mizzou-commemorates-win-over-kentucky-t-shirt-no-220237716--ncaaf', u'html\xa0\u2026', u'%%HASHTAG%%'],0.625,1.0,0.675,positive
+[u'When', u'desean', u'jackson', u'return', u'punt', u'giant', u'wa', u'awesom'],0.0,0.25,0.95,neutral
+[u'Happi', u'Valentin', u'Day', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%USERNAME%%', u'Everyday', u'the', u'14th', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'I', u'to', u'finish', u'read', u'Paterno', u'tomorrow', u'I', u'watch', u'footbal', u'Sunday', u'Monday', u'prepar', u'the', u'%%HASHTAG%%', u'releas', u'%%HASHTAG%%'],0.125,0.0,0.975,objective
+[u'%%USERNAME%%', u'Season', u'end', u'Superbowl', u'first', u'week', u'Februari'],0.0,0.0,1.0,objective
+[u'As', u'introduct', u'Literatur', u'wrote', u'The', u'Woman', u'In', u'Black', u'someth', u'I', u'particulalri', u'want', u'read', u'may', u'cri', u'%%HASHTAG%%'],0.25,0.375,0.875,negative
+[u'Nick', u'J', u'day', u'%%HASHTAG%%', u'my', u'powder', u'puff', u'pant', u'Look', u'like', u'Im', u'gonna', u'a', u'stud', u'tomorrow', u'the', u'light', u'%%USERNAME%%', u'%%USERNAME%%'],0.0,0.0,1.0,positive
+[u'Han', u'mon', u'dieu', u'le', u'remix', u'de', u'I', u'the', u'best', u'dan', u'Dream', u'High', u'2', u'je', u'meur', u'XDDD'],1.0,0.375,0.725,positive
+[u'Dont', u'forget', u'Mitch', u'Daniel', u'go', u'be', u'Steven', u'Colbert', u'show', u'Thursday', u'Think', u'will', u'come', u'as', u'topic', u'%%Q_MARK%%'],0.5,0.25,0.925,neutral
+[u'%%USERNAME%%', u'I', u'would', u'think', u'would', u'that', u'you', u'run', u'POTU', u'It', u'may', u'part', u'your', u'job', u'someday'],0.0,0.0,1.0,neutral
+[u'Grammi', u'Caleb', u'go', u'Freeport', u'tomorrow', u'chale'],0.0,0.0,1.0,neutral
+[u'%%USERNAME%%', u'I', u'plan', u'go', u'CV', u'work', u'today', u'get', u'someth', u'That', u'may', u'what', u'I', u'get', u'Im', u'go', u'quarantin', u'today'],0.375,0.0,0.946428571429,objective
+[u'Full', u'Moon', u'Oct', u'29th', u'You', u'read', u'if', u'have', u'Sun', u'Sign', u'Libra', u'Scorpio', u'Sag', u'Cap', u'Aqua', u'Pisc', u'%%LINK%%'],0.125,0.0,0.988636363636,neutral
+[u'Drew', u'Peterson', u'may', u'convict', u'there', u'still', u'conflict', u'go', u'%%LINK%%', u'\xa0', u'%%HASHTAG%%', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.0,0.125,0.975,neutral
+[u'%%USERNAME%%', u'Paterno', u'wouldnt', u'charg', u'All', u'hearsay', u'him', u'he', u'do', u'job', u'(minim', u'may', u'be)', u'He', u'report', u'Rest', u'specul'],0.0,0.0,1.0,neutral
+[u'With', u'Benson', u'attent', u'Franki', u'feel', u'like', u'forgotten', u'stepchild', u'Let', u'found', u'father', u'so', u'know', u'will', u'never', u'forget', u'2nd', u'place'],1.0,0.625,0.819444444444,negative
+[u'Polic', u'protest', u'clash', u'Republ', u'Day', u'march', u'Turkey', u'On', u'day', u'mark', u'89th', u'anniversari', u'the', u'found', u'%%LINK%%'],0.125,0.125,0.96875,negative
+[u'Congratul', u'%%HASHTAG%%', u'Jason', u'Heyward', u'Gold', u'Glove', u'honor', u'first', u'mani', u'the', u'J-Hey', u'kid', u'%%EXCLAIM%%'],0.5,0.0,0.928571428571,negative
+[u'Aww', u'love', u'Austin', u'River', u'happi', u'see', u'get', u'start', u'1st', u'NBA', u'game', u'it', u'my', u'boy', u'LET', u'GO', u'SPUR', u'%%EXCLAIM%%', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.75,0.0,0.931818181818,positive
+[u'Steven', u'A', u'Smith', u'might', u'the', u'biggest', u'ass-hat', u'%%HASHTAG%%', u'that', u'easi'],0.25,0.125,0.8125,positive
+[u'Patrick', u'Roy', u'last', u'game', u'a', u'Canadien', u'one', u'the', u'select', u'thi', u'weekend', u'HNIC', u'rewind'],0.0,0.0,1.0,positive
+[u'It', u'huge', u'mistak', u'the', u'New', u'York', u'Marathon', u'be', u'held', u'weekend', u'so', u'mani', u'without', u'home', u'food', u'power'],0.25,0.125,0.953125,negative
+[u'glass', u'may', u'rise', u'it', u'get', u'warmer', u'Lago', u'del', u'Desierto', u'Argentina', u'%%LINK%%'],0.125,0.0,0.975,negative
+[u'Appl', u'softwar', u'retail', u'chief', u'in', u'overhaul', u'SAN', u'FRANCISCO', u'(Reuters)', u'Appl', u'Inc', u'CEO', u'Tim', u'Cook', u'Monday', u'push', u'the', u'power', u'hea'],0.0,0.0,1.0,neutral
+[u'Im', u'host', u'Day', u'parti', u'Spartacu', u'Friday', u'From', u'2-6', u'then', u'Spi', u'Raleigh', u'night', u'%%EXCLAIM%%'],0.0,0.0,1.0,objective
+[u'I', u'Aint', u'Do', u'Nun', u'At', u'Work', u'Today', u'But', u'Sort', u'Out', u'These', u'Thing'],0.125,0.0,0.984375,objective
+[u'Fabio', u'Capello', u'From', u'Ive', u'seen', u'day', u'I', u'assur', u'Russia', u'capabl', u'get', u'good', u'result', u'vs', u'Portug', u'tomorrow', u'%%HASHTAG%%'],0.0,0.0,1.0,positive
+[u'Parker', u'Leonard', u'steal', u'OKC', u'thunder', u'Nineti', u'minut', u'tipoff', u'Thursday', u'night', u'the', u'AT&T', u'Center', u'Oklahoma', u'Ci', u'%%LINK%%'],0.5,0.0,0.944444444444,negative
+[u'%%USERNAME%%', u'I', u'realli', u'hope', u'finish', u'trade', u'Tuesday', u'Wednesday', u'Gagner', u'a', u'real', u'solid', u'player', u'could', u'help', u'sabr'],0.25,0.25,0.944444444444,positive
+[u'I', u'-may-', u'the', u'girl', u'the', u'face', u'the', u'earth', u'DOESNT', u'find', u'Chan', u'Tatum', u'attract', u'%%HASHTAG%%', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.625,0.0,0.875,negative
+[u'Cold', u'pizza', u'Mass', u'Effect', u'3', u'I', u'want', u'leg', u'heal', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'Go', u'look', u'some', u'voodoo', u'shit', u'Ill', u'walk', u'jump', u'run', u'tomorrow'],0.5,1.0,0.892857142857,neutral
+[u'Chan', u'tatum', u'be', u'white', u'oak', u'tomorrow', u'all', u'stalker', u'there'],0.25,0.375,0.895833333333,neutral
+[u'Game', u'play', u'the', u'week', u'now', u'interest', u'Super', u'Sunday', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'%%HASHTAG%%', u'Video', u'Game', u'Trailer', u'Launch', u'Trailer', u'Check', u'the', u'launch', u'trailer', u'Mass', u'Effect', u'3', u'Ad', u'Fri', u'Oct', u'26', u'00', u'%%LINK%%'],0.0,0.0,1.0,objective
+[u'Where', u'our', u'defens', u'%%Q_MARK%%', u'Have', u'seen', u'%%Q_MARK%%', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%'],0.0,0.0,1.0,positive
+[u'Staci', u'hit', u'up', u'said', u'packag', u'might', u'up', u'tomorrow', u'that', u'case', u'Im', u'go', u'the', u'rave', u'San', u'Fran', u'%%HASHTAG%%'],0.0,0.0,1.0,negative
+[u'Give', u'5', u'min', u'Candi', u'dancer', u'Deja', u'Vu', u'Im', u'nut', u'my', u'4th', u'pump', u'that', u'bad', u'lol'],0.0,0.625,0.875,negative
+[u'Kevin', u'Hart', u'show', u'MSG', u'Novemb', u'10th', u'go', u'be', u'beauti'],0.25,0.125,0.925,positive
+[u'RT', u'tutt', u'anch', u'se', u'non', u'li', u'vedremo', u'non', u'costa', u'nient', u'%%HASHTAG%%', u'I', u'LOVE', u'YOU', u'GUY'],0.5,0.125,0.875,positive
+[u'%%USERNAME%%', u'cof', u'cof~', u'someon', u'go', u'Germani', u'novemb', u'30', u'oh', u'I', u'realli', u'envi', u'%%LINK%%', u'-je', u'com/ko/news/detail', u'asp', u'%%Q_MARK%%', u'document_no=159&seq=340&searchType&searchStr\xa0\u2026'],0.0,0.0,1.0,positive
+[u'Thank', u'snow', u'cancel', u'class', u'today', u'Now', u'may', u'stop', u'snow', u'that', u'I', u'drive', u'Chapel', u'Hill', u'tomorrow', u'Id', u'realli', u'appreci'],0.125,0.0,0.989583333333,positive
+[u'%%HASHTAG%%', u'%%HASHTAG%%', u'pitch', u'on', u'new', u'birthday', u'parti', u'Super', u'Bowl', u'Sunday', u'treat', u'%%LINK%%'],0.375,0.0,0.946428571429,positive
+[u'%%HASHTAG%%', u'Juli', u'20', u'Sam', u'Gagner', u'%%EXCLAIM_QMARK_MIX%%', u'%%LINK%%', u'-\xa0', u'%%USERNAME%%', u'nice', u'have', u'there', u'at', u'least', u'anoth', u'year', u'%%EXCLAIM%%'],0.25,0.0,0.95,positive
+[u'think', u'might', u'go', u'see', u'flight', u'tomorrow', u'becaus', u'Denzel', u'Washington'],0.0,0.0,1.0,positive
+[u'Moham', u'Nashe', u'Press', u'brief', u'CONI', u'report', u'31', u'Aug', u'2012', u'%%LINK%%', u'-_CRJFfNN4\xa0', u'via', u'%%USERNAME%%'],0.0,0.0,1.0,objective
+[u'Call', u'realiti', u'TV', u'fan', u'Were', u'invit', u'LI', u'realiti', u'TV', u'star', u'join', u'Google+', u'Hangout', u'Sunday', u'you', u'too', u'%%LINK%%'],0.125,0.375,0.944444444444,objective
+[u'Honesti', u'often', u'best', u'polici', u'Fabio', u'Capello', u'Russia', u'coach', u'I', u'hope', u'Ronaldo', u'injuri', u'more', u'seriou', u'he', u'couldnt', u'play', u'tomorrow'],0.875,0.125,0.875,negative
+[u'Thi', u'Austin', u'River', u'1st', u'game', u'peopl', u'suck', u'he', u'rooki', u'chill', u'%%EXCLAIM%%'],0.0,0.0,1.0,negative
+[u'%%USERNAME%%', u'Hello', u'May', u'I', u'ask', u'did', u'get', u'set', u'Castl', u'%%Q_MARK%%'],0.125,0.0,0.979166666667,neutral
+[u'Throwback', u'Thursday', u'%%EXCLAIM%%', u'Daddi', u'Joe', u'Pa', u'%%EXCLAIM%%', u'RIP', u'my', u'eye', u'still', u'most', u'winningest', u'coach', u'colleg', u'footbal', u'%%LINK%%', u'-k_/'],0.0,0.125,0.984375,positive
+[u'As', u'previous', u'said', u'%%HASHTAG%%', u'WILL', u'inde', u'announc', u'Gagner', u'sign', u'within', u'48', u'hr', u'per', u'VERi', u'connect', u'Edmonton', u'sourc', u'%%HASHTAG%%', u'clueless'],0.125,0.0,0.975,negative
+[u'Im', u'enjoy', u'Celebr', u'Juic', u'instead', u'sleep', u'go', u'be', u'fook', u'tomorrow', u'though'],0.625,0.25,0.825,positive
+[u'The', u'Woman', u'In', u'Black', u'legendari', u'ghost', u'thriller', u'tour', u'Dubai', u'Abu', u'Dhabi', u'Novemb', u'Decemb', u'More', u'%%LINK%%'],0.0,0.375,0.953125,positive
+[u'Can', u'pleas', u'Wednesday', u'POTU', u'been', u're', u'elect', u'Then', u'can', u'move', u'countri', u'%%HASHTAG%%', u'%%EXCLAIM%%'],0.0,0.0,1.0,neutral
+[u'My', u'univers', u'definit', u'expand', u'studi', u'physic', u'%%USERNAME%%', u'%%USERNAME%%', u'pic', u'twitter', u'com/1pWtB6yp'],0.25,0.0,0.916666666667,negative
+[u'%%HASHTAG%%', u'loan', u'keeper', u'Ben', u'Amo', u'name', u'the', u'England', u'under-21', u'side', u'face', u'Azerbaijan', u'next', u'Thursday', u'Norway', u'Sept', u'10'],0.125,0.0,0.988636363636,objective
+[u'norv', u'turner', u'call', u'play', u'action', u'pass', u'1st', u'goal', u'the', u'half-yard', u'line', u'river', u'throw', u'pick', u'%%HASHTAG%%'],0.0,0.0,1.0,objective
+[u'Obama', u'get', u'least', u'290', u'elector', u'vote', u'Take', u'bet', u'%%USERNAME%%', u'%%USERNAME%%'],0.25,0.0,0.958333333333,neutral
+[u'%%USERNAME%%', u'Franki', u'I', u'think', u'Im', u'gonna', u'a', u'date', u'bed', u'tomorrow', u'Me', u'That', u'my', u'boy'],0.375,0.0,0.9375,positive
+[u'Pray', u'Moham', u'Morsi', u'new', u'Presid', u'Egypt', u'he', u'may', u'continu', u'be', u'leader', u'freedom', u'peac', u'%%LINK%%'],0.625,0.125,0.85,positive
+[u'got', u'jiiiii-nob', u'%%EXCLAIM%%'],0.125,0.0,0.875,neutral
+[u'Axl', u'Rose', u'need', u'just', u'give', u'Now', u'Not', u'later', u'soon', u'tomorrow', u'NOW', u'%%EXCLAIM%%'],0.25,0.375,0.921875,negative
+[u'Shout', u'boy', u'%%USERNAME%%', u'fight', u'tomorrow', u'night', u'the', u'La', u'Vega', u'%%HASHTAG%%', u'card', u'He', u'put', u'the', u'work', u'I', u'dont', u'need', u'to', u'wish', u'luck'],0.75,0.625,0.885416666667,positive
+[u'My', u'mom', u'bday', u'in', u'26', u'day', u'OMG', u'0', u'should', u'get', u'%%Q_MARK%%', u'%%HASHTAG%%'],1.0,0.0,0.666666666667,positive
+[u'If', u'your', u'the', u'Isl', u'Man', u'next', u'Thur', u'Ill', u'talk', u'Safe', u'Hous', u'sign', u'book', u'Waterston', u'6', u'30pm', u'%%USERNAME%%'],0.875,0.625,0.75,objective
+[u'PBR', u'%%USERNAME%%', u'bring', u'Jim', u'White', u'the', u'%%USERNAME%%', u'Loung', u'Octob', u'23rd', u'7', u'pm', u'%%EXCLAIM%%', u'%%LINK%%'],0.0,0.0,1.0,neutral
+[u'Happi', u'Halloween', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'Start', u'wick', u'Wednesday', u'listen', u'Pink', u'Floyd', u'Leonard', u'Cohen', u'Get', u'take', u'boy', u'tonight', u'%%EXCLAIM%%', u'Yay', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.25,0.125,0.965909090909,positive
+[u'Austin', u'River', u'need', u'get', u'stronger', u'%%HASHTAG%%', u'guard', u'muscl', u'tonight', u'He', u'start', u'just', u'score', u'4th', u'%%HASHTAG%%'],0.75,0.25,0.888888888889,negative
+[u'On', u'Sunday', u'Novemb', u'4th', u'Olympu', u'expert', u'be', u'hand', u'the', u'Curri', u'store', u'Cambridg', u'From', u'10', u'30am', u'%%LINK%%'],0.25,0.125,0.925,objective
+[u'Okay', u'and', u'%%USERNAME%%', u'about', u'watch', u'The', u'Woman', u'In', u'Black', u'Thi', u'may', u'a', u'terribl', u'night'],0.125,0.5,0.895833333333,negative
+[u'%%USERNAME%%', u'Saturday', u'I', u'buy', u'ticket', u'the', u'%%HASHTAG%%', u'Belgium', u'%%EXCLAIM%%', u'Im', u'happi', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'Thi', u'goe', u'way', u'fast', u'O', u'It', u'alreadi', u'year', u'I', u'saw', u'Avril', u'Lavign', u'concert', u'<3', u'Octob', u'25', u'2011', u'one', u'the', u'best', u'day', u'my', u'life', u'D'],0.875,0.25,0.897727272727,positive
+[u'\u201c', u'%%USERNAME%%', u'I', u'pull', u'in', u'scion', u'pull', u'in', u'_______', u'\u201d84', u'Honda', u'civic', u'wagovan'],0.0,0.0,1.0,neutral
+[u'Yep', u'true', u'Torchlight', u'II', u'a', u'great', u'game'],0.0,0.0,1.0,neutral
+[u'How', u'mani', u'contin', u'The', u'Challeng', u'film', u'%%Q_MARK%%', u'21', u'%%Q_MARK%%', u'okay', u'did', u'fail', u'2nd', u'grade', u'%%Q_MARK%%'],0.125,0.25,0.925,negative
+[u'%%USERNAME%%', u'Were', u'go', u'be', u'Boy', u'Girl', u'Club', u'clean', u'tomorrow', u'10am', u'They', u'told', u'us', u'bring', u'boot', u'glove', u'All', u'welcom'],0.75,0.25,0.909090909091,positive
+[u'David', u'Letterman', u'an', u'interest', u'show', u'Monday', u'He', u'locat', u'New', u'York', u'Citi', u'Becaus', u'the', u'hurrican', u'%%LINK%%'],0.0,0.0,1.0,positive
+[u'Novemb', u'birthday', u'month', u'elect', u'day', u'weekend', u'San', u'Fran', u'%%USERNAME%%', u'Napl', u'Thanksgiv', u'lot', u'friend', u'famili', u'YE'],0.125,0.0,0.982142857143,positive
+[u'We', u'need', u'wide', u'angela', u'RT', u'%%USERNAME%%', u'%%USERNAME%%', u'%%Q_MARK%%', u'Mayb', u'we', u'can', u'get', u'len', u'wait', u'few', u'year', u'later', u'Gun', u'shuqi', u'readi', u'help', u'Haha'],1.125,0.375,0.833333333333,neutral
+[u'Ive', u'on', u'TV', u'few', u'time', u'Still', u'wait', u'the', u'call', u'ITV', u'Danc', u'On', u'Ice', u'though', u'Start', u'think', u'I', u'may', u'TOO', u'famou'],0.125,0.25,0.9625,negative
+[u'Slap', u'Shot', u'Nash', u'Back', u'From', u'Injuri', u'Skate', u'Davo', u'Rick', u'Nash', u'the', u'New', u'York', u'Ranger', u'return', u'action', u'Switzerland', u'Tuesday'],0.25,0.0,0.980769230769,objective
+[u'Nikon', u'prostaff', u'cant', u'wait', u'get', u'on', u'shoot', u'tomorrow', u'%%EXCLAIM%%', u'pic', u'twitter', u'com/9z3DQMHu'],0.125,0.0,0.982142857143,positive
+[u'%%USERNAME%%', u'I', u'hope', u'make', u'sure', u'take', u'care', u'Eli', u'Man', u'Giant', u'Vs', u'Pittsburgh', u'Sunday', u'%%HASHTAG%%'],0.375,0.875,0.875,positive
+[u'Ive', u'got', u'2', u'ticket', u'see', u'Leonard', u'Cohen', u'Rosemont', u'IL', u'Novemb', u'23', u'I', u'cant', u'use', u'Anyon', u'interest', u'%%Q_MARK%%', u'Face', u'valu', u'about', u'$300'],0.125,0.0,0.986111111111,neutral
+[u'%%USERNAME%%', u'%%HASHTAG%%'],0.0,0.0,0.0,objective
+[u'%%USERNAME%%', u'come', u'Romney', u'I', u'may', u'be', u'abl', u'vote', u'Britain', u'I', u'COMPLETLEY', u'support', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'Good', u'Luck', u'%%EXCLAIM%%'],0.875,0.125,0.875,positive
+[u'WWE', u'%%HASHTAG%%', u'be', u'interest', u'next', u'week', u'The', u'Road', u'Dogg', u'return', u'WWE', u'the', u'Royal', u'Rumbl', u'Shawn', u'Michael', u'go', u'be', u'Raw', u'Monday'],0.5,0.5,0.916666666667,positive
+[u'Kendrick', u'Perkin', u'led', u'leagu', u'the', u'4th', u'year', u'a', u'row', u'SPM', u'(Scowl', u'per', u'minute)', u'liter', u'laugh', u'loud'],0.0,0.0,1.0,positive
+[u'My', u'%%HASHTAG%%', u'XI', u'Super', u'Sunday', u'De', u'Gea', u'Rafa', u'Rio', u'Evan', u'Evra', u'Clevz', u'Nani', u'Young', u'Roo', u'Chicha', u'RVP', u'What', u'you', u'%%Q_MARK%%'],0.0,0.125,0.982142857143,objective
+[u'Eli', u'man', u'best', u'4th', u'quarter', u'QB', u'the', u'game', u'%%EXCLAIM%%'],0.75,0.0,0.8125,positive
+[u'I', u'dont', u'want', u'love', u'like', u'Jonni', u'June', u'I', u'want', u'love', u'like', u'Blake', u'Miranda'],0.875,0.0,0.825,objective
+[u'Lin', u'pick', u'a', u'loos', u'ball', u'just', u'truck', u'Stuckey', u'Unfortun', u'that', u'allow', u'bench', u'4th', u'foul', u'Piston', u'reclaim', u'lead', u'67-65'],0.375,0.25,0.9375,negative
+[u'Not', u'sure', u'im', u'go', u'be', u'halloween', u'yet', u'Sun', u'Shine', u'just', u'obviou', u'Larri', u'Bird', u'the', u'front', u'runner', u'of', u'right'],1.25,1.875,0.739583333333,negative
+[u'If', u'Cundiff', u'wouldv', u'made', u'Field', u'Goal', u'Sunday', u'I', u'couldv', u'eatin', u'free', u'6in', u'sub', u'Subway', u'lunch', u'%%EXCLAIM%%'],0.375,0.0,0.958333333333,neutral
+[u'Me', u'person', u'dont', u'see', u'Grammi', u'play', u'AFL', u'still', u'28', u'i', u'think', u'hell', u'turn', u'someth', u'els', u'Best', u'luck', u'what', u'may', u'next'],0.25,0.125,0.958333333333,positive
+[u'I', u'feel', u'bad', u'My', u'boo', u'Asia', u'bday', u'event', u'mayb', u'cancel', u'thi', u'Sunday', u'%%EXCLAIM%%', u'I', u'soooo', u'look', u'forward', u'it'],0.125,1.0,0.8875,negative
+[u'Dirti', u'Jim', u'close', u'one', u'If', u'may', u'start', u'hear', u'comparison', u'to', u'Cundiff', u'thi', u'town'],0.0,0.25,0.9375,neutral
+[u'After', u'Mid', u'Tennesse', u'vs', u'Western', u'Kentucki', u'game', u'I', u'hear', u'theyr', u'gonna', u'play', u'2nd', u'annual', u'Ogalla', u'Nebraska', u'Snail', u'Chuckin', u'Pageant'],0.0,0.0,1.0,neutral
+[u'Sophia', u'grace', u'rosi', u'%%EXCLAIM%%', u'Cant', u'wait', u'see', u'on', u'Ellen', u'tomorrow', u'%%EXCLAIM%%', u'xxx', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'pic', u'twitter', u'com/abvxnWQB'],0.0,0.0,1.0,positive
+[u'Im', u'go', u'Bullet', u'My', u'Valentin', u'O2', u'Academi', u'Glasgow', u'Glasgow', u'Unit', u'Kingdom', u'Mar', u'13', u'%%LINK%%'],0.0,0.0,1.0,neutral
+[u'Peopl', u'Power', u'travel', u'Egypt', u'see', u'the', u'April', u'6th', u'activist', u'been', u'fare', u'sinc', u'Moham', u'Morsi', u'elect'],0.25,0.125,0.953125,objective
+[u'Shit', u'yeah', u'Thursday', u'Russel', u'Howard', u'Good', u'News', u'Celebr', u'Juic', u'on'],0.5,0.25,0.85,positive
+[u'Pretti', u'good', u'Thursday', u'night', u'%%USERNAME%%', u'%%EXCLAIM%%', u'If', u'River', u'would', u'stop', u'suck', u'bad', u'%%EXCLAIM%%', u'Qualcomm', u'Stadium', u'%%LINK%%'],0.0,0.625,0.910714285714,positive
+[u'I', u'not', u'chang', u'yesterday', u'I', u'onli', u'make', u'most', u'day', u'look', u'hope', u'toward', u'tomorrow', u'(Anonymous)'],0.25,0.75,0.875,negative
+[u'Had', u'wonder', u'workshop', u'Thursday', u'SAG', u'offic', u'Carol', u'Nadel', u'Select', u'Cast', u'She', u'such', u'%%LINK%%'],0.875,0.0,0.854166666667,positive
+[u'%%USERNAME%%', u'2nd', u'Ryan', u'budget', u'from', u'mani', u'year', u'ago', u'recent', u'didnt', u'includ', u'Mitt', u'said', u'mani', u'time', u'he', u'presid', u'and'],0.5,0.0,0.9,objective
+[u'Whi', u'everyon', u'want', u'give', u'Eli', u'Man', u'credit', u'everi', u'win', u'The', u'truth', u'Sunday', u'game', u'have', u'a', u'blowout'],1.5,0.375,0.765625,neutral
+[u'Charl', u'Dicken', u'may', u'have', u'me', u'anoth', u'life', u'%%HASHTAG%%', u'%%LINK%%'],0.25,0.0,0.875,neutral
+[u'Go', u'Buffalo', u'Wild', u'Wing', u'tomorrow', u'my', u'life', u'long', u'friend', u'Israel', u'my', u'brother', u'That', u'I', u'call', u'good', u'night', u'%%HASHTAG%%'],1.125,0.25,0.894230769231,positive
+[u'7', u'15pm', u'tomorrow', u'night', u'I', u'a', u'date', u'Denzel', u'%%EXCLAIM%%', u'%%HASHTAG%%', u'I', u'cant', u'wait', u'%%EXCLAIM%%'],0.125,0.0,0.979166666667,positive
+[u'Appl', u'CEO', u'apolog', u'error-ridden', u'new', u'map', u'app', u'Appl', u'CEO', u'Tim', u'Cook', u'apolog', u'Friday', u'the', u'company&', u'%%HASHTAG%%', u'erro', u'%%LINK%%'],0.375,0.0,0.9375,positive
+[u'New', u'Die', u'Hard', u'movi', u'come', u'Feb', u'14', u'Look', u'like', u'Bruce', u'Willi', u'go', u'be', u'Valentin', u'date', u'o)'],0.375,0.125,0.9375,positive
+[u'I', u'like', u'%%USERNAME%%', u'video', u'%%LINK%%', u'%%Q_MARK%%', u'a\xa0', u'Anonym', u'Rememb', u'Rememb', u'5th', u'Novemb'],0.125,0.0,0.958333333333,positive
+[u'Hello', u'man', u'pointi', u'multicolour', u'snake', u'skin', u'cowboy', u'boot', u'suit', u'Axl', u'Rose', u'hair', u'youv', u'made', u'Friday', u'heart', u'even', u'happier'],1.0,0.5,0.892857142857,positive
+[u'Chael', u'start', u'FUEL', u'TV', u'Octob', u'1st'],0.0,0.0,1.0,objective
+[u'Hmm', u'I', u'think', u'I', u'live', u'movi', u'Ground', u'Hog', u'Day', u'Grandma', u'Jan', u'Isaac', u'back', u'thi', u'weekend'],0.0,0.25,0.975,objective
+[u'Gotta', u'go', u'see', u'Flight', u'tomorrow', u'Denzel', u'the', u'greatest', u'actor', u'ever'],0.0,0.0,1.0,positive
+[u'THI', u'%%EXCLAIM%%', u'RT', u'%%USERNAME%%', u'Make', u'%%USERNAME%%', u'happi', u'Yvett', u'lemon/lavend', u'%%HASHTAG%%', u'at', u'%%USERNAME%%', u'%%EXCLAIM%%', u'%%LINK%%'],0.5,0.0,0.5,negative
+[u'Anonym', u'ask', u'beard', u'tweetd', u'intens', u'messag', u'M', u'tuesday', u'abit', u'the', u'halloween', u'parti', u'she', u'%%LINK%%'],0.0,0.0,1.0,neutral
+[u'%%HASHTAG%%', u'mon', u'boy', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'there', u'1', u'thing', u'missin', u'%%HASHTAG%%', u'NOOOOOOOOO'],0.25,0.0,0.875,neutral
+[u'Axl', u'rose', u'the', u'bose', u'my', u'roll', u'the', u'concret', u'u', u'see', u'rose', u'still', u'rose', u'count', u'a', u'million', u'dollar', u'fore', u'sun', u'rose'],0.0,0.125,0.991071428571,neutral
+[u'Play', u'Dishonor', u'(360)', u'Darksid', u'2', u'(360)', u'Mass', u'Effect', u'3', u'(360)', u'the', u'last', u'24', u'hour', u'%%LINK%%', u'-7th', u'%%Q_MARK%%', u'type=tw_sessiondigest\xa0\u2026'],0.0,0.0,1.0,neutral
+[u'Scariest', u'man', u'aliv', u'Kendrick', u'Perkin', u'close', u'2nd', u'%%USERNAME%%', u'Ray', u'Lewi', u'probabl', u'onli', u'human', u'ever', u'born', u'an', u'indoor', u'voic'],0.0,0.0,1.0,negative
+[u'CAN', u'I', u'LIVE', u'IN', u'THI', u'VIDEO', u'%%Q_MARK%%', u'Soul', u'Train', u'Line', u'Let', u'It', u'Whip', u'Dazz', u'Band', u'mpg', u'%%LINK%%', u'\xa0', u'via', u'%%USERNAME%%'],0.0,0.0,1.0,positive
+[u'Charger', u'may', u'go', u'8-8', u'that', u'make', u'playoff', u'AFC', u'NFC', u'team', u'must', u'win', u'10', u'game', u'%%EXCLAIM%%', u'Fact', u'%%EXCLAIM%%', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%'],0.75,0.0,0.892857142857,neutral
+[u'Been', u'sat', u'my', u'room', u'stick', u'postcard', u'Tehran', u'the', u'wall', u'God', u'know', u'long', u'Whi', u'nobodi', u'invent', u'teleport', u'machin', u'yet', u'%%Q_MARK%%'],0.875,0.0,0.9125,negative
+[u'I', u'must', u'find', u'sleep', u'Long', u'day', u'weekend', u'ahead', u'me'],0.0,0.125,0.979166666667,positive
+[u'hahahaha', u'spanish', u'peopl', u'Nadal', u'box', u'smile', u'the', u'break', u'the', u'5th', u'set', u'HAHAHAHAHAHA', u'%%HASHTAG%%'],0.25,0.0,0.95,positive
+[u'Sick', u'Beard', u'Download', u'Finish', u'3rd', u'Rock', u'Sun', u'5x11', u'Dick', u'Put', u'the', u'ID', u'Cupid'],0.0,0.125,0.986111111111,objective
+[u'Sunday', u'the', u'Sag', u'like', u'Friday', u'Idaho', u'bore', u'fuck', u'%%EXCLAIM%%'],0.125,0.125,0.958333333333,negative
+[u'On', u'Monday', u'I', u'go', u'back', u'my', u'old', u'job', u'the', u'fourth', u'time', u'My', u'life', u'the', u'Groundhog', u'Day', u'movi'],0.375,0.0,0.9625,objective
+[u'Harri', u'Redknapp', u'be', u'heavili', u'link', u'the', u'posit', u'Blackburn', u'manag', u'today', u'Howev', u'QPR', u'may', u'begun', u'court', u'alreadi'],0.5,0.125,0.910714285714,neutral
+[u'%%USERNAME%%', u'packer', u'win', u'superbowl', u'xlvii'],0.125,0.0,0.9375,negative
+[u'yo', u'Im', u'excit', u'Royal', u'Rumbl', u'might', u'book', u'Monday', u'work', u'I', u'watch'],0.25,0.0,0.95,positive
+[u'%%USERNAME%%', u'Happi', u'20TH', u'Birthday', u'Nick', u'J', u'%%EXCLAIM%%', u'Hope', u'one', u'the', u'best', u'%%EXCLAIM%%', u'Youv', u'accomplish', u'much', u'alreadi', u'And', u'much', u'to', u'come', u'LOVE', u'YOU', u'%%EXCLAIM%%'],1.875,0.125,0.777777777778,positive
+[u'%%HASHTAG%%', u'When', u'I', u'born', u'On', u'day', u'wa', u'2nd', u'day', u'Chines', u'New', u'Year', u'Immedi', u'gotten', u'lot', u'redpacket', u'D'],0.25,0.5,0.90625,positive
+[u'Monta', u'Elli', u'Elli', u'just', u'two', u'point', u'1-of-11', u'shoot', u'Friday', u'%%LINK%%', u'\xa0', u'%%HASHTAG%%'],0.125,0.0,0.979166666667,objective
+[u'If', u'Baltimor', u'team', u'mascot', u'come', u'miss', u'1st', u'person', u'interest', u'be', u'Billi', u'Cundiff', u'%%EXCLAIM%%', u'Or', u'Redskin', u'mascot', u'taken', u'blame', u'%%EXCLAIM%%'],0.25,0.875,0.897727272727,neutral
+[u'I', u'hope', u'I', u'get', u'ticket', u'the', u'%%HASHTAG%%', u'concert', u'Belgium', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'You', u'cant', u'order', u'till', u'Saturday', u'%%EXCLAIM%%', u'Pfff'],0.25,0.125,0.958333333333,positive
+[u'Low-fat', u'Oasi', u'Edmonton', u'Sun', u'Low-fat', u'OasisEdmonton', u'SunPoor', u'Noel', u'Gallagh', u'--', u'there', u'alon', u'hi', u'new', u'ba', u'%%LINK%%'],0.375,0.0,0.9375,objective
+[u'Egypt', u'Morsi', u'get', u'red', u'carpet', u'welcom', u'Iran', u'TEHRAN', u'Aug', u'29', u'Egypt', u'Moham', u'Morsi', u'in', u'Iran', u'the', u'first', u'visit', u'%%LINK%%'],0.0,0.0,1.0,positive
+[u'If', u'Seattl', u'Portland', u'knit', u'togeth', u'cover', u'the', u'California', u'sun', u'youd', u'San', u'Fran', u'Kinda', u'love'],0.5,0.0,0.916666666667,positive
+[u'Estou', u'ouvindo', u'Brown', u'Eye', u'Live', u'Friday', u'Show', u'Jonathan', u'Ross', u'Ladi', u'Gaga', u'%%LINK%%', u'\xa0\u2026', u'via', u'%%USERNAME%%'],0.0,0.375,0.9375,neutral
+[u'Nigga', u'realli', u'fight', u'the', u'ga', u'station', u'Sat', u'night', u'tho'],0.0,0.0,1.0,negative
+[u'%%USERNAME%%', u'%%USERNAME%%', u'about', u'Holland', u'%%Q_MARK%%', u'%%EXCLAIM%%', u'Countdown', u'UFC', u'153', u'Silva', u'vs', u'Bonnar', u'debut', u'Tuesday', u'FUEL', u'TV', u'%%LINK%%'],0.0,0.0,1.0,objective
+[u'Aubig', u'Black', u'Leather', u'Camera', u'Case', u'Bag', u'Pouch', u'Case', u'Strap', u'Olympu', u'OM-D', u'OMD', u'EM5', u'E-M5', u'Cyber', u'Monday', u'Deal', u'%%LINK%%', u'-black-leather-camera-case-bag-pouch-case-with-strap-for-olympus-om-d-omd-em5-e-m5-cyber-monday-deals/\xa0\u2026'],0.0,0.375,0.9625,neutral
+[u'%%USERNAME%%', u'next', u'Wednesday', u'go', u'the', u'Disney', u'one', u'No', u'chanc', u'Avril', u'go', u'the', u'univers', u'night', u'%%HASHTAG%%'],0.0,0.25,0.958333333333,negative
+[u'%%USERNAME%%', u'Bullet', u'My', u'Valentin', u'next', u'year', u'%%Q_MARK%%', u'Do', u'still', u'want', u'go', u'see', u'%%Q_MARK%%', u'Presal', u'start', u'tomorrow', u'morn', u'%%EXCLAIM%%'],0.25,0.125,0.958333333333,neutral
+[u'Yay', u'Bruno', u'Mar', u'come', u'with', u'new', u'album', u'Decemb', u'11th', u'I', u'MUST', u'HAVE', u'IT', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.625,0.0,0.910714285714,positive
+[u'Im', u'Like', u'Whi', u'fuck', u'Happi', u'Valentin', u'Day', u'trend', u'the', u'12th', u'June', u'%%Q_MARK%%', u'anyway', u'I', u'knew', u'it', u'celebr', u'Brasil', u'Xx'],0.125,0.0,0.984375,positive
+[u'%%USERNAME%%', u'Dublin', u'Saturday', u'Gotta', u'get', u'the', u'Guin', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.0,0.0,1.0,neutral
+[u'Be', u'addict', u'templ', u'Run', u'may', u'the', u'worst', u'thing', u'that', u'happen', u'me', u'haha'],0.5,0.875,0.725,negative
+[u'%%USERNAME%%', u'gonna', u'in', u'Louisvil', u'Kentucki', u'tomorrow', u'I', u'cant', u'go', u'the', u'show', u'I', u'guess', u'Ill', u'sit', u'listen', u'hi', u'music', u'pretend'],0.375,0.75,0.859375,negative
+[u'%%HASHTAG%%', u'Ben', u'Amo', u'(Hull', u'City)', u'extra', u'time', u'1-1', u'the', u'1st', u'round', u'the', u'Leagu', u'Cup'],0.125,0.0,0.975,neutral
+[u'Michael', u'Jackson', u'Bad', u'25', u'air', u'Novemb', u'22', u'ABC', u'Make', u'sure', u'watch', u'%%EXCLAIM%%', u'%%LINK%%', u'%%Q_MARK%%', u'v=1P0toSi4nbE&feature=youtube_gdata_player\xa0\u2026'],0.5,0.875,0.803571428571,objective
+[u'%%USERNAME%%', u'forget', u'Dook', u'we', u'that', u'seri', u'anyway', u'%%EXCLAIM%%', u'let', u'Beat', u'State', u'saturday', u'we', u'continu', u'to', u'succes', u'season'],0.25,0.0,0.958333333333,positive
+[u'Theo', u'vs', u'Evra', u'Saturday', u'Wenger', u'make', u'happen'],0.0,0.0,1.0,positive
+[u'Look', u'forward', u'see', u'Illeg', u'Eagl', u'Dork', u'tomorrow', u'night', u'Lin', u'Amigo', u'Best', u'Eagl', u'tribut', u'band', u'around', u'%%HASHTAG%%'],0.625,0.0,0.9375,positive
+[u'happi', u'valentin', u'day', u'all', u'brazilian', u'friend', u'%%EXCLAIM%%'],0.125,0.0,0.958333333333,positive
+[u'Anonym', u'ask', u'Would', u'have', u'chanc', u'see', u'for', u'topless', u'Tuesday', u'%%Q_MARK%%', u'%%LINK%%'],0.25,0.0,0.9375,neutral
+[u'Pakistan', u'approv', u'liberalis', u'visa', u'accord', u'India', u'Islamabad', u'Nov', u'1', u'(IANS)', u'Pakistan', u'approv', u'liberalis', u'v', u'%%LINK%%'],0.125,0.0,0.984375,positive
+[u'Fabio', u'Capello', u'(Russia', u'head-coach)', u'wish', u'Cristiano', u'injuri', u'more', u'seriou', u'(Russia', u'play', u'Portug', u'tomorrow', u'the', u'WCQ)'],0.5,0.0,0.875,negative
+[u'Hey', u'Nevada', u'tweep', u'rememb', u'TOMORROW', u'the', u'last', u'day', u'EARLi', u'VOTe', u'%%EXCLAIM%%', u'Readi', u'Set', u'Vote', u'%%EXCLAIM%%', u'%%HASHTAG%%', u'%%EXCLAIM%%'],0.375,0.0,0.946428571429,neutral
+[u'Observ', u'UN', u'EU', u'CW', u'send', u'CoNi', u'accord', u'thi', u'observ', u'the', u'Maldivian', u'seen', u'live', u'TV', u'on', u'7', u'feb', u'day', u'dream'],0.125,0.0,0.984375,neutral
+[u'FUCK', u'Halloween', u'Fuck', u'thanksgiv', u'Fuck', u'birthday', u'Fuck', u'Christma', u'New', u'Year', u'Valentin', u'St', u'Patrick', u'April', u'fool', u'Fuck', u'of'],0.625,0.0,0.943181818182,negative
+[u'mother', u'said', u'what', u'gucci', u'mah', u'nigguh', u'%%EXCLAIM%%', u'me', u'think', u'may', u'been', u'listen', u'Nigga', u'In', u'Pari', u'i', u'worri', u'%%Q_MARK%%'],0.25,0.125,0.946428571429,neutral
+[u'I', u'may', u'done', u'dumb', u'thing', u'it', u'there', u'My', u'new', u'long', u'term', u'goal', u'The', u'Challeng', u'%%LINK%%', u'-challeng', u'html\xa0\u2026'],0.375,0.0,0.9375,neutral
+[u'highlight', u'monday', u'chuck', u'mattress', u'stair', u'hit', u'eleanor', u'around', u'the', u'face', u'caus', u'to', u'fall', u'the', u'stair'],0.25,0.0,0.972222222222,neutral
+[u'Love', u'hair', u'style', u'Friday', u'Jason', u'Wu', u'%%HASHTAG%%', u'show', u'%%Q_MARK%%', u'Were', u'give', u'step-by-step', u'recreat', u'the', u'look', u'%%LINK%%'],0.625,0.125,0.916666666667,positive
+[u'Sad', u'say', u'%%HASHTAG%%', u'nearli', u'an', u'end', u'Fantast', u'event', u'last', u'night', u'Michael', u'Portillo', u'Last', u'event', u'tomorrow', u'Charl', u'Dicken'],0.0,0.0,1.0,neutral
+[u'%%LINK%%', u'-sandro-superb-for-spurs/\xa0\u2026', u'My', u'profil', u'Sandro', u'I', u'kind', u'love'],0.0,0.0,0.0,positive
+[u'%%USERNAME%%', u'1st', u'like', u'Imma', u'play', u'Headlock', u'then', u'Safe', u'Sound', u'now', u'gonna', u'play', u'All', u'Star', u'hmmmm'],0.625,0.0,0.921875,neutral
+[u'Dad', u'are', u'go', u'do', u'Athen', u'tomorrow', u'%%Q_MARK%%', u'Me', u'Noth', u'Dad', u'Oh', u'Ok', u'Have', u'fun', u'I', u'like', u'Father'],0.75,0.125,0.927083333333,positive
+[u'Dont', u'surpris', u'we', u'end', u'wait', u'Novemb', u'16th', u'find', u'who', u'next', u'POTU', u'%%HASHTAG%%', u'%%LINK%%', u'-provisional-ballots-delay/2012/11/01/id/462413\xa0\u2026'],0.625,0.0,0.791666666667,negative
+[u'Rugbi', u'tonight', u'it', u'like', u'freez', u'omg', u'I', u'may', u'die'],0.0,0.0,1.0,negative
+[u'go', u'rugbi', u'practic', u'sunday', u'%%HASHTAG%%'],0.0,0.0,1.0,objective
+[u'Is', u'mercuri', u'prize', u'tv', u'%%Q_MARK%%', u'When', u'where', u'%%Q_MARK%%', u'Field', u'music', u'get', u'vote', u'if', u'do', u'win', u'tomorrow', u'gig', u'be', u'blinder', u'%%EXCLAIM%%'],0.75,0.25,0.923076923077,positive
+[u'Asia', u'stock', u'mostli', u'on', u'US', u'China', u'data', u'Asian', u'stock', u'market', u'advanc', u'Friday', u'a', u'batch', u'upbeat', u'econom', u'data', u'the', u'U', u'S', u'Chi'],1.0,0.0,0.933333333333,positive
+[u'Break', u'Dawn', u'come', u'on', u'16th', u'yayyy'],0.0,0.0,1.0,positive
+[u'Celebr', u'Chines', u'New', u'Year', u'%%HASHTAG%%', u'(around', u'February)', u'see', u'dragon', u'danc', u'the', u'Spring', u'Festiv', u'%%EXCLAIM%%', u'Amaz', u'experi', u'%%EXCLAIM%%'],0.0,0.25,0.95,positive
+[u'Disappoint', u'see', u'UK', u'Govt', u'issu', u'reassur', u'messag', u'Tehran', u'%%LINK%%', u'-military-action-downing-street\xa0\u2026', u'Mayb', u'were', u'influenc', u'%%USERNAME%%'],0.25,0.125,0.90625,negative
+[u'More', u'footag', u'the', u'studio', u'Bullet', u'For', u'My', u'Valentin', u'finish', u'record', u'upcom', u'4th', u'album', u'%%LINK%%'],0.0,0.125,0.979166666667,objective
+[u'bought', u'1st', u'Heineken', u'beer', u'La', u'Vega', u'ps', u'Ive', u'live', u'for', u'5', u'yr', u'~what', u'took', u'so', u'long', u'%%EXCLAIM%%', u'pic', u'twitter', u'com/WxVoBdek'],0.125,0.0,0.984375,negative
+[u'20', u'June', u'2012', u'European', u'Tour', u'parti', u'drove', u'fabul', u'road', u'Davo', u'Stelvio', u'Thi', u'the', u'last', u'littl', u'bit', u'%%LINK%%'],0.0,0.125,0.982142857143,neutral
+[u'Join', u'us', u'THI', u'THURSDAY', u'the', u'Introduct', u'our', u'Dramat', u'Read', u'Charl', u'Dickenss', u'A', u'Christma', u'Carol', u'11/1', u'6-7pm'],0.25,0.0,0.958333333333,objective
+[u'%%USERNAME%%', u'Cant', u'wait', u'the', u'new', u'seri', u'start', u'Sunday', u'here', u'Britain', u'%%HASHTAG%%'],0.375,0.0,0.946428571429,positive
+[u'Publish', u'new', u'blog', u'entri', u'Novemb', u'18', u'Otherwis', u'Known', u'Sheila', u'Great', u'Art', u'the', u'Counti', u'%%LINK%%'],0.375,0.0,0.90625,positive
+[u'Dr', u'Moham', u'Morsi', u'announc', u'Egypt', u'first', u'elect', u'Presid', u'the', u'gloriou', u'25th', u'Jan', u'Revolut', u'Congratul'],0.0,0.0,1.0,positive
+[u'Northern', u'Light', u'Sale', u'Thursday', u'great', u'pedigre', u'way', u'the', u'catalogu', u'%%EXCLAIM%%', u'Genom', u'the', u'full', u'packag', u'%%EXCLAIM%%', u'View', u'catalogu', u'onlin', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'I', u'THINK', u'Bowen', u'Cofield', u'be', u'better', u'2nd', u'yr', u'hope', u'Jenkin', u'be', u'good', u'he', u'look', u'last', u'preseason', u'those', u'unhatch', u'egg'],2.375,0.375,0.75,positive
+[u'Just', u'ad', u'Google+', u'Hangout', u'the', u'schedule--se', u'YOU', u'Novemb', u'21', u'%%Q_MARK%%', u'%%EXCLAIM%%', u'Detail', u'%%LINK%%'],0.0,0.0,1.0,objective
+[u'%%USERNAME%%', u'I', u'WANT', u'TANG', u'JUN', u'FOR', u'CHRISTMA', u'I', u'want', u'on', u'Valentin', u'well', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.875,0.0,0.825,positive
+[u'%%LINK%%', u'\xa0', u'I', u'vote', u'1ST', u'LADi', u'be', u'Coast', u'2', u'Coast', u'Mixtap', u'224', u'Host', u'Kendrick', u'Lamar', u'%%EXCLAIM%%', u'%%USERNAME%%'],0.25,0.125,0.925,neutral
+[u'News', u'Releas', u'09', u'Octob', u'2012', u'Custom', u'the', u'Negro', u'sub-grid', u'experienc', u'partial', u'outag', u'today', u'5', u'45PM', u'(cont)', u'%%LINK%%'],1.125,0.0,0.775,negative
+[u'Look', u'%%HASHTAG%%', u'fan', u'I', u'know', u'may', u'upset', u'Suisham', u'miss', u'kick', u'Just', u'know', u'I', u'heard', u'guy', u'name', u'Billi', u'Cundiff', u'avail'],0.0,0.125,0.988636363636,neutral
+[u'Oh', u'for', u'still', u'fellat', u'Harri', u'Redknapp', u'went', u'in', u'3rd', u'round', u'Stoke', u'last', u'season', u'Rememb', u'%%Q_MARK%%'],0.0,0.125,0.975,neutral
+[u'%%USERNAME%%', u'%%HASHTAG%%', u'Good', u'And', u'is', u'3rd', u'%%Q_MARK%%', u'Valentin', u'day', u'%%Q_MARK%%', u'Or', u'%%Q_MARK%%'],0.75,0.125,0.708333333333,positive
+[u'%%USERNAME%%', u'A', u'betray', u'wife', u'legal', u'allow', u'kill', u'adulter', u'husband', u'may', u'do', u'with', u'bare', u'hand', u'(Hong', u'Kong)'],0.5,0.75,0.821428571429,negative
+[u'%%USERNAME%%', u'I', u'think', u'need', u'line', u'up', u'an', u'elig', u'receiv', u'like', u'Jacksonvil', u'against', u'guy', u'Sunday', u'Thought', u'%%Q_MARK%%'],0.375,0.25,0.895833333333,neutral
+[u'Russel', u'Howard', u'Cuckoo', u'Celebr', u'Juic', u'Famili', u'Guy', u'Thursday', u'night', u'the', u'best', u'night', u'comedi'],0.875,0.125,0.857142857143,positive
+[u'Ricki', u'Martin', u'may', u'gay', u'he', u'sexi', u'af', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'D'],0.125,0.25,0.8125,positive
+[u'hey', u'%%USERNAME%%', u'member', u'miss', u'shot', u'Leonard', u'Cohen', u'tix', u'morn', u'%%USERNAME%%', u'%%Q_MARK%%', u'%%USERNAME%%', u'have', u'for', u'you', u'on', u'Sunday', u'%%EXCLAIM%%'],0.25,0.0,0.964285714286,positive
+[u'Gonna', u'ride', u'Love', u'Train', u'tomorrow', u'dig', u'Soul', u'Train', u'Ojay', u'bad', u'ass', u'it', u'%%LINK%%', u'%%Q_MARK%%', u'v=yaNMQg2nYT4&feature=youtube_gdata_player\xa0\u2026'],0.625,0.625,0.861111111111,positive
+[u'I', u'wish', u'I', u'MD', u'I', u'wanna', u'bear', u'Negro', u'shit', u'fun', u'go', u'out', u'Sunday', u'Ross', u'snighter', u'Sunday', u'Finna', u'pop', u'on', u'TWL'],0.5,0.625,0.897727272727,positive
+[u'Nick', u'Diaz', u'said', u'would', u'fight', u'GSP', u'tomorrow', u'the', u'UFC', u'ask', u'Except', u'know', u'wouldnt', u'your', u'suspend'],1.0,0.0,0.833333333333,negative
+[u'first', u'tweet', u'ever', u'love', u'san', u'diego', u'%%EXCLAIM%%', u'Busi', u'day', u'like', u'alway', u'readi', u'%%USERNAME%%', u'Fuel', u'TV', u'tomorrow'],0.5,0.0,0.9375,positive
+[u'Were', u'think', u'run', u'the', u'Australia', u'Day', u'weekend', u'Januari', u'Is', u'a', u'good', u'bad', u'idea', u'%%Q_MARK%%'],0.875,0.625,0.8125,neutral
+[u'Glitteri', u'nail', u'I', u'come', u'%%EXCLAIM%%', u'Three', u'the', u'polish', u'the', u'Wonderland', u'collect', u'%%USERNAME%%', u'%%LINK%%'],0.125,0.0,0.979166666667,positive
+[u'<---', u'New', u'Icon', u'I', u'may', u'be', u'chang', u'icon', u'lot', u'long', u'Jennett', u'upload', u'pic', u'caus', u'is', u'too', u'beauti'],0.625,0.5,0.875,positive
+[u'Damn', u'I', u'miss', u'%%HASHTAG%%', u'%%USERNAME%%'],0.125,0.375,0.75,neutral
+[u'Dr', u'Moham', u'Morsi', u'announc', u'Egypt', u'first', u'elect', u'Presid', u'the', u'gloriou', u'25th', u'Jan', u'Revolut', u'%%LINK%%'],0.0,0.0,1.0,positive
+[u'%%USERNAME%%', u'Onli', u'can', u'answer', u'I', u'tri', u'%%EXCLAIM%%', u'There', u'WP8', u'way', u'call', u'3rd', u'p', u'app', u'%%Q_MARK%%', u'Like', u'Intent', u'Android', u'I', u'wanna', u'switch', u'WP', u'%%EXCLAIM%%'],0.0,0.25,0.96875,positive
+[u'Protest', u'the', u'Mitch', u'Daniel', u'Purdu', u'Presidenti', u'nomin', u'tomorrow', u'Loeb', u'Theater', u'2', u'30', u'pm', u'Bring', u'friend', u'%%EXCLAIM%%', u'%%HASHTAG%%'],0.125,0.0,0.982142857143,negative
+[u'Dr', u'Moham', u'Morsi', u'announc', u'Egypt', u'1st', u'elect', u'Presid', u'the', u'gloriou', u'25th', u'Jan', u'Revolut', u'Congratul', u'%%HASHTAG%%', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'Thi', u'Thursday', u'Night', u'Footbal', u'game', u'suck', u'But', u'Go', u'Chief', u'%%EXCLAIM%%', u'I', u'want', u'see', u'hot', u'head', u'River', u'explod', u'the', u'sidelin', u'tonight'],0.25,0.0,0.980769230769,negative
+[u'%%HASHTAG%%', u'+1500', u'peopl', u'the', u'Superbowl', u'Sun', u'Citi', u'discov', u'How', u'help', u'Africa', u'Run', u'like', u'Never', u'Befor'],0.5,0.0,0.875,neutral
+[u'Nebraska', u'place', u'nation-lead', u'nine', u'player', u'the', u'first-ev', u'Senior', u'Bowl', u'watch', u'list', u'releas', u'Saturday', u'%%LINK%%'],0.0,0.0,1.0,positive
+[u'Play', u'%%USERNAME%%', u'day', u'prep', u'tomorrow', u'concert', u'Fort', u'Canning', u'Go', u'babi', u'go', u'go', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'%%USERNAME%%', u'the', u'POTU', u'win', u'2nd', u'term', u'isnt', u'NJ', u'gov', u'gonna', u'go', u'back', u'bash', u'when', u'state', u'in', u'better', u'shape', u'(2/2)'],0.625,0.0,0.921875,positive
+[u'%%USERNAME%%', u'Crimin', u'kill', u'Sadat', u'in', u'process', u'kill', u'Egypt', u'destroy', u'futur', u'young', u'old', u'Egyptian'],0.375,0.125,0.9375,negative
+[u'Watch', u'favourit', u'%%USERNAME%%', u'behind', u'scene', u'(for', u'4th', u'time)', u'Jennif', u'Hudson', u'goe', u'AWOL', u'Excus', u'the', u'hell', u'go', u'%%Q_MARK%%', u'%%EXCLAIM%%'],0.0,0.375,0.9375,negative
+[u'%%USERNAME%%', u'You', u'Go', u'To', u'The', u'Game', u'%%Q_MARK%%', u'%%HASHTAG%%'],0.0,0.0,1.0,neutral
+[u'Fabio', u'Capello', u'From', u'Ive', u'seen', u'day', u'I', u'assur', u'Russia', u'capabl', u'get', u'good', u'result', u'vs', u'Portug', u'tomorrow'],0.0,0.0,1.0,positive
+[u'When', u'columbu', u'shoot', u'Bill', u'Murray', u'zombieland', u'may', u'one', u'the', u'funniest', u'thing', u'ever'],0.0,0.0,1.0,objective
+[u'Photo', u'Fab', u'find', u'%%EXCLAIM%%', u'Jason', u'Wu', u'satin', u'scarlet', u'clutch', u'Off', u'5th', u'%%EXCLAIM%%', u'Whoop', u'whoop', u'%%EXCLAIM%%', u'(Taken', u'Instagram)', u'%%LINK%%'],1.125,0.5,0.819444444444,positive
+[u'Poland', u'critic', u'18th', u'amend', u'The', u'new', u'frame', u'been', u'open', u'None', u'the', u'topic', u'on', u'earlier', u'%%HASHTAG%%'],0.625,0.5,0.839285714286,neutral
+[u'Success', u'Saturday', u'Have', u'great', u'time', u'the', u'4th', u'Annual', u'Girlfriend', u'Group', u'Celebr', u'%%EXCLAIM%%', u'%%USERNAME%%', u'Wood', u'%%USERNAME%%', u'Cofield', u'%%USERNAME%%', u'Maddox'],0.125,0.0,0.984375,positive
+[u'If', u'%%USERNAME%%', u'hold', u'WWE', u'Titl', u'Royal', u'Rumbl', u'will', u'held', u'the', u'titl', u'434', u'day', u'Make', u'the', u'6th', u'longest', u'reign'],0.5,0.0,0.916666666667,neutral
+[u'SAG', u'For', u'Life', u'Stacey', u'April', u'Gabriel', u'irieapril', u'%%HASHTAG%%', u'happi', u'wed', u'day', u'Gabe', u'%%EXCLAIM%%', u'North', u'Star', u'Ballroom', u'%%LINK%%'],0.25,0.0,0.972222222222,positive
+[u'Victor', u'Cruz', u'said', u'Tuesday', u'hi', u'agent', u'the', u'%%USERNAME%%', u'agre', u'the', u'structur', u'a', u'new', u'contract', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%'],1.375,0.0,0.803571428571,objective
+[u'The', u'best', u'thing', u'Walk', u'Dead', u'return', u'it', u'mean', u'Spartacu', u'be', u'back', u'soon', u'%%EXCLAIM%%', u'(Dammit', u'Starz', u'site', u'say', u'January)'],1.0,0.25,0.886363636364,positive
+[u'Thank', u'Jesu', u'CV', u'My', u'Mom', u'My', u'Mari', u'I', u'abl', u'kick', u'flu', u'1', u'week', u'%%EXCLAIM%%', u'Now', u'make', u'w/out', u'My', u'MaryJan', u'Monday', u'%%EXCLAIM%%', u'%%HASHTAG%%'],1.5,0.125,0.8375,positive
+[u'Tip', u'Appl', u'CEO', u'u', u'may', u'want', u'stop', u'outsourc', u'map', u'app', u'China', u'While', u'UR', u'how', u'bout', u'bring', u'those', u'manufactur', u'job', u'back'],0.25,0.0,0.979166666667,neutral
+[u'%%USERNAME%%', u'OH', u'MY', u'GOD', u'WE', u'BOTH', u'CANT', u'BRFEATH', u'WDSWKIADEMJ', u'I', u'DOTN', u'KNOW', u'HOW', u'TO', u'CALMDMM', u'0', u'D', u'/]('],0.75,0.25,0.833333333333,positive
+[u'%%USERNAME%%', u'%%USERNAME%%', u'saw', u'jennif', u'Hudson', u'26th', u'street', u'look', u'great', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'Super', u'skinni'],0.0,0.0,1.0,positive
+[u'%%HASHTAG%%', u'%%HASHTAG%%', u'It', u'friday', u'night', u'you', u'find', u'watch', u'The', u'Notebook', u'AGAIN', u'You', u'(cont)', u'%%LINK%%'],0.125,0.0,0.975,neutral
+[u'NFL', u'Commission', u'Roger', u'Goodel', u'say', u'may', u'cancel', u'Pro', u'Bowl', u'%%LINK%%', u'\xa0', u'Would', u'care', u'there', u'no', u'Pro', u'Bowl', u'%%Q_MARK%%'],0.0,0.0,1.0,negative
+[u'Join', u'Phil', u'Novemb', u'8', u'the', u'Better', u'Softwar', u'East', u'Confer', u'Orlando', u'hell', u'speak', u'How', u'%%LINK%%'],0.5,0.375,0.825,neutral
+[u'Pacino', u'play', u'Paterno', u'bio', u'film', u'come', u'soon', u'Thi', u'mark', u'Pacino', u'2nd', u'film', u'the', u'phrase', u'Say', u'hello', u'my', u'littl', u'friend'],0.375,0.25,0.9375,objective
+[u'I', u'swear', u'tomorrow', u'Niner', u'fan', u'start', u'tweet', u'Kyle', u'William', u'tomorrow', u'best', u'believ', u'Im', u'gonna', u'put', u'on', u'check'],0.75,0.0,0.925,negative
+[u'recap', u'I', u'saw', u'Bad', u'25', u'Tuesday', u'The', u'Spike', u'Lee', u'Documentari', u'Michael', u'Jackson', u'It', u'beyond', u'amaz', u'&&', u'wa', u'show', u'6', u'day'],0.0,0.875,0.927083333333,positive
+[u'%%USERNAME%%', u'OMFG', u'ADAM', u'LAMBERT', u'IS', u'NOMIN', u'3', u'GRAMMI', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'<3'],0.0,0.0,1.0,neutral
+[u'Harri', u'Style', u'rock', u'Lyle', u'Scott', u'may', u'be', u'10', u'be', u'honest', u'wish', u'had', u'life', u'%%USERNAME%%', u'pic', u'twitter', u'com/W8J9sTx1'],1.625,0.25,0.829545454545,positive
+[u'Were', u'experienc', u'issu', u'Fuel', u'TV', u'(Ch', u'39)', u'Should', u'back', u'Friday', u'Monday'],0.0,0.0,1.0,negative
+[u'Blog', u'Post', u'Vice', u'Presid', u'Joe', u'Biden', u'Present', u'Top', u'Ten', u'List', u'CBSs', u'Late', u'Show', u'David', u'Letterman', u'Thursday', u'%%LINK%%'],0.625,0.375,0.909090909091,objective
+[u'KPop', u'Will', u'Psi', u'the', u'first', u'Korean', u'win', u'Grammi', u'%%Q_MARK%%', u'Psi', u'may', u'qualifi', u'the', u'upcom', u'Grammi', u'Award', u'Gangnam', u'Sti', u'%%LINK%%'],0.25,0.0,0.964285714286,positive
+[u'Stick', u'stone', u'may', u'break', u'bone', u'Rugbi', u'it', u'better', u'%%EXCLAIM%%'],1.125,0.25,0.725,positive
+[u'How', u'anyon', u'blame', u'BR', u'%%Q_MARK%%', u'It', u'wasnt', u'who', u'spunk', u'away', u'the', u'cash', u'And', u'wasnt', u'who', u'refus', u'spend', u'more'],0.125,0.5,0.921875,negative
+[u'RUMOR', u'%%HASHTAG%%', u'may', u'trade', u'Nikla', u'Hjalmarsson', u'the', u'%%HASHTAG%%', u'Sam', u'Gagner', u'Stay', u'tune'],0.0,0.0,1.0,objective
+[u'%%LINK%%', u'\xa0', u'Visit', u'%%HASHTAG%%', u'five', u'Euro', u'MP', u'call', u'Sat', u'Tehran', u'refus', u'let', u'meet', u'a', u'jail', u'activist'],0.125,0.0,0.986111111111,negative
+[u'%%HASHTAG%%', u'%%USERNAME%%', u'Jeremi', u'Lin', u'a', u'+23', u'Rocket', u'hi', u'debut', u'That', u'2nd-best', u'plus-minu', u'him', u'ani', u'game', u'hi', u'career'],0.0,0.0,1.0,positive
+[u'%%USERNAME%%', u'the', u'station', u'and', u'run', u'I', u'need', u'GA', u'bad', u'Everyon', u'out', u'%%EXCLAIM%%'],0.25,0.875,0.775,positive
+[u'If', u'in', u'Indianapoli', u'tomorrow', u'swing', u'the', u'Maci', u'Castelton', u'mall', u'5', u'30-7', u'30', u'Ill', u'there', u'sign', u'autograph', u'pictur', u'%%EXCLAIM%%'],0.25,0.5,0.875,positive
+[u'%%USERNAME%%', u'The', u'Anaheim', u'Duck', u'interest', u'Sam', u'Gagner', u'the', u'Edmonton', u'Oiler', u'Could', u'part', u'a', u'trade', u'the', u'Duck', u'1st', u'round', u'pick'],0.0,0.0,1.0,objective
+[u'Cannot', u'wait', u'see', u'%%USERNAME%%', u'my', u'boy', u'%%USERNAME%%', u'%%USERNAME%%', u'next', u'Friday', u'Athen', u'%%EXCLAIM%%'],0.25,0.0,0.9375,positive
+[u'Long', u'Princeton', u'(and', u'Diggy)', u'%%HASHTAG%%', u'Happi', u'Valentin', u'day', u'(yn)', u'Februari', u'14', u'It', u'9', u'm', u'%%LINK%%', u'\xa0', u'via', u'%%USERNAME%%'],0.0,0.0,1.0,positive
+[u'Hey', u'Daryl', u'%%EXCLAIM%%', u'Great', u'connect', u'Anti', u'%%HASHTAG%%', u'Colorado', u'Excit', u'have', u'in', u'next', u'issu', u'Deadlin', u'Nov', u'15th', u'%%USERNAME%%'],0.25,0.0,0.95,positive
+[u'%%USERNAME%%', u'Morn', u'homeless', u'men', u'even', u'Charl', u'Dickenss', u'great', u'great', u'granddaught', u'Standard', u'day', u'1st', u'yr', u'BucksAdSchool'],0.125,0.0,0.986111111111,neutral
+[u'Did', u'get', u'full', u'part-tim', u'job', u'internship', u'offer', u'%%Q_MARK%%', u'Let', u'us', u'know', u'%%EXCLAIM%%', u'Sign', u'Day', u'tomorrow', u'LBJSC', u'Amphitheater-tel', u'you', u'work', u'%%EXCLAIM%%'],0.125,0.0,0.988636363636,objective
+[u'Nigga', u'realli', u'some', u'10th', u'grade', u'shit', u'tonight'],0.0,0.25,0.9375,negative
+[u'TOI', u'Israel', u'admit', u'1988', u'kill', u'Arafat', u'deputi', u'Israel', u'the', u'first', u'time', u'Thursday', u'admit', u'respons', u'%%LINK%%'],0.0,0.0,1.0,negative
+[u'Thank', u'everyon', u'came', u'Friday', u'night', u'see', u'us', u'threat', u'signal', u'dicken', u'%%EXCLAIM%%', u'Awesom', u'night', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'%%USERNAME%%', u'lol', u'use', u'do', u'everi', u'saturday', u'yeah', u'3'],0.0,0.0,1.0,positive
+[u'Were', u'excit', u'TRUNK', u'OR', u'TREAT', u'tomorrow', u'(Nov', u'2)', u'night', u'the', u'Boy', u'Girl', u'Club', u'Pottstown', u'It', u'start', u'%%LINK%%'],0.25,0.0,0.975,positive
+[u'%%LINK%%', u'\xa0', u'New', u'%%HASHTAG%%', u'comment', u'TheEuropeanDream', u'avail', u'Indianapoli', u'friday-sunday', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'%%HASHTAG%%', u'send', u'boy', u'2', u'2013', u'NFL', u'Pro', u'Bowl', u'%%LINK%%', u'\xa0', u'via', u'%%USERNAME%%', u'Ur', u'vote', u'actual', u'count', u'unlik', u'Nov', u'6th', u'elect'],0.5,0.5,0.9,neutral
+[u'Ive', u'seen', u'everi', u'Denzel', u'Washington', u'movi', u'Flight', u'%%USERNAME%%', u'it', u'%%EXCLAIM%%', u'I', u'miss', u'kid', u'%%EXCLAIM%%', u'But', u'Im', u'that', u'theatr', u'tomorrow', u'%%EXCLAIM%%'],0.0,0.25,0.95,positive
+[u'Love', u'like', u'Michael', u'Jackson', u'8th', u'nose', u'youll', u'never', u'understand'],1.0,0.625,0.729166666667,neutral
+[u'Come', u'and', u'join', u'us', u'the', u'SIA', u'Trek', u'Treat', u'Octob', u'27th', u'%%EXCLAIM%%', u'%%LINK%%', u'\xa0', u'It', u'fundrais', u'the', u'Safe', u'Hous', u'%%EXCLAIM%%'],0.625,0.0,0.875,objective
+[u'I', u'still', u'a', u'lot', u'candi', u'left', u'anyon', u'want', u'tomorrow'],0.0,0.375,0.925,positive
+[u'Buffalo', u'Bill', u'Kyle', u'William', u'Miss', u'Practic', u'Thursday', u'For', u'second', u'straight', u'day', u'Buffalo', u'Bill', u'%%LINK%%', u'\xa0', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.0,0.0,1.0,negative
+[u'Hey', u'guy', u'tomorrow', u'now', u'nation', u'Ground', u'Hog', u'day', u'I', u'hope', u'see', u'all', u'post', u'it', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'Hahahaha'],0.125,0.375,0.95,positive
+[u'%%USERNAME%%', u'play', u'Templ', u'Run', u'earlier', u'thinkin', u'you', u'I', u'6th', u'year', u'xo'],0.0,0.0,1.0,neutral
+[u'How', u'know', u'shit', u'bar', u'%%EXCLAIM%%', u'You', u'get', u'arm', u'stamp', u'%%EXCLAIM%%', u'If', u'u', u'wake', u'tomorrow', u'print', u'arm', u'your', u'a', u'TWAT', u'%%EXCLAIM%%'],0.25,0.375,0.947916666667,negative
+[u'Appl', u'softwar', u'retail', u'chief', u'in', u'overhaul', u'SAN', u'FRANCISCO', u'(Reuters)', u'Appl', u'Inc', u'CEO', u'Tim', u'Cook', u'Monday', u'replac', u'head', u'it'],0.0,0.0,1.0,objective
+[u'%%HASHTAG%%', u'Ben', u'Amo', u'a', u'doubt', u'tonight', u'Hull', u'Citi', u'game', u'vs', u'Doncast', u'(2nd', u'round', u'Leagu', u'Cup)', u'a', u'groin', u'problem'],0.25,0.625,0.902777777778,negative
+[u'Wow', u'sound', u'like', u'junior', u'do', u'well', u'%%EXCLAIM%%'],0.625,0.375,0.8,neutral
+[u'I', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'Do', u'guy', u'want', u'go', u'see', u'new', u'Denzel', u'Washington', u'movi', u'tomorrow', u'%%Q_MARK%%'],0.625,0.0,0.921875,positive
+[u'%%USERNAME%%', u'wont', u'get', u'candi', u'till', u'monday', u'I', u'(bi', u'own', u'stupidity)', u'sick', u'person', u'right', u'meow'],0.25,0.0,0.964285714286,negative
+[u'Jay', u'Paterno', u'former', u'Penn', u'State', u'assist', u'footbal', u'coach', u'son', u'Joe', u'Paterno', u'said', u'Sunday', u'night', u'he', u'at', u'event', u'a'],0.5,0.125,0.943181818182,neutral
+[u'%%USERNAME%%', u'KAAAAARRRAAA', u'=))'],0.0,0.0,0.0,positive
+[u'Saw', u'1st', u'Volkswagen', u'TWAT', u'today', u'Take', u'Jetta', u'lose', u'J', u'spell', u'TEAT', u'turn', u'E', u'sideway', u'get', u'W'],0.625,0.125,0.931818181818,neutral
+[u'That', u'mean', u'well', u'know', u'Thursday', u'morn', u'%%USERNAME%%', u'won', u'her', u'Safe', u'Sound', u'duet', u'%%USERNAME%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],1.125,0.0,0.859375,neutral
+[u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'Ra', u'Sparki', u'want', u'see', u'evid', u'Birthday', u'steak', u'pea', u'gravi', u'%%EXCLAIM%%'],0.0,0.25,0.958333333333,neutral
+[u'Oh', u'Rafa', u'said', u'the', u'injuri', u'wa', u'the', u'best', u'year', u'ever', u'wa', u'1st', u'the', u'race', u'%%HASHTAG%%'],0.875,0.0,0.875,negative
+[u'%%USERNAME%%', u'other', u'Jenel', u'may', u'made', u'mistak', u'she', u'time', u'chang', u'be', u'better', u'person', u'too', u'late', u'you', u'FUCKHEAD'],1.25,1.375,0.7375,negative
+[u'I', u'want', u'Jenel', u'come', u'tomorrow', u'I', u'need', u'someon', u'watch', u'netflix', u'eat', u'mac', u'chees'],0.5,0.25,0.875,neutral
+[u'Halloween', u'the', u'third', u'biggest', u'parti', u'day', u'the', u'year', u'behind', u'New', u'Year', u'Eve', u'Super', u'Bowl', u'Sunday'],0.25,0.125,0.958333333333,positive
+[u'Cheaper', u'carbon', u'replac', u'silicon', u'solar', u'panel', u'Tweet', u'Washington', u'Nov', u'1', u'(IANS)', u'Research', u'built', u'first', u'%%LINK%%'],0.0,0.0,1.0,neutral
+[u'Ill', u'stop', u'love', u'Jennett', u'the', u'31st', u'Feb', u'Februari', u'onli', u'28', u'day', u'it', u'doesnt', u'count', u'<3'],0.25,0.5,0.85,positive
+[u'Inter', u'Roma', u'keep', u'pace', u'win', u'Inter', u'Milan', u'kept', u'pace', u'Seri', u'A', u'leader', u'Juventu', u'see', u'Catania', u'2-0', u'the', u'San', u'Siro', u'Sunday'],0.125,0.0,0.9875,neutral
+[u'Awesom', u'wed', u'shoot', u'Amsterdam', u'today', u'excit', u'fot', u'next', u'one', u'Saturday', u'a', u'castl', u'Utrecht', u'preview', u'come', u'soon'],0.25,0.125,0.958333333333,positive
+[u'Mitch', u'Daniel', u'gave', u'Stephen', u'Colbert', u'Purdu', u'hat', u'Thursday', u'show', u'I', u'hope', u'burn', u'in', u'rage', u'flame', u'glori'],0.375,0.875,0.875,positive
+[u'watch', u'Denzel', u'Washington', u'talk', u'hi', u'new', u'movi', u'flight', u'com', u'Nov', u'2nd', u'2012', u'%%HASHTAG%%', u'With', u'David', u'Letterman'],0.375,0.125,0.944444444444,objective
+[u'%%USERNAME%%', u'Dr', u'Moham', u'Morsi', u'announc', u'Egypt', u'1st', u'elect', u'Presid', u'the', u'gloriou', u'25th', u'Jan', u'Revolut', u'Congratul', u'%%HASHTAG%%'],0.0,0.0,1.0,positive
+[u'Piss', u'easi', u'job', u'analys', u'MOTD2', u'They', u'repeat', u'Gari', u'Nevil', u'say', u'Super', u'Sunday'],0.0,0.0,1.0,positive
+[u'go', u'finish', u'watch', u'The', u'Vow', u'tomorrow', u'such', u'cute', u'movi', u'c'],0.0,0.0,1.0,positive
+[u'Music', u'Pick', u'R', u'Kelli', u'Leonard', u'Cohen', u'Cat', u'Power', u'fri', u'11/2', u'Grace', u'Potter', u'Nocturn', u'THE', u'WILTERN', u'If', u'anyon', u'%%LINK%%'],0.0,0.0,1.0,neutral
+[u'Just', u'close', u'eye', u'The', u'sun', u'go', u'Youll', u'alright', u'No', u'one', u'hurt', u'now', u'Come', u'morn', u'light', u'You', u'Ill', u'SAFE', u'AND', u'SOUND', u'%%HASHTAG%%'],0.875,1.375,0.839285714286,positive
+[u'Proper', u'buzz', u'watch', u'The', u'Vow', u'%%USERNAME%%', u'tomorrow'],0.75,0.0,0.85,positive
+[u'3rd', u'Mariah', u'song', u'the', u'night', u'NOOOOOOOOO', u'THAT', u'WA', u'SO', u'BAD', u'%%HASHTAG%%'],0.0,0.875,0.78125,negative
+[u'Noel', u'Gallagh', u'HFB', u'Kopparberg', u'make', u'damn', u'near', u'perfect', u'Saturday', u'even', u'It', u'could', u'be', u'100%', u'perfect', u'I', u'at', u'a', u'Noel', u'gig'],1.0,0.5,0.85,positive
+[u'Tomorrow', u'opportun', u'love', u'continu', u'Boy', u'Girl', u'Club', u'(123', u'Jefferson)', u'Meet', u'us', u'at', u'10am', u'w/', u'boot', u'glove', u'possibl'],0.25,0.0,0.964285714286,positive
+[u'Im', u'SO', u'excit', u'Im', u'gonna', u'meet', u'Buddi', u'Cake', u'Boss', u'Ruth', u'Eckerd', u'Hall', u'Grammi', u'Jan', u'12', u'Cant', u'wait', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'pic', u'twitter', u'com/mI1trUlp'],0.0,0.0,1.0,positive
+[u'Have', u'read', u'Charl', u'Dicken', u'homework', u'may', u'the', u'greatest', u'thing', u'ever'],0.0,0.0,1.0,positive
+[u'hit', u'up', u'your', u'%%HASHTAG%%', u'candid', u'tonight', u'show', u'Best', u'tweet', u'hit', u'air', u'10', u'30'],0.25,0.0,0.964285714286,negative
+[u'Slept', u'6', u'the', u'afternoon', u'yesterday', u'Ive', u'woken', u'Awesom'],0.0,0.0,1.0,negative
+[u'Pacino', u'might', u'play', u'Paterno', u'PSU', u'movi', u'Itll', u'the', u'2nd', u'movi', u'hi', u'career', u'w/', u'the', u'phrase', u'Say', u'hello', u'my', u'littl', u'friend', u'%%HASHTAG%%'],0.25,0.0,0.964285714286,neutral
+[u'%%USERNAME%%', u'n', u'hope', u'u', u'aint', u'tweetn', u'live', u'alaska'],0.25,0.125,0.90625,positive
+[u'%%USERNAME%%', u'Thank', u'the', u'boot', u'mate', u'came', u'v', u'handi', u'today', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.125,0.0,0.975,positive
+[u'Im', u'gon', u'believ', u'Victor', u'Cruz', u'the', u'real', u'deal', u'line', u'outsid', u'slot', u'doesnt', u'disappear', u'like', u'he', u'did', u'Sunday'],0.25,0.0,0.964285714286,negative
+[u'Come', u'watch', u'Will', u'Ferrel', u'Zach', u'Galifanaki', u'duke', u'out', u'The', u'Campaign', u'Thursday', u'Midnight', u'%%EXCLAIM%%', u'%%LINK%%'],0.75,0.0,0.892857142857,objective
+[u'Steeler', u'travel', u'New', u'York', u'Sunday', u'Giant', u'game', u'The', u'Pittsburgh', u'Steeler', u'face', u'New', u'York', u'Giant', u'%%LINK%%'],0.0,0.5,0.944444444444,objective
+[u'%%USERNAME%%', u'Movi', u'day', u'some', u'Grammi', u'hot', u'chocol', u'tomorrow', u'%%HASHTAG%%'],0.0,0.0,1.0,positive
+[u'nigga', u'boutta', u'DROPPIN', u'like', u'fli', u'georgetown', u'tomorrow', u'wont', u'catchh', u'there', u'%%EXCLAIM%%'],0.0,0.0,1.0,negative
+[u'Hacker', u'alreadi', u'defeat', u'window', u'8', u'ReadWrit', u'Mobil', u'rank', u'5th', u'interfac', u'design', u'behind', u'iO', u'Android'],0.0,0.375,0.946428571429,negative
+[u'Kobe', u'isnt', u'rock', u'purs', u'is', u'European'],0.25,0.125,0.90625,objective
+[u'So', u'I', u'heard', u'old', u'crush', u'go', u'the', u'bell', u'game', u'tomorrow', u'wanna', u'talk', u'%%Q_MARK%%', u'Wtf', u'%%Q_MARK%%', u'o', u'%%HASHTAG%%'],0.375,0.125,0.944444444444,negative
+[u'All', u'Nikon', u'Photograph', u'there', u'brace', u'for', u'someth', u'AWESOM', u'tomorrow', u'my', u'blog', u'I', u'Team', u'Canon', u'thi', u'EPIC', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'I', u'want', u'go', u'watch', u'Denzel', u'new', u'movi', u'tomorrow', u'%%EXCLAIM%%', u'Someon', u'take', u'meeeeeeeeeee'],0.625,0.0,0.875,objective
+[u'Watch', u'2nd', u'punish', u'Wish', u'theyd', u'make', u'anoth', u'one', u'Quentin', u'Tarentino', u'direct', u'Thoma', u'Jane', u'Castl'],0.5,0.25,0.75,positive
+[u'Download', u'differ', u'version', u'the', u'Greek', u'alphabet', u'song', u'listen', u'repeat', u'on', u'a', u'Thursday', u'night', u'Thi', u'my', u'life'],0.25,0.0,0.96875,objective
+[u'Buzzer', u'beater', u'jump', u'shot', u'Parker', u'On', u'primetim', u'Thursday', u'game', u'NO', u'WAY', u'CAN', u'happen', u'%%EXCLAIM%%', u'How', u'great', u'the', u'NBA', u'%%Q_MARK%%', u'%%EXCLAIM%%', u'%%Q_MARK%%', u'%%EXCLAIM%%'],0.0,0.25,0.975,neutral
+[u'Guarante', u'Gaga', u'debut', u'new', u'singl', u'the', u'Grammi', u'Februari', u'Not', u'oppos', u'even', u'though', u'agesssss', u'away'],0.5,0.0,0.875,neutral
+[u'Fed', u'Beig', u'Book', u'fiscal', u'cliff', u'concern', u'hure', u'retail', u'sale', u'Weak', u'spend', u'loan', u'demand', u'steadi', u'Veri', u'mix', u'report', u'%%HASHTAG%%', u'$$'],0.5,0.25,0.931818181818,positive
+[u'Aboud', u'el', u'Zomour', u'guy', u'kill', u'Sadat', u'now', u'attend', u'Octob', u'6', u'celebr', u'Cairo', u'stadium', u'Shame', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.0,0.75,0.916666666667,negative
+[u'AUSTRALIA', u'DAY', u'%%HASHTAG%%', u'Intern', u'kick-start', u'ultim', u'Australia', u'Day', u'long', u'weekend', u'%%USERNAME%%', u'Sat', u'26', u'Jan', u'%%LINK%%'],0.0,0.0,1.0,objective
+[u'ugh', u'everyon', u'go', u'Athen', u'Saturday', u'night', u'go', u'Friday', u'%%EXCLAIM%%'],0.0,0.0,1.0,negative
+[u'Just', u'Spartacu', u'2', u'0', u'sauna', u'imma', u'sore', u'tomorrow', u'so', u'worth'],0.0,0.0,1.0,positive
+[u'The', u'storm', u'be', u'move', u'inland', u'CNi', u'tomorrow', u'That', u'Ill', u'get', u'worri', u'my', u'famili', u'Live', u'right', u'Oneida', u'Lake'],0.625,0.625,0.861111111111,negative
+[u'Cannot', u'wait', u'play', u'San', u'Fran', u'Sunday', u'If', u'can', u'beat', u'at', u'home', u'the', u'NFC', u'Championship', u'can', u'beat', u'now'],0.375,0.25,0.921875,positive
+[u'Championship', u'Team', u'news', u'Bellami', u'frame', u'Cardiff', u'All', u'team', u'news', u'Saturday', u'Championship', u'%%LINK%%', u'\xa0', u'%%HASHTAG%%'],0.25,0.5,0.916666666667,objective
+[u'OMG', u'IVE', u'GOT', u'A', u'FUCK', u'CHOCOL', u'VICTORIA', u'SPONG', u'IN', u'THE', u'FRIDG', u'*oh', u'mama', u'oh', u'daddi', u'let', u'play', u'kabaddi*'],0.875,0.0,0.890625,positive
+[u'if', u'your', u'Maryland', u'earli', u'vote', u'been', u'extend', u'tomorrow', u'9pm', u'PLEAS', u'GO', u'VOTE', u'%%EXCLAIM%%'],0.5,0.25,0.892857142857,objective
+[u'Cupid', u'so', u'much', u'work', u'da', u'1st', u'time', u'he', u'dont', u'wanna', u'my', u'friend', u'more'],0.25,0.0,0.96875,negative
+[u'I', u'need', u'nice', u'becaus', u'I', u'want', u'play', u'Penni', u'Can', u'Saturday', u'Thi', u'a', u'real', u'problem', u'Cougar', u'Town', u'made', u'love', u'game', u'Haha'],1.875,0.875,0.788461538462,positive
+[u'Incred', u'pass', u'Vick', u'Kyle', u'William', u'William', u'jump', u'Carr', u'the', u'end', u'zone', u'21-0', u'2nd'],0.25,0.25,0.875,positive
+[u'Jr', u'got', u'select', u'the', u'pro', u'bowl', u'team', u'the', u'season', u'over', u'yet', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'One', u'game', u'Saturday', u'playoff'],0.5,0.0,0.95,positive
+[u'%%USERNAME%%', u'damn', u'I', u'dont', u'wanna', u'get', u'comput', u'Tomorrow', u'my', u'Harri', u'feel', u'out', u'control', u'the', u'outtak', u'video', u'broke'],0.25,0.25,0.916666666667,negative
+[u'%%USERNAME%%', u'Congratul', u'you', u'celebr', u'British', u'kid', u'singer', u'Sophia', u'Grace', u'Rosi', u'1st', u'Anniversari', u'a', u'visit', u'your', u'show', u'How'],0.0,0.0,1.0,positive
+[u'Fuck', u'part', u'time', u'fan', u'Where', u'you', u'Boro', u'away', u'Saturday', u'%%Q_MARK%%'],0.0,0.0,1.0,negative
+[u'%%USERNAME%%', u'Would', u'trade', u'Calvin', u'CJ', u'Murray', u'Griffin', u'McCoy', u'Lloyd', u'a', u'keeper', u'PPR', u'leagu', u'%%Q_MARK%%', u'Also', u'Harvin', u'2nd', u'RB', u'lack'],0.125,0.125,0.972222222222,objective
+[u'Tomorrow', u'Im', u'the', u'air', u'live', u'9', u'05', u'wjct', u'radio', u'Then', u'TV', u'tape', u'good', u'morn', u'Jacksonvil', u'10', u'30', u'%%HASHTAG%%'],0.5,0.0,0.9375,positive
+[u'Carmin', u'Lupretazzi'],0.0,0.0,0.0,negative
+[u'Wait', u'the', u'highlight', u'my', u'Thursday', u'night', u'Celebr', u'Juic', u'%%HASHTAG%%'],0.125,0.0,0.96875,positive
+[u'Pierc', u'veilRT', u'%%USERNAME%%', u'Miss', u'may', u'iRT', u'%%USERNAME%%', u'Lagu', u'demen', u'Bullet', u'my', u'Valentin', u'hbu', u'%%Q_MARK%%', u'%%Q_MARK%%'],0.0,0.0,1.0,neutral
+[u'Northern', u'light', u'sale', u'tomorrow', u'follow', u'Wexham', u'Cup', u'Bull', u'Sale', u'sale', u'Elit', u'Femal', u'Holstein', u'Jersey', u'%%EXCLAIM%%', u'A', u'real', u'treat', u'a', u'sale', u'%%EXCLAIM%%', u'No', u'trick', u'%%EXCLAIM%%'],0.0,0.125,0.991666666667,positive
+[u'Ben', u'said', u'Bicest', u'full', u'chav', u'well', u'Im', u'current', u'sat', u'last', u'year', u'cast', u'Jeremi', u'Kyle', u'UH', u'HYPOCRIT', u'MUCH', u'%%Q_MARK%%'],0.625,0.125,0.925,neutral
+[u'Bay', u'Area', u'head', u'%%EXCLAIM%%', u'ill', u'on', u'piano', u'Yoshi', u'San', u'Fran', u'Sunday', u'play', u'the', u'one', u'n', u'Dwight', u'Tribl', u'%%LINK%%'],0.25,0.5,0.90625,objective
+[u'So', u'Bey', u'perform', u'the', u'Superbowl', u'Feb', u'Im', u'assum', u'new', u'materi', u'the', u'come', u'month', u'hand', u'album', u'Grammi'],0.875,0.0,0.875,neutral
+[u'Im', u'sick', u'hear', u'Ohio', u'must', u'win', u'2', u'becom', u'POTU', u'%%EXCLAIM%%', u'PA', u'2', u'EC', u'vote', u'Ohio', u'What', u'Mitt', u'lose', u'Ohio', u'win', u'n', u'PA', u'%%Q_MARK%%', u'Huh', u'%%Q_MARK%%'],0.875,0.0,0.927083333333,objective
+[u'Happi', u'Valentin', u'Day', u'trend', u'%%Q_MARK%%', u'%%Q_MARK%%', u'%%Q_MARK%%', u'But', u'not', u'even', u'Februari', u'%%Q_MARK%%'],0.125,0.625,0.8125,negative
+[u'Thi', u'Sunday', u'come', u'watch', u'Raven', u'take', u'Brown', u'help', u'support', u'the', u'Baltimor', u'Human', u'Societi', u'%%EXCLAIM%%', u'CAPTAIN', u'%%LINK%%'],0.875,0.375,0.875,positive
+[u'Yay', u'Blake', u'%%EXCLAIM%%', u'Mayb', u'will', u'a', u'CMA', u'babi', u'9', u'month', u'%%Q_MARK%%', u'Total', u'class', u'speech', u'Blake', u'Miranda', u'tonight'],0.0,0.0,1.0,positive
+[u'AC', u'Milan', u'reportedli', u'want', u'Miralem', u'Pjanic', u'join', u'San', u'Siro', u'Januari', u'%%HASHTAG%%'],0.0,0.25,0.9375,objective
+[u'My', u'mom', u'work', u'the', u'mother', u'the', u'girl', u'won', u'Homecom', u'Queen', u'PH', u'last', u'Friday', u'the', u'compani', u'sent', u'the', u'sweetest', u'email'],1.0,0.0,0.916666666667,positive
+[u'How', u'badli', u'I', u'miss', u'Andi', u'Carrol', u'Know', u'the', u'derbi', u'game', u'tomorrow', u'alway', u'play', u'well', u'score', u'blue', u'nose'],1.0,0.25,0.821428571429,positive
+[u'Ticket', u'the', u'Franc', u'Belgium', u'Netherland', u'Germani', u'Denmark', u'Norway', u'Sweden', u'TMH', u'tour', u'go', u'sale', u'tomorrow', u'%%EXCLAIM%%', u'Good', u'luck', u'%%EXCLAIM%%'],0.5,0.0,0.954545454545,positive
+[u'%%USERNAME%%', u'I', u'realli', u'would', u'enjoy', u'visit', u'tomorrow', u'-)'],0.375,0.0,0.875,negative
+[u'Who', u'the', u'bell', u'game', u'tomorrow', u'though'],0.0,0.0,1.0,objective
+[u'New', u'live', u'sound', u'webinar', u'tomorrow', u'10', u'PST', u'Paul', u'David', u'Hager', u'(Goo', u'Goo', u'Doll', u'Avril', u'Lavign', u'Devo)', u'regist', u'at', u'%%LINK%%'],0.0,0.25,0.96875,objective
+[u'%%HASHTAG%%', u'Appl', u'CEO', u'apolog', u'error-ridden', u'new', u'map', u'app', u'Appl', u'CEO', u'Tim', u'Cook', u'apolog', u'Friday', u'the', u'company&', u'%%HASHTAG%%', u'%%LINK%%'],0.375,0.0,0.9375,negative
+[u'%%USERNAME%%', u'im', u'jealou', u'your', u'hair', u'haha', u'sayingg'],0.0,0.0,1.0,positive
+[u'%%USERNAME%%', u'You', u'attend', u'%%USERNAME%%', u'Champ', u'Fri/Sat/Sun', u'top', u'12', u'roller', u'derbi', u'team', u'the', u'WORLD', u'play', u'Indianapoli', u'8pm', u'Friday', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'someon', u'come', u'me', u'Noel', u'Field', u'Saturday', u'night', u'Noel', u'Field', u'basic', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.0,0.0,1.0,neutral
+[u'%%USERNAME%%', u'good', u'tast', u'music', u'favorit', u'band', u'%%Q_MARK%%'],0.0,0.0,1.0,positive
+[u'Premier', u'Leagu', u'West', u'Ham', u'v', u'Man', u'Citi', u'Saturday', u'Our', u'preview', u'look', u'the', u'stat', u'some', u'interest', u'bet', u'tip', u'%%LINK%%', u'-ham-v-man-city-betting-tips-preview/\xa0\u2026'],0.0,0.0,1.0,positive
+[u'%%USERNAME%%', u'I', u'preorder', u'on', u'Thursday/friday', u'midnight', u'night', u'came', u'abl', u'pre-ord', u'love', u'and', u'Franki', u'X', u'pic', u'twitter', u'com/Pp1oZZaA'],0.625,0.0,0.895833333333,positive
+[u'Love', u'open', u'debat', u'rap', u'game', u'Kathi', u'Crowley', u'Octob', u'20', u'Bruno', u'Mar', u'%%LINK%%', u'-night-live/video/October-20--Bruno-Mars/1421369/#', u'UJNPEJnvbBc', u'twitter\xa0\u2026'],0.625,1.125,0.708333333333,positive
+[u'%%USERNAME%%', u'Congratul', u'Kendal', u'Germani', u'is', u'7', u'clock', u'Friday', u'Novemb', u'2', u'Happi', u'B-day'],0.25,0.125,0.90625,positive
+[u'%%USERNAME%%', u'Haha', u'spent', u'of', u'energi', u'Gangnam', u'Style', u'yesterday', u'3', u'Awesom', u'time', u'I', u'got', u'to', u'danc', u'wee', u'%%EXCLAIM%%', u'D'],0.375,0.25,0.895833333333,positive
+[u'Kendrick', u'Perkin', u'may', u'the', u'worst', u'goate', u'all', u'sport'],0.5,1.0,0.25,negative
+[u'Friday', u'CNET', u'Updat', u'play', u'One', u'Republ', u'Appl', u'CEO', u'say', u'sorri', u'iO', u'6', u'map', u'mess', u'Appl', u'CEO', u'Tim', u'Cook', u'said', u'wa', u'extrem', u'sorr'],0.0,0.125,0.988636363636,negative
+[u'Tomorrow', u'go', u'be', u'fun-fil', u'day', u'email', u'peopl', u'how', u'what', u'do', u'I', u'come', u'back', u'Murray', u'the', u'spring', u'%%HASHTAG%%'],0.25,0.125,0.9625,positive
+[u'So', u'proud', u'%%USERNAME%%', u'huge', u'upset', u'Maryland', u'Time', u'us', u'do', u'the', u'same', u'tomorrow', u'night', u'%%HASHTAG%%'],0.0,0.5,0.928571428571,positive
+[u'Rugbi', u'a', u'great', u'winter', u'sport', u'gaa', u'ladi', u'look', u'keep', u'there', u'fit', u'Come', u'along', u'friday', u'kilkenni', u'rfc', u'7', u'tri', u'out'],0.25,0.75,0.857142857143,positive
+[u'30', u'Second', u'To', u'Mar', u'MCR', u'dead', u'gone', u'I', u'kill', u'becaus', u'will', u'no', u'use', u'me', u'thi', u'earth'],0.375,0.75,0.8125,positive
+[u'My', u'thought', u'the', u'RNC', u'letter', u'secretari', u'state', u'rais', u'%%Q_MARK%%', u'about', u'vote', u'machin', u'w/no', u'evid', u'back', u'up', u'%%LINK%%', u'-obscenely-tries-cast-doubt-elections-veracity\xa0\u2026'],0.125,0.0,0.975,negative
+[u'I', u'rememb', u'Nigga', u'In', u'Pari', u'song', u'DELIGHT', u'%%EXCLAIM%%', u'What', u'a', u'SATURDAY', u'%%EXCLAIM%%', u'%%HASHTAG%%'],0.375,0.375,0.8125,positive
+[u'Avril', u'Lavign', u'have', u'concert', u'tomorrow', u'night', u'the', u'park', u'Sonic', u'open', u'her', u'You', u'wanna', u'come', u'%%Q_MARK%%'],0.25,0.375,0.910714285714,objective
+[u'Im', u'keepin', u'nikon', u'F3', u'aliv', u'strong', u'Holla', u'me'],0.5,0.0,0.75,neutral
+[u'An', u'emot', u'intellig', u'organis', u'mind', u'%%Q_MARK%%', u'Find', u'how', u'%%USERNAME%%', u'San', u'Fran', u'Dec', u'%%LINK%%', u'-siyf17', u'eventbrit', u'com/', u'%%Q_MARK%%', u'nomo=1\xa0', u'pl', u'RT', u'%%EXCLAIM%%'],0.75,0.0,0.75,positive
+[u'TAKBIR', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'Dr', u'Moham', u'Morsi', u'announc', u'Egypt', u'1st', u'elect', u'Presid', u'the', u'gloriou', u'25th', u'Jan', u'Revolut', u'Congratul', u'Egypt', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'GOP', u'set', u'bar', u'low', u'4th', u'cycl', u'promot', u'a', u'grossli', u'UN-AMERICAN', u'idea', u'POTU', u'elect', u'autocrat', u'%%HASHTAG%%'],0.25,0.5,0.892857142857,negative
+[u'%%USERNAME%%', u'My', u'daughter', u'not', u'understand', u'I', u'obsess', u'Wuther', u'Height', u'One', u'my', u'favorit', u'book', u'ever'],0.375,0.625,0.857142857143,neutral
+[u'tonight', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'(wed)--Mik', u'Slo-Mo', u'Brenner', u'solo', u'open', u'Jim', u'White', u'Tin', u'Angel', u'8pm', u'cmon', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%LINK%%'],0.0,0.375,0.9375,objective
+[u'%%USERNAME%%', u'miss', u'a', u'fairrrrrr', u'%%HASHTAG%%'],0.0,0.0,1.0,neutral
+[u'Cant', u'wait', u'hear', u'tomorrow', u'CMAG', u'Meet', u'HORNi', u'(CoNI', u'Report', u'Baag', u'wait', u'watch', u'will', u'grill', u'tomorrow', u'%%EXCLAIM%%', u'CMAG', u'hope'],0.25,0.125,0.9625,negative
+[u'It', u'wednesday', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'You', u'know', u'that', u'mean', u'new', u'episod', u'The', u'Challeng', u'Battl', u'the', u'Season', u'American', u'Horror', u'Stori', u'Asylum', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.875,0.75,0.729166666667,neutral
+[u'Tomorrow', u'the', u'last', u'day', u'earli', u'vote', u'in', u'Nevada', u'you', u'havent', u'alreadi', u'go', u'vote', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'Dont', u'wait', u'til', u'tue', u'do'],0.125,0.0,0.984375,neutral
+[u'So', u'I', u'thought', u'yesterday', u'Tuesday', u'Im', u'think', u'today', u'be', u'littl', u'like', u'movi', u'Ground', u'Hog', u'Day'],0.375,0.375,0.916666666667,neutral
+[u'%%HASHTAG%%', u'Saturday', u'%%USERNAME%%', u'be', u'Turnt', u'the', u'MAX', u'%%EXCLAIM%%', u'Come', u'see', u'%%USERNAME%%', u'rock', u'%%EXCLAIM%%', u'35th', u'and', u'King', u'Dr', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'pic', u'twitter', u'com/30fmUpli'],0.25,0.125,0.953125,positive
+[u'Man', u'Utd', u'v', u'Arsen', u'Sat', u'see', u'best', u'defenc', u'(AFC)', u'the', u'leagu', u'(conced', u'0', u'67', u'p/game)', u'the', u'best', u'attack', u'(Utd)', u'(score', u'2', u'67', u'p/game)'],1.5,0.0,0.785714285714,positive
+[u'Watch', u'Sunday', u'Harri', u'Paul', u'Good', u'is', u'Well-observ', u'fearsom', u'dri'],0.75,0.125,0.825,positive
+[u'rememb', u'last', u'new', u'year', u'I', u'sat', u'for', u'2', u'hour', u'watch', u'Kasabian', u'live', u'the', u'O2'],0.375,0.0,0.946428571429,objective
+[u'Mani', u'rumour', u'float', u'that', u'Harri', u'Redknapp', u'may', u'interest', u'the', u'Blackburn', u'job', u'%%Q_MARK%%', u'What', u'you', u'think', u'%%Q_MARK%%'],0.125,0.0,0.975,positive
+[u'Thi', u'bitch', u'%%USERNAME%%', u'put', u'frog', u'back', u'Lmfao', u'throw', u'back', u'Thursday'],0.0,0.75,0.892857142857,negative
+[u'Happi', u'Valentin', u'Day', u'(to', u'that', u'may', u'one)'],0.0,0.0,1.0,positive
+[u'Video', u'Game', u'Trailer', u'Launch', u'Trailer', u'Check', u'the', u'launch', u'trailer', u'Mass', u'Effect', u'3', u'Ad', u'Fri', u'Oct', u'26', u'00', u'11', u'11', u'%%LINK%%'],0.0,0.0,1.0,objective
+[u'No', u'joke', u'I', u'got', u'voicemail', u'yesterday', u'say', u'Happi', u'Valentin', u'Day', u'instead', u'Happi', u'4th', u'Juli', u'Wow', u'Not', u'sure', u'that', u'all'],0.875,0.375,0.821428571429,positive
+[u'My', u'mama', u'go', u'Jacksonvil', u'Saturday', u'I', u'would', u'go', u'she', u'want', u'let', u'Im', u'punish', u'%%EXCLAIM%%'],1.125,0.0,0.8125,negative
+[u'Despit', u'late', u'flight', u'of', u'LGA', u'I', u'arriv', u'time', u'snrk', u'the', u'%%HASHTAG%%', u'%%EXCLAIM%%', u'Thank', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.125,0.25,0.875,positive
+[u'Come', u'on', u'Monday', u'watch', u'THE', u'WOMAN', u'IN', u'BLACK', u'w/', u'MODEL', u'UN', u'%%EXCLAIM%%', u'Free', u'Entri', u'%%EXCLAIM%%', u'Concess', u'w/', u'donat', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%HASHTAG%%', u'%%LINK%%'],0.0,0.375,0.958333333333,neutral
+[u'Nigga', u'In', u'Pari', u'play', u'the', u'wait', u'room', u'the', u'clinic', u'thi', u'old', u'ladi', u'sat', u'tap', u'walk', u'stick', u'bob', u'head', u'So', u'cute'],0.5,0.0,0.958333333333,positive
+[u'Love', u'hair', u'style', u'Friday', u'Jason', u'Wu', u'New', u'York', u'Fashion', u'Week', u'show', u'%%Q_MARK%%', u'Were', u'give', u'the', u'step-by-step', u'%%LINK%%'],0.625,0.125,0.931818181818,positive
+[u'Too', u'Soon', u'%%Q_MARK%%', u'Amazon', u'Open', u'Black', u'Friday', u'Deal', u'Store', u'Thanksgiv', u'week', u'away', u'World', u'Seri', u'end', u'Sund', u'%%LINK%%'],0.25,0.75,0.916666666667,negative
+[u'%%USERNAME%%', u'may', u'it', u'true', u'becous', u'tripl', u'h', u'arm', u'broken', u'reel', u'may', u'he', u'come', u'back', u'the', u'royal', u'rumbl'],0.25,0.375,0.921875,neutral
+[u'THE', u'%%HASHTAG%%', u'IS', u'BACK', u'%%EXCLAIM%%'],0.25,0.125,0.8125,negative
+[u'Went', u'see', u'The', u'Mysteri', u'Charl', u'Dicken', u'the', u'Playhous', u'Theatr', u'West', u'End', u'last', u'Thursday', u'star', u'Simon', u'Callow', u'It', u'must', u'see', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'Oh', u'yay', u'%%EXCLAIM%%', u'My', u'mom', u'told', u'that', u'Grammi', u'come', u'tomorrow', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'Woot', u'woot', u'%%EXCLAIM%%', u'%%HASHTAG%%'],0.875,0.0,0.825,positive
+[u'Unfortun', u'I', u'wathc', u'manifest', u'relat', u'Republ', u'Day', u'I', u'see', u'we', u'realli', u'far', u'away', u'21st', u'centuri', u'+++'],0.0,0.0,1.0,negative
+[u'Thi', u'may', u'a', u'littl', u'forward', u'secret-countri', u'can', u'imagin', u'sex', u'Miranda', u'Lambert', u'Blake', u'%%LINK%%'],0.0,0.0,1.0,positive
+[u'The', u'end', u'The', u'Grey', u'may', u'one', u'the', u'bad', u'ass', u'end', u'a', u'movi', u'Ive', u'ever', u'seen'],0.0,0.625,0.910714285714,negative
+[u'It', u'earli', u'in', u'Germani', u'American', u'friend', u'just', u'get', u'drunk', u'Off', u'Pragu', u'knucklehead', u'%%EXCLAIM%%', u'Talk', u'you', u'Sunday', u'%%EXCLAIM%%', u'%%HASHTAG%%'],0.375,0.5,0.890625,positive
+[u'%%USERNAME%%', u'not', u'let', u'a', u'let', u'game', u'Sunday', u'Houston', u'San', u'Fran', u'come', u'Gotta', u'focu', u'beat', u'Tennesse', u'%%HASHTAG%%'],0.125,0.625,0.90625,negative
+[u'Who', u'go', u'Israel', u'Saturday', u'%%Q_MARK%%', u'%%EXCLAIM%%'],0.0,0.0,1.0,neutral
+[u'Iran', u'armi', u'monitor', u'ship', u'Gulf', u'TEHRAN', u'Oct', u'28', u'A', u'senior', u'command', u'the', u'Islam', u'Revolut', u'Guard', u'Corp', u'%%LINK%%'],0.375,0.0,0.965909090909,objective
+[u'Soul', u'Train', u'70', u'Halloween', u'Parti', u'Sat', u'Oct', u'27', u'%%LINK%%', u'\xa0', u'ADV', u'TIXX', u'$10', u'$15', u'wt', u'costum', u'$20', u'the', u'door', u'%%LINK%%'],0.0,0.0,1.0,neutral
+[u'Worst', u'fuck', u'night', u'my', u'life', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%HASHTAG%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.375,1.125,0.625,positive
+[u'%%USERNAME%%', u'hi', u'babe', u'and', u'friend', u'wonder', u'do', u'u', u'say', u'herm', u'%%Q_MARK%%', u'lol', u'sorri', u'thi', u'stupid', u'qs', u'%%EXCLAIM%%'],0.875,0.0,0.902777777778,positive
+[u'%%USERNAME%%', u'Lol', u'Mayb', u'Friday', u'sinc', u'Im', u'go', u'Georgetown'],0.0,0.0,1.0,neutral
+[u'Bird', u'the', u'Wire', u'one', u'the', u'1st', u'song', u'I', u'learn', u'a', u'child', u'And', u'daddi', u'I', u'go', u'see', u'Leonard', u'Cohen', u'%%EXCLAIM%%', u'%%LINK%%'],0.125,0.25,0.946428571429,objective
+[u'Arsen', u'Ladi', u'0-0', u'HT', u'FFC', u'Turbin', u'Potsdam', u'their', u'Women', u'Champion', u'Leagu', u'Last', u'16', u'1st', u'Leg', u'Clash', u'Borehamwood', u'%%HASHTAG%%'],0.0,0.0,1.0,objective
+[u'Valentin', u'Day', u'Linkin', u'Park', u'may', u'be', u'newest', u'song', u'it', u'one', u'the', u'best'],1.0,0.125,0.71875,positive
+[u'Commun', u'Cougar', u'Town', u'Friday', u'Night', u'Light', u'Glee', u'Mad', u'Men', u'Modern', u'Famili', u'six', u'feet', u'skin', u'Terra', u'nova', u'o', u'wire', u'%%Q_MARK%%', u'%%Q_MARK%%', u'%%Q_MARK%%'],0.5,0.25,0.942307692308,objective
+[u'Land', u'conserv', u'announc', u'Monday', u'Gov', u'Mitch', u'Daniel', u'Lt', u'Gov', u'Becki', u'Skillman', u'make', u'lan', u'%%LINK%%', u'\xa0', u'%%HASHTAG%%'],0.0,0.0,1.0,objective
+[u'Ryan', u'Reynold', u'may', u'back', u'a', u'prequel', u'sequel', u'Safe', u'Hous', u'or', u'without', u'Denzel', u'Washington', u'Script', u'in', u'work'],1.0,0.0,0.833333333333,neutral
+[u'Dinner', u'my', u'dad', u'And', u'toni', u'Parker', u'last', u'second', u'game', u'win', u'shot', u'What', u'a', u'great', u'night', u'in', u'time', u'be', u'ruin', u'300', u'tomorrow'],0.375,0.625,0.923076923077,positive
+[u'Post', u'the', u'night', u'Anonym', u'(ID', u'ExcV6jkR)', u'11/02/12(Fri)00', u'52', u'39', u'No', u'434329650', u'Thi', u'thread', u'like', u'watch', u'monkey', u'fuck', u'coconut'],0.0,0.375,0.958333333333,negative
+[u'Appl', u'CEO', u'apolog', u'error-ridden', u'new', u'map', u'app', u'(+video)', u'Appl', u'CEO', u'Tim', u'Cook', u'apolog', u'Friday', u'the', u'compani', u'%%LINK%%'],0.375,0.0,0.9375,positive
+[u'Just', u'rewatch', u'Toni', u'Parker', u'game', u'winner', u'I', u'cant', u'the', u'life', u'me', u'figur', u'what', u'Westbrook', u'think', u'%%USERNAME%%'],0.0,0.0,1.0,negative
+[u'Congrat', u'DJ', u'3rd', u'grade', u'team', u'go', u'the', u'Superbowl', u'%%EXCLAIM%%', u'Ill', u'there', u'cheer'],0.25,0.5,0.875,positive
+[u'The', u'two', u'Luke', u'(Austen', u'Dickens)', u'play', u'Nelson', u'Bay', u'Digger', u'Club', u'Friday', u'2/11', u'Go', u'check', u'em', u'if', u'live', u'the', u'area'],0.0,0.0,1.0,neutral
+[u'Im', u'proud', u'be', u'one', u'Governor', u'Romney', u'Hollywood', u'support', u'%%EXCLAIM%%', u'Read', u'those', u'us', u'support', u'Governor', u'Romney', u'%%LINK%%', u'-2012/closted-hollywood-republicans-article-1', u'1188353\xa0\u2026'],0.5,0.125,0.910714285714,positive
+[u'1st', u'offici', u'releas', u'%%USERNAME%%', u'out', u'%%EXCLAIM%%', u'%%HASHTAG%%', u'rmx', u'Haze', u'Northern', u'Light', u'instrument', u'%%EXCLAIM%%', u'%%LINK%%', u'-of-the-tiger-vol', u'-2/id569506229\xa0\u2026'],0.5,0.0,0.875,neutral
+[u'Big', u'game', u'%%USERNAME%%', u'tomorrow', u'away', u'vs', u'Knick', u'MSG', u'Person', u'think', u'Knick', u'win', u'first', u'game', u'MSG', u'crowd', u'Sandi', u'disast'],0.125,0.0,0.988636363636,positive
+[u'Im', u'assum', u'HEB', u'ran', u'of', u'candi', u'peopl', u'decid', u'give', u'pizza', u'instead', u'it', u'busier', u'Super', u'Bowl', u'Sunday', u'today'],0.5,0.0,0.9375,negative
+[u'Goodnight', u'%%EXCLAIM%%', u'Big', u'day', u'%%EXCLAIM%%', u'Tomorrow', u'Im', u'the', u'school', u'3', u'00', u'(Argentina', u'time)', u'I', u'stay', u'the', u'Mallin', u'%%EXCLAIM%%', u'(Tomorrow', u'Ill', u'tell', u'what', u'that)', u'%%EXCLAIM%%'],0.25,0.5,0.875,positive
+[u'Come', u'meet', u'member', u'the', u'1980', u'Dawg', u'Athen', u'weekend', u'The', u'Red', u'Zone', u'%%EXCLAIM%%', u'Friday', u'3pm', u'6pm', u'Coach', u'Vinc', u'%%LINK%%'],0.25,0.625,0.890625,objective
+[u'Thi', u'time', u'tomorrow', u'night', u'ill', u'parti', u'up', u'chapel', u'hill', u'%%HASHTAG%%'],0.25,0.5,0.875,positive
+[u'oH', u'MAN', u'thought', u'deadlin', u'ACT', u'tomorrow', u'I', u'until', u'9th', u'bless'],0.0,0.0,1.0,neutral
+[u'%%USERNAME%%', u'realiz', u'Mizzou', u'made', u'T-shirt', u'celebr', u'win', u'Kentucki', u'%%EXCLAIM%%', u'They', u'commemor', u'8th', u'place', u'finish', u'the', u'back'],0.125,0.125,0.95,positive
+[u'MILAN-GENOA', u'22', u'ROSSONERI', u'MILANELLO', u'22', u'player', u'been', u'call', u'for', u'Milan-Genoa', u'tomorrow', u'the', u'San', u'Siro', u'%%LINK%%'],0.25,0.125,0.875,objective
+[u'In', u'27', u'hour', u'know', u'im', u'gonna', u'see', u'boy', u'live', u'May', u'1st', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'Omgg', u'im', u'sooo', u'scare', u'tomorrow', u'%%EXCLAIM%%'],0.875,0.0,0.875,negative
+[u'%%HASHTAG%%', u'Khamenei', u'US', u'administr', u'hate', u'[government]', u'the', u'entir', u'world', u'%%LINK%%'],0.125,0.375,0.833333333333,positive
+[u'Awesom', u'respons', u'guy', u'%%EXCLAIM%%', u'The', u'correct', u'answer', u'Sam', u'Gagner', u'Brendan', u'Smith', u'All', u'you', u'be', u'put', u'the', u'draw', u'come', u'Thursday', u'%%EXCLAIM%%', u'%%HASHTAG%%'],0.25,0.125,0.958333333333,positive
+[u'Not', u'I', u'want', u'tip', u'hand', u'there', u'be', u'move', u'both', u'portfolio', u'tomorrow', u'morn', u'8', u'35', u'AM', u'(CST)', u'Home', u'Run', u'Follow', u'The', u'$$'],1.0,0.75,0.854166666667,neutral
+[u'It', u'get', u'ugli', u'it', u'get', u'beauti'],0.25,0.0,0.875,positive
+[u'my', u'TL', u'guy', u'talk', u'AFC', u'vs', u'MUFC', u'know', u'guy', u'u', u'cant', u'wait', u'till', u'Saturday', u'D', u'%%HASHTAG%%', u'<33'],0.75,0.375,0.897727272727,positive
+[u'%%USERNAME%%', u'would', u'be', u'for', u'full', u'day', u'movi', u'mine', u'Thursday', u'%%Q_MARK%%', u'P', u'far', u'Tarzan', u'The', u'Notebook', u'on', u'list', u'xD'],0.375,0.125,0.95,positive
+[u'Watch', u'Muse', u'the', u'Jonathan', u'Ross', u'show', u'last', u'night', u'promptli', u'nightmar', u'screw', u'everyth', u'on', u'Wednesday', u'%%EXCLAIM%%', u'Eeeeek', u'%%EXCLAIM%%'],0.375,0.125,0.944444444444,neutral
+[u'River', u'Gate', u'onli', u'3rd', u'time', u'season', u'Keep', u'up', u'Chief', u'fantasi', u'team', u'need'],0.25,0.25,0.9375,positive
+[u'Arian', u'pleas', u'help', u'Im', u'girl', u'who', u'bodi', u'veri', u'sore', u'just', u'ask', u'Ariana', u'Jennett', u'goodluck', u'tomorrow', u'PLEAS'],0.0,0.25,0.96875,negative
+[u'Google+', u'Hangout', u'OCTOB', u'27th', u'%%EXCLAIM%%', u'2PM', u'Pacif', u'5PM', u'Eastern', u'via', u'%%HASHTAG%%', u'%%HASHTAG%%', u'%%LINK%%', u'\xa0', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.0,0.0,0.0,objective
+[u'Gotta', u'rememb', u'bring', u'dionj', u'candi', u'tomorrow', u'lol', u'got', u'mad', u'me', u'today', u'%%EXCLAIM%%'],0.25,0.0,0.95,positive
+[u'Watch', u'The', u'Vow', u'the', u'5th', u'time', u'Im', u'still', u'tear', u'What', u'wrong', u'thi', u'movi', u'It', u'tooo', u'omg', u'cant', u'even'],0.25,0.875,0.8125,negative
+[u'See', u'on', u'March', u'24th', u'From', u'Argentina', u'Miami', u'limit', u'%%HASHTAG%%', u'%%USERNAME%%'],0.0,0.125,0.975,neutral
+[u'By', u'way', u'thank', u'to', u'How', u'I', u'Met', u'Your', u'Mother', u'Netflix', u'Without', u'question', u'new', u'favorit', u'show'],0.5,0.25,0.85,positive
+[u'Egypt&', u'%%HASHTAG%%', u'Presid', u'Moham', u'Morsi', u'Monday', u'pardon', u'those', u'arrest', u'the', u'start', u'the', u'revolut', u'%%LINK%%'],0.0,0.125,0.958333333333,positive
+[u'Kurt', u'Convey', u'win', u'boy', u'race', u'16', u'01', u'Nick', u'Diaz', u'come', u'2nd', u'around', u'16', u'10', u'Round', u'the', u'top', u'3', u'Kenni', u'Castro'],0.875,0.0,0.902777777778,positive
+[u'FYI', u'ridicul', u'ador', u'ladybug', u'Larri', u'Bird', u'give', u'1st', u'piec', u'candi', u'is', u'producer/', u'director', u'Chri', u'Koch', u'gorgeou', u'daughter', u'%%EXCLAIM%%'],0.375,0.75,0.839285714286,positive
+[u'Pictur', u'%%HASHTAG%%', u'1st', u'Anniversari', u'parti', u'Safe', u'Hous', u'%%HASHTAG%%', u'onlin', u'%%EXCLAIM%%', u'Check', u'out', u'%%EXCLAIM%%', u'%%LINK%%', u'%%Q_MARK%%', u'set=a', u'521717147845101', u'139201', u'110704132279740\xa0\u2026', u'pic', u'twitter', u'com/YmEQ9KrL'],0.625,0.0,0.791666666667,objective
+[u'BUST', u'%%USERNAME%%', u'caught', u'celebr', u'1sta', u'cup', u'win', u'Andi', u'Carrol', u'Joe', u'Hart', u'%%HASHTAG%%', u'%%HASHTAG%%', u'pic', u'twitter', u'com/Ifv3wd9I'],0.5,0.0,0.916666666667,neutral
+[u'%%USERNAME%%', u'If', u'are', u'still', u'look', u'a', u'Center', u'may', u'want', u'inquir', u'Sam', u'Gagner', u'Edmonton', u'need', u'D'],0.875,0.75,0.819444444444,objective
+[u'Enjoy', u'FLOTU', u'today', u'FL', u'%%EXCLAIM%%', u'%%USERNAME%%', u'u', u'r', u'BRILLIANT', u'simpli', u'put', u'%%EXCLAIM%%', u'Glad', u'I', u'vote', u'Saturday', u'%%HASHTAG%%', u'%%HASHTAG%%', u'pic', u'twitter', u'com/0Szz0XM7'],0.125,0.0,0.986111111111,positive
+[u'tonight', u'Never', u'Mind', u'The', u'Buzzcock', u'the', u'hilari', u'NOEL', u'FIELD', u'cant', u'wait', u'download', u'tomorrow'],0.125,0.625,0.90625,positive
+[u'Would', u'LIKE', u'see', u'cornerback', u'Champ', u'Bailey', u'play', u'hi', u'twelfth', u'Pro', u'Bowl', u'Januari', u'%%Q_MARK%%', u'2013', u'Pro', u'Bowl', u'vote', u'%%LINK%%'],0.25,0.0,0.979166666667,neutral
+[u'Take', u'litr', u'fizzi', u'flavour', u'water', u'bed', u'tonight', u'Super', u'Sunday', u'gonna', u'result', u'a', u'mouth', u'like', u'Ghandi', u'flip', u'flop', u'%%EXCLAIM%%', u'%%HASHTAG%%', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.0,0.0,1.0,neutral
+[u'Cant', u'wait', u'see', u'Flight', u'Saturday', u'Denzel', u'one', u'the', u'best', u'actor', u'the', u'world', u'alongsid', u'Leo', u'De', u'Niro'],0.75,0.0,0.925,positive
+[u'Now', u'yall', u'know', u'that', u'Halloween', u'candi', u'gonna', u'on', u'clearanc', u'tomorrow', u'can', u'save', u'for', u'Valentin', u'day'],0.5,0.0,0.9,positive
+[u'Citi', u'game', u'the', u'Raven', u'stadium', u'Saturday', u'noon', u'10', u'dollar', u'get', u'i', u'be', u'who', u'els', u'go', u'%%Q_MARK%%'],0.25,0.125,0.9625,objective
+[u'Thi', u'in', u'%%USERNAME%%', u'never', u'seen', u'Die', u'Hard', u'either', u'Die', u'Hard', u'marathon', u'I', u'get', u'back', u'%%HASHTAG%%'],0.125,0.625,0.892857142857,positive
+[u'Aris', u'your', u'sleep', u'Africa'],0.0,0.0,1.0,neutral
+[u'Aston', u'Villa', u'line', u'Januari', u'bid', u'Danish', u'midfield', u'Aston', u'Villa', u'reportedli', u'monitor', u'avail', u'%%LINK%%'],0.0,0.0,1.0,objective
+[u'A', u'third', u'those', u'kill', u'Pakistan', u'US', u'drone', u'civilian', u'They', u'dont', u'like', u'us', u'No', u'reason', u'I', u'forgot', u'theyr', u'nuclear', u'state'],0.25,0.25,0.944444444444,negative
+[u'%%USERNAME%%', u'As', u'point', u'Flacco', u'a', u'0', u'3', u'QBR', u'last', u'Sunday', u'Even', u'vet', u'QB', u'a', u'bad', u'day'],0.0,0.625,0.910714285714,negative
+[u'Just', u'like', u'take', u'moment', u'appreci', u'fuck', u'loud', u'Perth', u'crowd', u'%%USERNAME%%', u'tonight', u'Cant', u'imagin', u'get', u'better', u'%%EXCLAIM%%'],0.875,0.0,0.9125,negative
+[u'Come', u'some', u'laugh', u'Me', u'Spartacu', u'and', u'Max', u'Carolin', u'Comedi', u'Club', u'Wednesday', u'Octob', u'24th', u'%%EXCLAIM%%', u'%%LINK%%'],0.0,0.0,1.0,positive
+[u'%%USERNAME%%', u'to', u'blaze', u'Joe', u'I', u'tomorrow', u'%%Q_MARK%%'],0.125,0.125,0.75,neutral
+[u'My', u'Si', u'won', u'ticket', u'the', u'Jona', u'Brother', u'concert', u'Fort', u'Canning', u'Monday'],0.125,0.0,0.982142857143,positive
+[u'Fuck', u'band', u'cover', u'on', u'Friday', u'night', u'fuck', u'Ricki', u'Martin', u'exist', u'the', u'first', u'place', u'big', u'jerk'],0.375,0.125,0.95,negative
+[u'5th', u'floor', u'Paterno', u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'promis', u'go', u'be', u'product', u'now'],0.0,0.0,1.0,objective
+[u'Februari', u'12th', u'a', u'nice', u'time', u'releas', u'It', u'week', u'the', u'Grammi', u'Album', u'sell', u'week'],0.875,0.0,0.825,positive
+[u'Youd', u'think', u'not', u'repli', u'3rd', u'text', u'the', u'Twat', u'face', u'would', u'get', u'I', u'fuck', u'hate'],0.625,0.875,0.785714285714,negative
+[u'Watch', u'The', u'Vow', u'the', u'1st', u'TIME', u'%%EXCLAIM%%', u'I', u'<3', u'%%EXCLAIM%%', u'Alreadi', u'cri', u'3', u'time', u'%%EXCLAIM%%'],0.0,0.0,1.0,positive
+[u'ITL', u'confirm', u'former', u'Senior', u'Bowl', u'chief', u'Steve', u'Hale', u'NOT', u'affili', u'new', u'Raycom', u'All-Star', u'Game', u'Montgomeri', u'%%USERNAME%%'],0.375,0.0,0.946428571429,neutral
+[u'Final', u'bed', u'Such', u'long', u'day', u'so', u'much', u'accomplish', u'Athen', u'tomorrow', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.125,0.0,0.975,positive
+[u'So', u'I', u'ask', u'diehard', u'FSU', u'fan', u'the', u'game', u'Dook', u'Sat', u'are', u'kinda', u'worri', u'Coach', u'Cut', u'Coastal', u'divis', u'lead', u'team'],0.375,0.125,0.944444444444,neutral
+[u'The', u'Vow', u'%%EXCLAIM%%', u'Love', u'movi', u'If', u'are', u'meant', u'be', u'your', u'love', u'one', u'will', u'happen', u'matter', u'obstacl', u'may', u'face', u'%%EXCLAIM%%', u'%%HASHTAG%%', u'%%HASHTAG%%'],1.875,1.0,0.680555555556,positive
+[u'My', u'Thursday', u'night', u'arent', u'same', u'without', u'Waterloo', u'Road'],0.0,0.0,1.0,objective
+[u'New', u'Jeremi', u'Kyle', u'start', u'Monday', u'bitch', u'Im', u'back', u'school', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.0,0.75,0.85,neutral
+[u'I', u'think', u'got', u'eaten', u'a', u'grue', u'PC', u'Friday', u'Diablo', u'III', u'(PTR', u'Patch', u'1', u'05)', u'%%EXCLAIM_QMARK_MIX%%', u'%%LINK%%', u'\xa0', u'%%LINK%%', u'-friday/pc-friday-diablo-iii-ptr-patch-105#', u'UGdeYNUP-m0', u'twitter\xa0\u2026'],0.125,0.0,0.979166666667,neutral
+[u'Perfect', u'weather', u'finish', u'great', u'week', u'Saw', u'Noel', u'Field', u'show', u'Thursday', u'Ath', u'Meet', u'would', u'made', u'the', u'week', u'perfect', u'%%EXCLAIM%%'],0.0,0.125,0.991071428571,positive
+[u'Moham', u'Nashe', u'Press', u'brief', u'CONI', u'report', u'31', u'Aug', u'2012', u'%%LINK%%', u'%%Q_MARK%%', u'v=Z-_CRJFfNN4&sns=tw\xa0\u2026', u'via', u'%%USERNAME%%'],0.0,0.0,1.0,neutral
+[u'%%USERNAME%%', u'%%USERNAME%%', u'AND', u'%%USERNAME%%', u'on', u'The', u'Jonathan', u'Ross', u'show', u'tonight', u'Terrif', u'sat', u'night', u'%%EXCLAIM%%', u'Well', u'done', u'%%USERNAME%%', u'%%HASHTAG%%'],0.0,0.0,1.0,positive
+[u'The', u'closer', u'hockey', u'season', u'get', u'more', u'I', u'wish', u'would', u'kept', u'pile', u'game', u'the', u'PVR', u'Jones', u'some', u'Jet', u'bad', u'Need', u'fix', u'%%EXCLAIM%%'],0.25,1.625,0.855769230769,neutral
+[u'ALL', u'ABOARD', u'1st', u'flight', u'Hong', u'Kong', u'off', u'the', u'UK', u'there', u'%%HASHTAG%%'],0.0,0.0,1.0,objective
+[u'I', u'love', u'time', u'part=>', u'%%USERNAME%%', u'Axl', u'Rose', u'show', u'on', u'time', u'give', u'Jimmi', u'Kimmel', u'1st', u'live', u'TV', u'interview', u'20', u'year', u'%%LINK%%'],0.5,0.0,0.944444444444,positive
+[u'Noth', u'like', u'watch', u'Vow', u'a', u'Friday', u'night', u'Cheer', u'cancel', u'plan', u'sick'],0.125,0.0,0.984375,positive
+[u'Cant', u'wait', u'see', u'Flight', u'DENZEL', u'WASHINGTON', u'tomorrow', u'%%EXCLAIM%%', u'Bam', u'%%EXCLAIM%%', u'-)'],0.0,0.0,1.0,positive
+[u'Tomorrow', u'biggest', u'name', u'music', u'entertain', u'on', u'show', u'%%EXCLAIM%%', u'And', u'it', u'Ricki', u'Martin', u'Who', u'it', u'%%Q_MARK%%', u'Click', u'%%LINK%%'],0.25,0.125,0.953125,positive
+[u'Mizzou', u'beat', u'Kentucki', u'2-1', u'%%EXCLAIM%%', u'Tiger', u'advanc', u'face', u'top-se', u'Florida', u'the', u'semi', u'Friday', u'6', u'30', u'p', u'm'],0.125,0.0,0.984375,positive
+[u'For', u'who', u'went', u'see', u'Danc', u'On', u'Ice', u'tour', u'year', u'DVD', u'of', u'the', u'tour', u'come', u'Novemb', u'26th', u'2012', u'pic', u'twitter', u'com/x9RATLTb'],0.0,0.0,1.0,neutral
+[u'The', u'Grey', u'huhuhuhu', u'%%HASHTAG%%', u'%%HASHTAG%%', u'670', u'im', u'go', u'sleep', u'need', u'tomorrow', u'ive', u'work'],0.25,0.25,0.916666666667,positive
+[u'Just', u'cu', u'Friday', u'are', u'62', u'reason', u'Bill', u'Murray', u'awesom', u'%%LINK%%', u'-reasons-to-go-batshit-over-the-birth-of-bill-mu-6ygq\xa0\u2026'],0.25,0.125,0.9375,positive
+[u'My', u'photo', u'at', u'Photoplu', u'the', u'Olympu', u'booth', u'Come', u'and', u'say', u'hello', u'%%EXCLAIM%%', u'Ill', u'here', u'till', u'Saturday', u'%%LINK%%'],0.375,0.5,0.890625,neutral
+[u'LMFAOASDFGHJKLOMG', u'just', u'saw', u'pictur', u'Jenel', u'the', u'1st', u'day', u'school', u'5th', u'grade', u'damn', u'nigga', u'chang'],0.0,0.25,0.96875,negative
+[u'Should', u'Assassin\u2019', u'Creed', u'III', u'Be', u'Your', u'First', u'Assassin\u2019', u'Creed', u'Game', u'%%Q_MARK%%', u'I', u'think', u'%%LINK%%', u'\xa0', u'via', u'%%USERNAME%%'],0.0,0.0,1.0,positive
+[u'Friday', u'the', u'last', u'day', u'earli', u'vote', u'Maryland', u'Im4Q6', u'Pleas', u'join', u'and', u'vote', u'FOR', u'Question', u'6', u'%%HASHTAG%%'],0.375,0.375,0.916666666667,neutral
+[u'Ive', u'notic', u'%%USERNAME%%', u'remind', u'of', u'noel', u'field', u'littl', u'bit', u'I', u'think', u'may', u'their', u'strang', u'wonder', u'dress', u'sens'],0.75,0.125,0.875,positive
+[u'Got', u'great', u'piec', u'you', u'Histori', u'buff', u'Friday', u'morn', u'game', u'Schalk', u'Bayern', u'mark', u'end', u'Germani', u'greatest', u'ever', u'side'],0.125,0.125,0.96875,positive
+[u'So', u'Thi', u'Saturday', u'Fort', u'Canning', u'sweetheart(', u'okay', u'%%EXCLAIM%%', u'Yay', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.125,0.125,0.9375,positive
+[u'Dimitrov', u'Querrey', u'Tsonga', u'Harrison', u'also', u'split', u'coach', u'year', u'Theyr', u'get', u'like', u'footbal', u'club'],0.0,0.0,1.0,negative
+[u'Have', u'ever', u'forgotten', u'get', u'Valentin', u'present', u'%%Q_MARK%%', u'Your', u'chanc', u'Feb', u'17', u'%%HASHTAG%%', u'tix', u'come', u'%%EXCLAIM%%', u'%%USERNAME%%'],0.25,0.0,0.964285714286,neutral
+[u'2nd', u'night', u'Parker', u'been', u'it', u'boy', u'oh', u'boy'],0.25,0.0,0.916666666667,negative
+[u'Controversi', u'asid', u'2', u'game', u'shown', u'TV', u'Super', u'Sunday', u'great', u'spectacl', u'%%HASHTAG%%'],0.0,0.0,1.0,positive
+[u'[PAGASA]', u'6', u'39AM', u'Intermitt', u'light', u'occasion', u'moder', u'rain', u'southern', u'portion', u'Negro', u'Cebu', u'Bohol', u'may', u'persist', u'the', u'next'],0.0,0.0,1.0,neutral
+[u'APPLIC', u'ARE', u'DUE', u'THI', u'FRIDAY', u'NOVEMB', u'2', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'Let', u'video', u'YE', u'PREP', u'Senior', u'Sign', u'Day', u'inspir', u'as', u'%%LINK%%'],0.625,0.125,0.916666666667,positive
+[u'Appl', u'CEO', u'apolog', u'error-ridden', u'new', u'map', u'app', u'Appl', u'CEO', u'Tim', u'Cook', u'apolog', u'Friday', u'the', u'co', u'%%LINK%%', u'\xa0', u'%%HASHTAG%%'],0.375,0.0,0.946428571429,objective
+[u'Jimmi', u'Kimmel', u'Live', u'Axl', u'Rose', u'Part', u'1', u'Part', u'1', u'Jimmi', u'Kimmel', u'interview', u'Axl', u'Rose', u'Ad', u'Thu', u'Oct', u'25', u'11', u'02', u'2', u'%%LINK%%'],0.0,0.0,1.0,objective
+[u'Im', u'listen', u'the', u'capella', u'The', u'2nd', u'Law', u'appreci', u'bad', u'ass', u'Bellami', u'Not', u'I', u'didnt', u'alreadi', u'know', u'hi', u'album'],0.0,0.625,0.930555555556,negative
+[u'If', u'are', u'famili', u'member', u'friend', u'fan', u'Austin', u'River', u'may', u'want', u'unfollow', u'Thi', u'about', u'get', u'ugli'],0.625,0.125,0.916666666667,negative
+[u'Happi', u'Valentin', u'Day', u'<3', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'ye', u'Brazil', u'is', u'celebr', u'June', u'12', u'Your', u'mind', u'blown', u'%%EXCLAIM%%'],0.375,0.125,0.9,positive
+[u'IF', u'Ade', u'play', u'when', u'had', u'pre', u'season', u'been', u'injur', u'with', u'Defo', u'inform', u'need', u'go', u'IMO', u'%%EXCLAIM%%', u'That', u'attitud', u'want', u'spur'],0.75,0.375,0.859375,negative
+[u'%%USERNAME%%', u'home', u'you', u'must', u'recharg', u'JONA', u'power', u'%%HASHTAG%%', u'=Jedi'],0.0,0.0,1.0,negative
+[u'%%HASHTAG%%', u'Preview', u'follow', u'live', u'coverag', u'Saturday', u'game', u'Man', u'Utd', u'Arsen', u'the', u'Premier', u'Leagu', u'%%LINK%%'],0.0,0.0,1.0,objective
+[u'cri', u'everi', u'episod', u'Dream', u'High', u'2', u'start', u'episod', u'13', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'T-T', u'tomorrow', u'shall', u'watch', u'last', u'final', u'episod', u'%%EXCLAIM%%'],0.25,0.0,0.958333333333,positive
+[u'Most', u'you', u'idiot', u'dont', u'even', u'know', u'your', u'team', u'call', u'support', u'Read', u'learn', u'Talk', u'older', u'fan'],0.375,0.125,0.944444444444,negative
+[u'I', u'know', u'Pablo', u'Sandov', u'night', u'just', u'got', u'exclus', u'w', u'THI', u'guy', u'Stori', u'soon', u'%%EXCLAIM%%', u'%%HASHTAG%%', u'%%LINK%%'],0.125,0.125,0.964285714286,neutral
+[u'I', u'like', u'%%USERNAME%%', u'video', u'%%LINK%%', u'%%Q_MARK%%', u'a\xa0', u'17th', u'GRAMMi', u'Paul', u'Simon', u'John', u'Lennon', u'co-pres', u'GRAMMi', u'Record', u'Of', u'The'],0.125,0.0,0.982142857143,positive
+[u'1st', u'time', u'Ive', u'seen', u'Eleanor', u'respond', u'hate', u'o', u'o', u'seem', u'sweet', u'say', u'1', u'mean', u'thing', u'%%EXCLAIM%%', u'pic', u'twitter', u'com/TDlEGKDw'],0.25,0.375,0.9375,neutral
+[u'omg', u'music', u'video', u'come', u'tomorrow', u'%%EXCLAIM%%', u'Btw', u'I', u'still', u'cant', u'get', u'Harri', u'voic', u'%%LINK%%', u'%%Q_MARK%%', u'v=6wBzR7zhA0g&feature=youtube_gdata_player\xa0\u2026'],0.0,0.125,0.979166666667,negative
+[u'Egypt&', u'%%HASHTAG%%', u'new', u'presid', u'Moham', u'Morsi', u'Monday', u'describ', u'relationship', u'the', u'U', u'S', u'Egypt', u'some', u'%%LINK%%'],0.375,0.0,0.9375,objective
+[u'1', u'Noel', u'Field', u'comedi', u'gala', u'tonight', u'2', u'Work', u'day', u'tomorrow', u'3', u'Granni', u'Smith', u'festiv', u'night'],0.125,0.125,0.972222222222,positive
+[u'Watch', u'The', u'Woman', u'In', u'Black', u'the', u'9th', u'time', u'hahaha'],0.0,0.375,0.925,positive
+[u'Go', u'Healthi', u'Kid', u'Day', u'Cover', u'Kid', u'Boy', u'Girl', u'Club', u'Teichert', u'Branch', u'Sat', u'Nov', u'3', u'%%LINK%%'],0.25,0.0,0.977272727273,objective
+[u'Turkey', u'Gul', u'Erdogan', u'bicker', u'double-head', u'govern', u'%%LINK%%', u'\xa0', u'via', u'%%USERNAME%%', u'What', u'you', u'think', u'%%USERNAME%%', u'%%Q_MARK%%'],0.0,0.25,0.916666666667,negative
+[u'Had', u'low', u'moment', u'I', u'thought', u'%%Q_MARK%%', u'2wk', u'Tuesday', u'I', u'see', u'Noel', u'Gallagh', u'close', u'the', u'best', u'boy', u'the', u'world', u'Im', u'smile', u'0)'],1.125,0.25,0.885416666667,positive
+[u'Gov', u'Mitch', u'Daniel', u'ralli', u'Republican', u'a', u'rare', u'appear', u'may', u'violat', u'h', u'%%LINK%%'],0.0,0.25,0.916666666667,negative
+[u'Absolut', u'love', u'Paul', u'OGradi', u'seri', u'Battersea', u'Dog', u'Home', u'Will', u'gut', u'it', u'finish', u'next', u'week', u'%%HASHTAG%%'],0.625,0.0,0.921875,positive
+[u'I', u'may', u'a', u'littl', u'optimist', u'I', u'think', u'Brown', u'vex', u'of', u'Baltimor', u'curs', u'beat', u'Raven', u'Mayb', u'just', u'lol'],0.125,0.875,0.857142857143,positive
+[u'Jeremi', u'Lin', u'may', u'a', u'lil', u'Chines', u'wiener', u'he', u'still', u'get', u'%%HASHTAG%%'],0.125,0.375,0.9,neutral
+[u'alway', u'cri', u'wen', u'listen', u'Avril', u'sing', u'Tomorrow', u'Dublin', u'just', u'rememb', u'everyth', u'bad', u'happen', u'me'],0.0,0.625,0.875,negative
+[u'Cupid', u'Psych', u'isnt', u'origin', u'Greek', u'myth', u'It', u'a', u'stori', u'The', u'Golden', u'Ass', u'Apuleiu', u'often', u'cite', u'the', u'1st', u'Fairi', u'Tale'],0.0,0.0,1.0,objective
+[u'I', u'comepos', u'first', u'Twat', u'septemb', u'15th', u'technic', u'iv', u'a', u'twitter', u'a', u'long', u'time', u'forgot', u'it', u'good', u'be', u'back'],0.375,0.25,0.921875,positive
+[u'%%USERNAME%%', u'Tune', u'%%USERNAME%%', u'tomorrow', u'a', u'special', u'%%USERNAME%%', u'%%HASHTAG%%', u'News', u'segment', u'the', u'7AM', u'9AM', u'hour', u'%%EXCLAIM%%', u'NOOOOOOOOO'],0.0,0.0,1.0,negative
+[u'UK', u'%%USERNAME%%', u'SAFE', u'HOUS', u'onli', u'99', u'penc', u'Kindl', u'today', u'steal', u'%%EXCLAIM%%', u'Get', u'or', u'%%HASHTAG%%', u'(Will', u'work', u'US', u'US', u'pub', u'Dec)'],1.25,0.0,0.861111111111,neutral
+[u'%%USERNAME%%', u'U', u'r', u'5-Star', u'the', u'Hog', u'fan', u'VA3', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'U', u'got', u'prop', u'the', u'coach', u'Wednesday', u'night', u'the', u'Sign', u'Day', u'event', u'the', u'Vill', u'%%HASHTAG%%', u'%%EXCLAIM%%'],0.125,0.25,0.971153846154,positive
+[u'%%USERNAME%%', u'David', u'Guetta', u'come', u'Fort', u'Canning', u'11', u'Octob', u'3', u'OMG', u'OMG', u'OMG', u'%%EXCLAIM%%', u'3', u'Will', u'b', u'go', u'D'],0.25,0.25,0.928571428571,positive
+[u'Crack', u'whip', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.125,0.0,0.9375,positive
+[u'%%USERNAME%%', u'Im', u'pretti', u'excit', u'have', u'Wolter', u'my', u'team'],0.25,0.0,0.875,positive
+[u'When', u'were', u'thi', u'time', u'last', u'season', u'now', u'6', u'point'],0.25,0.125,0.9375,neutral
+[u'Bear', u'announc', u'they', u'cut', u'former', u'first-round', u'pick', u'Chri', u'William', u'Also', u'sign', u'CB', u'Zack', u'Bowman'],0.125,0.125,0.958333333333,positive
+[u'rehears', u'Nov', u'6', u'%%USERNAME%%', u'call', u'Jim', u'Leyland', u'congratul', u'New', u'York', u'Giant', u'their', u'victori', u'basebal', u'match', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.0,0.25,0.95,positive
+[u'Im', u'go', u'actual', u'meet', u'Chan', u'Tatum', u'tomorrow', u'It', u'set', u'Suck', u'dick', u'twitter', u'%%EXCLAIM%%'],0.125,0.5,0.930555555556,negative
+[u'The', u'boy', u'hot', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%HASHTAG%%', u'Big', u'win', u'tonight', u'let', u'er', u'tomorrow', u'%%EXCLAIM%%', u'%%HASHTAG%%'],0.375,0.0,0.9375,positive
+[u'Now', u'hold', u'virtual', u'silver', u'medal', u'taken', u'GB', u'the', u'Olymp', u'Game', u'final', u'%%HASHTAG%%'],0.0,0.0,1.0,objective
+[u'%%USERNAME%%', u'you', u'film', u'Jonathan', u'Ross', u'yet', u'%%Q_MARK%%', u'%%Q_MARK%%', u'%%Q_MARK%%', u'Cant', u'wait', u'see', u'on', u'sat', u'%%EXCLAIM%%', u'xxx'],0.25,0.0,0.972222222222,positive
+[u'Come', u'support', u'%%HASHTAG%%', u'tomorrow', u'%%HASHTAG%%', u'113th', u'and', u'King', u'Dr', u'4-8', u'30pm', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'Be', u'chang', u'want', u'see'],0.25,0.375,0.910714285714,positive
+[u'Liverpool', u'look', u'activ', u'Demba', u'Ba', u'7m', u'buy', u'claus', u'Andi', u'Carrol', u'go', u'other', u'way', u'januari'],0.5,0.625,0.839285714286,objective
+[u'Safe', u'sound', u'hotel', u'%%EXCLAIM%%', u'Scotti', u'pass', u'on', u'the', u'plane', u'had', u'get', u'doctor', u'oxygen', u'Practic', u'tomorrow', u'%%LINK%%'],1.0,0.0,0.9,positive
+[u'One', u'day', u'work', u'rugbi', u'fill', u'weekend', u'Hurri', u'Saturday', u'%%EXCLAIM%%', u'%%HASHTAG%%', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.0,0.375,0.925,positive
+[u'%%USERNAME%%', u'%%USERNAME%%', u'%%USERNAME%%', u'Keep', u'yr', u'eye', u'open', u'Incurs', u'It', u'may', u'be', u'Spartacu', u'it', u'go', u'be', u'of', u'world', u'-)'],0.5,0.625,0.859375,positive
+[u'Saw', u'after', u'game', u'Saturday', u'Former', u'Site', u'Of', u'The', u'Now', u'Remov', u'Joe', u'Paterno', u'Statu', u'At', u'Beaver', u'Stadium', u'%%LINK%%'],0.0,0.0,1.0,objective
+[u'I', u'may', u'the', u'odd', u'man', u'I', u'dont', u'get', u'the', u'buzz', u'on', u'thi', u'Kendrick', u'Lamar', u'Decent', u'I', u'guess', u'but', u'not', u'stellar'],1.0,1.25,0.71875,negative
+[u'Thi', u'may', u'a', u'reason', u'swap', u'iO', u'too', u'mani', u'daft', u'game', u'Android', u'a', u'desol', u'wasteland', u'it', u'come', u'game', u'%%LINK%%', u'-10/31/android-games\xa0\u2026'],0.25,0.375,0.930555555556,negative
+[u'OMG', u'Bullet', u'For', u'My', u'Valentin', u'go', u'be', u'Radio', u'1', u'Monday', u'night'],0.25,0.125,0.9375,neutral
+[u'%%USERNAME%%', u'Peopl', u'say', u'u', u'wont', u'go', u'Pro', u'Bowl', u'the', u'play', u'of', u'the', u'Bear', u'CB', u'How', u'you', u'gonna', u'prove', u'wrong', u'Sunday', u'%%Q_MARK%%', u'%%EXCLAIM%%'],0.125,0.75,0.920454545455,negative
+[u'It', u'birthday', u'today', u'one', u'I', u'share', u'the', u'cap', u'England', u'femal', u'footbal', u'%%HASHTAG%%', u'I', u'also', u'work'],0.25,0.0,0.958333333333,positive
+[u'Oh', u'Geno', u'%%HASHTAG%%'],0.0,0.0,0.0,neutral
+[u'Alright', u'my', u'daughter', u'keep', u'sing', u'Avril', u'annoy', u'I', u'may', u'forc', u'to', u'retali'],0.0,0.0,1.0,negative
+[u'If', u'agre', u'w/', u'Bloomberg', u'we', u'borrow', u'trillion', u'China', u'an', u'attempt', u'stop', u'weather', u'Obama', u'guy'],0.0,0.125,0.982142857143,neutral
+[u'All', u'yall', u'definit', u'tri', u'Just', u'Caus', u'2', u'Multiplay', u'Mod', u'weekend', u'It', u'quit', u'the', u'spectacl', u'%%LINK%%', u'-cause-2/1226001p1', u'html\xa0\u2026'],0.0,0.0,1.0,neutral
+[u'Februari', u'13th', u'Desper', u'Day', u'most', u'awesom', u'day', u'all', u'time', u'%%HASHTAG%%'],0.0,0.0,1.0,positive
+[u'That', u'like', u'5th', u'time', u'Texan', u'hit', u'ball', u'Flacco', u'cant', u'throw'],0.0,0.0,1.0,objective
+[u'Indian', u'Air', u'Forc', u'may', u'go', u'Israel', u'second', u'time', u'%%LINK%%', u'-Air-Force-Avoids-Israel-Goes-Global-Aerostat', u'%%Q_MARK%%', u'odyssey=nav%7Chead\xa0\u2026'],0.0,0.0,1.0,negative
+[u'Raw', u'1', u'000', u'Rock', u'get', u'WWE', u'Championship', u'match', u'the', u'Royal', u'Rumbl', u'Januari', u'%%LINK%%', u'-2i'],0.125,0.5,0.895833333333,objective
+[u'[$]', u'BLACK', u'FRIDAY', u'BEST', u'PRICE', u'Underwat', u'Case', u'the', u'Follow', u'Olympu', u'Evolt', u'Digit', u'SLR', u'%%LINK%%', u'-friday-best-price-underwater-case-for-the-following-olympus-evolt-digital-slr-cameras-e3-e420-e520-e510-e410-e500/\xa0\u2026'],0.25,0.375,0.895833333333,positive
+[u'Oh', u'she', u'didnt', u'%%EXCLAIM%%', u'BGV', u'RT', u'%%USERNAME%%', u'I', u'cant', u'wait', u'make', u'%%USERNAME%%', u'listen', u'two', u'hour', u'taylor', u'swift', u'our', u'drive', u'tomorrow'],0.125,0.0,0.984375,negative
+[u'Actual', u'Id', u'like', u'omit', u'The', u'Vaccin', u'my', u'top', u'10', u'move', u'Kasabian', u'at', u'9th', u'The', u'Enemi', u'drop', u'10th', u'Told', u'I', u'cant', u'it'],0.25,0.5,0.892857142857,negative
+[u'%%USERNAME%%', u'I', u'would', u'love', u'audio', u'book', u'The', u'Art', u'Of', u'War', u'Sun', u'Tzu', u'read', u'Jim', u'White', u'%%EXCLAIM%%', u'%%EXCLAIM%%', u'%%HASHTAG%%'],0.5,0.0,0.9375,positive
+[u'2nd', u'Come', u'Will', u'Black', u'America', u'Debat', u'2012', u'Elect', u'%%HASHTAG%%', u'%%USERNAME%%', u'Im', u'tire', u'hear', u'ppl', u'say', u'POTU', u'havent', u'done', u'anyth', u'4', u'blk'],0.125,0.375,0.928571428571,negative
+[u'To', u'my', u'friend', u'%%HASHTAG%%', u'may', u'all', u'stand', u'strong', u'thi', u'89th', u'Republ', u'Day', u'%%EXCLAIM%%', u'Cumhuriyet', u'Bayraminiz', u'kutlu', u'olsun', u'%%EXCLAIM%%'],0.625,0.0,0.84375,positive
+[u'eh', u'first', u'day', u'Chines', u'New', u'Year', u'feb', u'10th'],0.0,0.25,0.95,objective
+[u'April', u'I', u'have', u'dinner', u'Jacksonvil', u'tomorrow', u'night', u'Milford', u'futur', u'Mr', u'Milford', u'%%EXCLAIM%%', u'%%USERNAME%%', u'%%HASHTAG%%'],0.25,0.0,0.95,objective
+[u'%%USERNAME%%', u'1win', u'the', u'Superbowl', u'%%EXCLAIM%%', u'Game', u'tomorrow', u'noon', u'%%EXCLAIM%%', u'Git', u'r', u'done', u'%%EXCLAIM%%', u'%%LINK%%', u'-5ym43e'],0.0,0.0,1.0,positive
+[u'Be', u'Amsterdam', u'earli', u'a', u'friday', u'morn', u'not', u'ideal', u'I', u'want', u'get', u'home', u'%%EXCLAIM%%'],0.625,0.75,0.847222222222,negative
+[u'Tomorrow', u'my', u'last', u'day', u'Edinburgh', u'%%EXCLAIM%%', u'Five', u'great', u'year', u'time', u'a', u'new', u'adventur', u'%%EXCLAIM%%'],0.375,0.0,0.958333333333,neutral
+[u'found', u'that', u'boy', u'be', u'ellen', u'novemb', u'9th', u'AHHH', u'happi'],0.5,0.125,0.791666666667,positive
+[u'54)', u'A', u'Bro', u'requir', u'go', u'with', u'Bro', u'St', u'Paddi', u'Day', u'other', u'Bro', u'holiday', u'like', u'Halloween', u'NYE', u'Desper', u'Day', u'FEB', u'13th'],0.0,0.625,0.910714285714,objective
+[u'Adel', u'won', u'8', u'grammi', u'%%Q_MARK%%', u'Dont', u'get', u'wrong', u'I', u'like', u'of', u'song', u'Adam', u'voic', u'better', u'me', u'%%EXCLAIM%%', u'He', u'hasnt', u'won', u'DGIT', u'%%EXCLAIM%%'],0.875,0.0,0.854166666667,positive
+[u'See', u'%%Q_MARK%%', u'That', u'whi', u'bunt', u'a', u'runner', u'2nd', u'nobodi', u'No', u'matter', u'the', u'hitter'],0.125,0.5,0.875,positive
+[u'Britain', u'of', u'recess', u'%%Q_MARK%%', u'I', u'give', u'till', u'Februari'],0.0,0.125,0.958333333333,neutral
+[u'THEY', u'ARE', u'HEREE', u'%%EXCLAIM%%', u'Im', u'envi', u'met', u'at', u'KLIA', u'especi', u'who', u'took', u'pictur', u'w', u'Nick', u'J', u'tomorrow', u'my', u'turn', u'%%EXCLAIM%%'],0.25,0.125,0.953125,positive
+[u'I', u'miss', u'10th', u'birthday', u'Avril', u'Lavign', u'Sk8er', u'Boi', u'%%EXCLAIM%%', u'Darn', u'I', u'love', u'song', u'especi', u'part', u'she', u'rhyme', u'boy', u'boy', u'%%HASHTAG%%'],0.875,0.375,0.84375,positive
+[u'%%USERNAME%%', u'Stick', u'colleg', u'hoop', u'pander', u'2nd', u'rate', u'ACC', u'team', u'Dook', u'open', u'game', u'right', u'around', u'corner', u'baybeee', u'%%EXCLAIM%%', u'%%EXCLAIM%%'],0.25,0.375,0.9375,positive
+[u'All', u'peopl', u'see', u'Noel', u'Field', u'tomorrow', u'I', u'extrem', u'jealou', u'you'],0.0,0.0,1.0,negative
+[u'Eleanor', u'say', u'she', u'go', u'practic', u'squat', u'pee', u'the', u'shower', u'tomorrow'],0.0,0.0,1.0,objective
+[u'Have', u'check', u'our', u'March', u'%%HASHTAG%%', u'Heifer', u'sale', u'%%Q_MARK%%', u'%%LINK%%', u'\xa0', u'%%HASHTAG%%', u'%%HASHTAG%%', u'%%HASHTAG%%'],0.5,0.0,0.9,positive
+[u'wait', u'the', u'power', u'out', u'tomorrow', u'im', u'go', u'miss', u'new', u'i', u'met', u'mother', u'NOOOOOOOOO'],0.375,0.0,0.958333333333,negative
+[u'Terribl', u'play', u'call', u'2nd', u'7', u'Victor', u'Cruz', u'a', u'slant', u'%%Q_MARK%%', u'TE', u'%%Q_MARK%%', u'Nick', u'sidelin', u'%%Q_MARK%%', u'How', u'ani', u'those', u'%%Q_MARK%%'],0.25,0.0,0.964285714286,negative
