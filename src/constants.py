@@ -50,6 +50,10 @@ HEADER = """%
 % Craig Bryan\t6965144
 %
 % Generated from "semeval_twitter_data.txt"
+<<<<<<< HEAD
 
 """
 
+=======
+"""
+>>>>>>> FETCH_HEAD

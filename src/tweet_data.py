@@ -18,6 +18,7 @@ class TweetData:
       %(self.sid, self.uid, self.mood, self.tweet_string)
 
   def get_quoted_tweet_string(self):
+<<<<<<< HEAD
     return '\' {} \''.format(self.tweet_string.replace('\''," ").encode('utf-8'))
 
   def set_scores(self, scores):
@@ -36,3 +37,6 @@ class TweetData:
         self.qMarks += 1
       if word =='EXCLAIM%%':
         self.eMarks += 1
+=======
+    return '"{}"'.format(self.tweet_string.replace("\"", "\\\"").encode('utf-8'))
+>>>>>>> FETCH_HEAD
