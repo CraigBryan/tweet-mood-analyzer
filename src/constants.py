@@ -16,8 +16,8 @@ LINK_MAP = OrderedDict([
 # Map that escapes usernames and hashtags
 # The keys are regular expressions and the values are the replacement string
 TWITTER_MAP = OrderedDict([
-  ('(?:^|")@\w+', 'USERNAME'),
-  ('(?:^|")#\w+', 'HASHTAG')
+  ('@\w+', 'USERNAME'),
+  ('#\w+', 'HASHTAG')
 ])
 
 #partial date regexes
