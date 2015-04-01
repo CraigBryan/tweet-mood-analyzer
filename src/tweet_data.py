@@ -62,3 +62,9 @@ class TweetData:
 
   def count_caps(self):
     return sum(1 for c in self.tweet_string if c.isupper())
+
+  def is_reply(self):
+    return str(self.tokens[0] == 'USERNAME')
+
+  def is_retweet(self):
+    return str('rt' in self.tokens)
