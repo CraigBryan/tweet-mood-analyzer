@@ -7,7 +7,7 @@ from arff_generator import DogSoundFileGenerator
 from unigram_swn_feature_parser import UnigramSWNFeatureParser
 from bag_of_words_generator import BagOfWordsGenerator 
 
-options = ['-swn', '-qe', '-uid', '-cap', '-bow']
+available_options = ['-swn', '-qe', '-uid', '-cap', '-bow', '-r', '-rt']
 
 if len(sys.argv) > 1:
   options = sys.argv[1:]
@@ -16,6 +16,9 @@ if '-t' in options:
   filename = '../res/one_tenth_semeval_twitter_data.txt'
 else:
   filename = '../res/semeval_twitter_data.txt'
+
+if '-a' in options:
+  options = available_options
 
 parser = InputParser(filename)
 tweet_list = parser.parse()
@@ -64,8 +67,16 @@ if '-bow' in options:
   bow_generator.assign_word_vectors()
   features.extend(bow_generator.generate_word_features())
 
+if '-r' in options:
+  features.append(Feature("is_reply", "enum", 
+                          "is_reply", enum_fields = ['True', 'False']))
 
-features.append(Feature("category", "enum", "mood", enum_fields = constants.MOODS))
+if '-rt' in options:
+  features.append(Feature("is_retweet", "enum", 
+                          "is_retweet", enum_fields = ['True', 'False']))
+
+features.append(Feature("category", "enum", 
+                        "mood", enum_fields = constants.MOODS))
 
 # Outputting the arff
 
@@ -74,4 +85,4 @@ output_gen.add_to_features(features)
 
 output_gen.generate_output("../res/test_output.arff")
 
-print("Output Successfull")
+print("Output Successful")
