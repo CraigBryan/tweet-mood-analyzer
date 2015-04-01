@@ -10,6 +10,10 @@ class TweetData:
     return "sid: %s \nuid: %s \nmood: %s \ntweet: %s" \
       %(self.sid, self.uid, self.mood, self.tweet_string)
 
+
+  def get_quoted_tweet_string(self):
+    return '\' {} \''.format(self.tweet_string.replace('\''," ").encode('utf-8'))
+
   def set_scores(self, scores):
     self.pos_score = scores[0]
     self.neg_score = scores[1]
@@ -31,7 +35,7 @@ class TweetData:
     for word in self.tokens:
       if word == '%%EXCLAIM%%':
         count += 1
-
+        
     return count
 
   def set_word_vector(self, vector):

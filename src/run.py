@@ -7,7 +7,7 @@ from arff_generator import DogSoundFileGenerator
 from unigram_swn_feature_parser import UnigramSWNFeatureParser
 from bag_of_words_generator import BagOfWordsGenerator 
 
-options = ['-t', '-swn', '-qe']
+options = ['-swn', '-qe', '-uid', '-cap', '-bow']
 
 if len(sys.argv) > 1:
   options = sys.argv[1:]
@@ -73,3 +73,5 @@ output_gen = DogSoundFileGenerator("tweet_mood", tweet_list)
 output_gen.add_to_features(features)
 
 output_gen.generate_output("../res/test_output.arff")
+
+print("Output Successfull")

@@ -9,6 +9,7 @@ class BagOfWordsGenerator:
   def __init__(self, tweet_list):
     self.tweets = tweet_list
     self.corpus = TweetCorpus()
+    self.corpus.wordCountDictionary = {}
 
   def generate_bag_of_words(self):
     for tweet in self.tweets:
@@ -22,7 +23,8 @@ class BagOfWordsGenerator:
   def generate_word_features(self):
     word_features = []
     for index, word in enumerate(self.corpus.list()):
-      word_features.append(Feature(word, 'numeric', 'get_word_count', 
+      if self.corpus.wordCountDictionary[word] > 5:
+        word_features.append(Feature(word, 'numeric', 'get_word_count', 
                                    data_param = index))
     return word_features
 
@@ -35,8 +37,17 @@ class TweetCorpus:
     self.word_set = set([])
 
   def add(self, word):
-    if word[0].isalpha():
-      self.word_set.add(word)
+    if len(word) > 0:
+      if word[0].isalpha():
+        if word in self.word_set:
+          self.wordCountDictionary[word] += 1
+        else:
+          self.wordCountDictionary[word] = 1
+          self.word_set.add(word)
+ #   else:
+ #       print(word)
+ #
+ #  printed word was blannk in tests
 
   def generate_word_vector(self, tokens):
     word_vector = []
