@@ -39,3 +39,6 @@ class TweetData:
 
   def get_word_count(self, index):
     return self.word_vector[index]
+
+  def count_caps(self):
+    return sum(1 for c in self.tweet_string if c.isupper())

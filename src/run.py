@@ -37,13 +37,17 @@ for data in tweet_list:
 
 print('Done Preprocessing')                  
 
-
-
 # Adding features
 
 features = []
 # The words are now added as a bag of words instead
 # features.append(Feature("tweet_string", "string", "tokens"))
+
+if '-uid' in options:
+  features.append(Feature("uid", "numeric", "uid"))
+
+if '-cap' in options:
+  features.append(Feature("caps", "numeric", "count_caps"))
 
 if '-swn' in options:
   features.append(Feature("pos_score", "numeric", "pos_score"))
