@@ -9,7 +9,7 @@ class BagOfWordsGenerator:
   def __init__(self, tweet_list):
     self.tweets = tweet_list
     self.corpus = TweetCorpus()
-    self.corpus.wordCountDictionary = {}
+    self.corpus.word_count_dictionary = {}
 
   def generate_bag_of_words(self):
     for tweet in self.tweets:
@@ -23,7 +23,7 @@ class BagOfWordsGenerator:
   def generate_word_features(self):
     word_features = []
     for index, word in enumerate(self.corpus.list()):
-      if self.corpus.wordCountDictionary[word] > 5:
+      if self.corpus.word_count_dictionary[word] > 5:
         word_features.append(Feature(word, 'numeric', 'get_word_count', 
                                    data_param = index))
     return word_features
@@ -40,9 +40,9 @@ class TweetCorpus:
     if len(word) > 0:
       if word[0].isalpha():
         if word in self.word_set:
-          self.wordCountDictionary[word] += 1
+          self.word_count_dictionary[word] += 1
         else:
-          self.wordCountDictionary[word] = 1
+          self.word_count_dictionary[word] = 1
           self.word_set.add(word)
  #   else:
  #       print(word)
