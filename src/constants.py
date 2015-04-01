@@ -68,6 +68,12 @@ ESCAPE_SEQUENCE = "%%"
 # The basic tokenizing split regex
 SPLIT_REGEX = ' |\n|\t|;|:|,|\.|\"'
 
+#Emoticon constants
+EMOTICON_POSITIVE = [ ':)' , ':)', ':D', '(:', ':-)',  '(-:', '<3',]
+
+EMOTICON_NEGATIVE = [ ':(',  '):',  ':-(',   ')-:',  ':\\', ':\'('] 
+  
+
 #Header comment text
 HEADER = """%
 % CSI 4107

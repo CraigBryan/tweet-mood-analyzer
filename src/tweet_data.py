@@ -1,3 +1,5 @@
+import constants
+
 class TweetData:
 
   def __init__(self, aSid, aUid, aMood, aTweet):
@@ -36,6 +38,20 @@ class TweetData:
       if word == '%%EXCLAIM%%':
         count += 1
         
+    return count
+
+  def pos_emoticons(self):
+    count = 0
+    for token in constants.EMOTICON_POSITIVE:
+      count += self.tweet_string.count(token)
+      
+    return count
+
+  def neg_emoticons(self):
+    count = 0
+    for token in constants.EMOTICON_NEGATIVE:
+      count += self.tweet_string.count(token)
+
     return count
 
   def set_word_vector(self, vector):

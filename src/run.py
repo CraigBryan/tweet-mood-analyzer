@@ -7,7 +7,7 @@ from arff_generator import DogSoundFileGenerator
 from unigram_swn_feature_parser import UnigramSWNFeatureParser
 from bag_of_words_generator import BagOfWordsGenerator 
 
-options = ['-swn', '-qe', '-uid', '-cap', '-bow']
+options = ['-swn', '-qe', '-uid', '-cap', '-bow', '-emoji']
 
 if len(sys.argv) > 1:
   options = sys.argv[1:]
@@ -64,6 +64,10 @@ if '-bow' in options:
   bow_generator.assign_word_vectors()
   features.extend(bow_generator.generate_word_features())
 
+if '-emoji' in options:
+  features.append(Feature("pos_emoji", "numeric", "pos_emoticons"))
+  features.append(Feature("neg_emoji", "numeric", "neg_emoticons")) 
+  
 
 features.append(Feature("category", "enum", "mood", enum_fields = constants.MOODS))
 
