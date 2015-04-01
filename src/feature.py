@@ -45,7 +45,7 @@ class Feature:
     else:
       type_string = self.weka_type
 
-    return "@ATTRIBUTE {} {}".format(self.name, type_string)
+    return "@ATTRIBUTE {} {}".format(self.name.encode('utf-8'), type_string)
 
   def apply_to_tweet(self, tweet):
     """

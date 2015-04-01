@@ -5,7 +5,7 @@ import constants
 from feature import Feature
 from arff_generator import DogSoundFileGenerator
 from unigram_swn_feature_parser import UnigramSWNFeatureParser
-import tweet_data
+from bag_of_words_generator import BagOfWordsGenerator 
 
 options = ['-t', '-swn', '-qe']
 
@@ -37,10 +37,13 @@ for data in tweet_list:
 
 print('Done Preprocessing')                  
 
+
+
 # Adding features
 
 features = []
-features.append(Feature("tweet_string", "string", "tokens")) #TODO add as a bag of words instead
+# The words are now added as a bag of words instead
+# features.append(Feature("tweet_string", "string", "tokens"))
 
 if '-swn' in options:
   features.append(Feature("pos_score", "numeric", "pos_score"))
@@ -50,6 +53,13 @@ if '-swn' in options:
 if '-qe' in options:
   features.append(Feature("q_marks", "numeric", "q_marks"))
   features.append(Feature("e_marks", "numeric", "e_marks")) 
+
+if '-bow' in options:
+  bow_generator = BagOfWordsGenerator(tweet_list)
+  bow_generator.generate_bag_of_words()
+  bow_generator.assign_word_vectors()
+  features.extend(bow_generator.generate_word_features())
+
 
 features.append(Feature("category", "enum", "mood", enum_fields = constants.MOODS))
 

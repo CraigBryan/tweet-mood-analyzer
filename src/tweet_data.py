@@ -33,3 +33,9 @@ class TweetData:
         count += 1
 
     return count
+
+  def set_word_vector(self, vector):
+    self.word_vector = vector
+
+  def get_word_count(self, index):
+    return self.word_vector[index]

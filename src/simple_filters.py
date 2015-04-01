@@ -26,7 +26,9 @@ class Analyzer:
     data = self._sw_remover.filter(data)
     data = self._punct_filter.filter(data)
     data = self._stemmer.stem(data)
+    data = self._replacer.remove_special_sequence(data)
     data = self._remove_empty_words(data)
+    data = self._punct_filter.second_punctuation_pass(data)
     return data
 
   def _remove_empty_words(self, data):
@@ -87,6 +89,21 @@ class PunctuationFilter:
 
     return data
 
+  def second_punctuation_pass(self, data):
+    """
+    Really dumb replacement to get rid of last troublesome special characters
+    """
+    try:
+      data = data.split(" ")
+    except AttributeError:
+      pass
+
+    for index, word in enumerate(data):
+      word = re.sub('^-|\(|\)|"', '', word)
+      data[index] = word
+
+    return data
+
 class SpecialWordReplacer:
   """
   Replaces any defined sequences so they can can be later ignored in the 
@@ -104,6 +121,13 @@ class SpecialWordReplacer:
         data = data.replace(match, self._get_replacement(result))
 
     return data
+
+  def remove_special_sequence(self, token_list):
+    amended_tokens = []
+    for token in token_list:
+      amended_tokens.append(token.replace(self._escape_seq, ''))
+
+    return amended_tokens
 
   def _get_replacement(self, to_replace):
     return " " + self._escape_seq + to_replace + self._escape_seq + " "
@@ -125,7 +149,7 @@ class Stemmer(PorterStemmer):
 
     for index, word in enumerate(data):
       if not re.search(self._escape_regex(), word):
-        data[index] = super(Stemmer, self).stem(word)
+        data[index] = super(Stemmer, self).stem(word).lower()
 
     return data
 
