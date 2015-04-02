@@ -7,11 +7,7 @@ from arff_generator import DogSoundFileGenerator
 from unigram_swn_feature_parser import UnigramSWNFeatureParser
 from bag_of_words_generator import BagOfWordsGenerator 
 
-<<<<<<< HEAD
-options = ['-swn', '-qe', '-uid', '-cap', '-bow', '-emoji']
-=======
-available_options = ['-swn', '-qe', '-uid', '-cap', '-bow', '-r', '-rt']
->>>>>>> FETCH_HEAD
+available_options = ['-swn', '-qe', '-uid', '-cap', '-bow', '-r', '-rt', '-emoji']
 
 if len(sys.argv) > 1:
   options = sys.argv[1:]
@@ -45,10 +41,7 @@ for data in tweet_list:
 print('Done Preprocessing')                  
 
 # Adding features
-
 features = []
-# The words are now added as a bag of words instead
-# features.append(Feature("tweet_string", "string", "tokens"))
 
 if '-uid' in options:
   features.append(Feature("uid", "numeric", "uid"))
@@ -71,12 +64,10 @@ if '-bow' in options:
   bow_generator.assign_word_vectors()
   features.extend(bow_generator.generate_word_features())
 
-<<<<<<< HEAD
 if '-emoji' in options:
   features.append(Feature("pos_emoji", "numeric", "pos_emoticons"))
   features.append(Feature("neg_emoji", "numeric", "neg_emoticons")) 
   
-=======
 if '-r' in options:
   features.append(Feature("is_reply", "enum", 
                           "is_reply", enum_fields = ['True', 'False']))
@@ -84,7 +75,6 @@ if '-r' in options:
 if '-rt' in options:
   features.append(Feature("is_retweet", "enum", 
                           "is_retweet", enum_fields = ['True', 'False']))
->>>>>>> FETCH_HEAD
 
 features.append(Feature("category", "enum", 
                         "mood", enum_fields = constants.MOODS))
@@ -97,3 +87,23 @@ output_gen.add_to_features(features)
 output_gen.generate_output("../res/test_output.arff")
 
 print("Output Successful")
+
+if '-info' in options:
+  replies = 0
+  retweets = 0
+  for tweet in tweet_list:
+    if tweet.is_reply() == 'True':
+      replies += 1
+    if tweet.is_retweet() == 'True':
+      retweets += 1
+
+  print("Number of hashtags found: {}".format(bow_generator.corpus.word_count_dictionary['HASHTAG']))
+  print("Number of usernames found: {}".format(bow_generator.corpus.word_count_dictionary['USERNAME']))
+  print("Number of exclamation marks found: {}".format(bow_generator.corpus.word_count_dictionary['EXCLAIM']))
+  print("Number of question marks found: {}".format(bow_generator.corpus.word_count_dictionary['Q_MARK']))
+  print("Number of links found: {}".format(bow_generator.corpus.word_count_dictionary['LINK']))
+  print("Number of dates found: {}".format(bow_generator.corpus.word_count_dictionary['DATE']))
+  print("Number of times found: {}".format(bow_generator.corpus.word_count_dictionary['TIME']))
+  print("Number of numbers found: {}".format(bow_generator.corpus.word_count_dictionary['NUMBER']))
+  print("Number of replies: {}".format(replies))
+  print("Number of retweets: {}".format(retweets))
