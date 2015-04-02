@@ -9,6 +9,8 @@ from bag_of_words_generator import BagOfWordsGenerator
 
 available_options = ['-swn', '-qe', '-uid', '-cap', '-bow', '-r', '-rt', '-emoji']
 
+options = available_options 
+
 if len(sys.argv) > 1:
   options = sys.argv[1:]
 
@@ -69,12 +71,10 @@ if '-emoji' in options:
   features.append(Feature("neg_emoji", "numeric", "neg_emoticons")) 
   
 if '-r' in options:
-  features.append(Feature("is_reply", "enum", 
-                          "is_reply", enum_fields = ['True', 'False']))
+  features.append(Feature("is_reply", "numeric", "is_reply"))
 
 if '-rt' in options:
-  features.append(Feature("is_retweet", "enum", 
-                          "is_retweet", enum_fields = ['True', 'False']))
+  features.append(Feature("is_retweet", "numeric", "is_retweet"))
 
 features.append(Feature("category", "enum", 
                         "mood", enum_fields = constants.MOODS))

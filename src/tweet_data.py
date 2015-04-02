@@ -64,7 +64,13 @@ class TweetData:
     return sum(1 for c in self.tweet_string if c.isupper())
 
   def is_reply(self):
-    return str(self.tokens[0] == 'USERNAME')
+    is_reply = 0
+    if self.tokens[0] == 'USERNAME':
+      is_reply = 1
+    return is_reply
 
   def is_retweet(self):
-    return str('rt' in self.tokens)
+    is_retweet = 0
+    if 'rt' in self.tokens:
+      is_retweet = 1
+    return is_retweet
