@@ -23,7 +23,7 @@ class BagOfWordsGenerator:
   def generate_word_features(self):
     word_features = []
     for index, word in enumerate(self.corpus.list()):
-      if self.corpus.word_count_dictionary[word] > 5:
+      if self.corpus.word_count_dictionary[word] > 2:
         word_features.append(Feature(word, 'numeric', 'get_word_count', 
                                    data_param = index))
     return word_features
